@@ -1,0 +1,1052 @@
+Name,Address,Municipality,Categories,Cuisine_Type,Rating,Rating_Band,Latitude,Longitude,Is_Halal,Is_Vegetarian,Is_Vegan,Has_Parking,Is_Family_Friendly,Is_Romantic,Has_Scenic_View,Has_Outdoor,Has_Wifi,Dominant_Topic,Topic_Label,Topic_1_Pct,Topic_2_Pct,Topic_3_Pct
+Kbbsteak,"LOT 4063, Jalan Sultan Zainal Abidin, Kampung Tanjung, 20000 Kuala Terengganu, Terengganu, Malaysia",Kuala Terengganu,Steak House,Western,5.0,Excellent (≥4.5★),,,No,No,No,No,No,No,No,No,No,5,Western & Fusion Food,64.57,22.4,11.52
+Restoran Gossip Kitchen,"63-B, Jalan Sultan Ismail, 20200 Kuala Terengganu, Terengganu, Malaysia",Kuala Terengganu,Restaurant,Other,4.0,Very Good (≥4.0★),,,No,No,No,Yes,No,Yes,Yes,No,No,5,Western & Fusion Food,62.0,27.31,7.97
+The Vinum Xchange,"221, Jalan Kampung Cina, 20100 Kuala Terengganu, Terengganu, Malaysia",Kuala Terengganu,Western Restaurant,Western,5.0,Excellent (≥4.5★),,,No,No,No,Yes,Yes,No,Yes,No,No,5,Western & Fusion Food,61.53,25.12,10.09
+Restoran Plan A,,Kuala Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),,,No,Yes,No,No,Yes,Yes,No,No,No,1,Overall Dining Experience,72.07,17.86,5.99
+Uncle Chua Signature,"Ground Floor, Lot 3546 & 3547, Jalan Sultan Zainal Abidin, 20000 Kuala Terengganu, Terengganu, Malaysia",Kuala Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),,,Yes,No,No,Yes,No,Yes,No,No,No,5,Western & Fusion Food,64.91,29.55,3.85
+Warung Pok Nong (Celup Tepung),"Jalan Pantai, A1693, T145, Kampung Teliput, 21030 Kuala Terengganu, Terengganu, Malaysia",Kuala Terengganu,Seafood Restaurant,Seafood,4.0,Very Good (≥4.0★),,,No,No,No,Yes,Yes,No,Yes,No,No,6,Seafood & Local Snacks,61.57,25.61,9.67
+Qween'S Diner,,Kuala Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),,,No,No,No,No,Yes,No,Yes,No,No,3,Location & Ambiance,62.19,23.18,8.83
+Umami Restaurant,"82, Jalan Kampung Cina, Kampung Banggul, 20100 Kuala Terengganu, Terengganu, Malaysia",Kuala Terengganu,Restaurant,Other,4.0,Very Good (≥4.0★),,,No,No,No,Yes,No,No,Yes,No,No,6,Seafood & Local Snacks,74.64,15.87,5.14
+Nasi Dagang Atas Tol - Kg Atas Tol,"Hadapan Surau Tanah Lot, Kg, 21070 Kuala Terengganu, Terengganu, Malaysia",Kuala Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),,,No,No,No,Yes,No,No,Yes,No,No,1,Overall Dining Experience,53.8,24.28,13.57
+Rahsia Kitchen,"1412, Jalan Budiman, Kampung Mengabang Tengah, 20400 Kuala Terengganu, Terengganu, Malaysia",Kuala Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),,,No,No,No,Yes,Yes,No,No,No,No,5,Western & Fusion Food,64.35,21.58,9.54
+D' Tunggal Seafood,,Kuala Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),,,No,No,No,Yes,No,No,No,Yes,No,6,Seafood & Local Snacks,64.31,22.74,7.38
+The Syrup Vs Soda,"3373, Jalan Batas Baru, 20300 Kuala Terengganu, Terengganu, Malaysia",Kuala Terengganu,Restaurant,Other,4.0,Very Good (≥4.0★),,,No,No,No,Yes,No,Yes,Yes,No,No,5,Western & Fusion Food,55.69,21.59,13.06
+Restaurant Ocean,,Kuala Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),,,No,Yes,No,No,No,No,No,No,No,6,Seafood & Local Snacks,67.29,23.52,6.83
+Suerasa Nasi Kerabu,"Jalan Sultan Sulaiman, Kampung Ladang Padang Cicar, 20000 Kuala Terengganu, Terengganu, Malaysia",Kuala Terengganu,Halal Restaurant,Other,5.0,Excellent (≥4.5★),,,No,No,No,Yes,Yes,No,No,Yes,No,2,Traditional Malay Food,50.01,29.48,12.71
+Nr Cafe,,Kuala Terengganu,Restaurant,Other,4.0,Very Good (≥4.0★),,,No,No,No,Yes,Yes,No,Yes,No,No,1,Overall Dining Experience,63.59,25.48,8.61
+Restoran Asia Signature,,Kuala Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),,,No,No,No,Yes,Yes,No,Yes,Yes,No,1,Overall Dining Experience,67.89,20.65,6.36
+Yuji Yakiniku,"1482 A, Jalan Budiman, Kampung Mengabang Tengah, 20400 Kuala Terengganu, Terengganu, Malaysia",Kuala Terengganu,Japanese Restaurant,Japanese,5.0,Excellent (≥4.5★),,,No,No,No,No,No,No,No,No,No,5,Western & Fusion Food,51.95,29.38,13.6
+Restoran Aroma Arab Global,,Kuala Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),,,No,Yes,No,No,Yes,No,No,No,No,5,Western & Fusion Food,63.21,24.4,6.56
+Seoul Garden Buffet,"Lot L1-FB-KS, Paya Bunga Square, Lot PT 3313, Kdah 4785, Jalan Masjid Abidin, 65, Jalan Sultan Ismail, 20300 Kuala Terengganu, Terengganu, Malaysia",Kuala Terengganu,Korean Restaurant,Korean,5.0,Excellent (≥4.5★),,,No,No,No,No,Yes,No,No,Yes,No,1,Overall Dining Experience,57.64,28.17,8.45
+Restoran B'Beteng,,Kuala Terengganu,Restaurant,Other,4.0,Very Good (≥4.0★),,,No,No,No,Yes,Yes,No,Yes,Yes,No,3,Location & Ambiance,63.61,23.47,8.82
+Coffee Garden (Paya Bunga Square Utc),"Lot PK03, Kompleks Paya Bunga Square (UTC, 20100 Kuala Terengganu, Terengganu, Malaysia",Kuala Terengganu,Cafe,Cafe,5.0,Excellent (≥4.5★),,,No,No,No,No,Yes,No,Yes,Yes,No,1,Overall Dining Experience,66.79,18.29,10.62
+Swees Thai Cuisine Restaurant,,Kuala Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),,,No,No,No,No,No,No,No,No,No,1,Overall Dining Experience,80.66,7.51,6.66
+Mei Fong Curry Noodles,"178, Jalan Kampung Cina, Kampung Banggul, 20100 Kuala Terengganu, Terengganu, Malaysia",Kuala Terengganu,Noodle Shop,Malay,3.0,Good (≥3.0★),,,Yes,Yes,No,No,Yes,Yes,No,Yes,No,5,Western & Fusion Food,62.12,27.15,8.44
+Northern Thai Cafe & Restaurant,,Kuala Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),,,No,Yes,No,No,No,No,No,Yes,No,6,Seafood & Local Snacks,66.15,24.87,5.95
+Medan Selera Mualaf Macma,,Kuala Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),,,Yes,No,No,Yes,Yes,No,No,No,No,5,Western & Fusion Food,51.85,31.13,10.67
+Nasi Ayam Legasi,,Kuala Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),,,No,No,No,No,Yes,No,No,No,No,2,Traditional Malay Food,63.43,29.39,3.31
+Uncle Ng Restaurant,"Lot 4285, Jalan Sultan Zainal Abidin, 20000 Kuala Terengganu, Terengganu, Malaysia",Kuala Terengganu,Chinese Restaurant,Chinese,4.0,Very Good (≥4.0★),,,No,Yes,No,Yes,No,Yes,Yes,Yes,No,6,Seafood & Local Snacks,51.67,35.41,9.3
+Auntie Dayana'S,"Plaza perdana, Jalan Engku Sar, 20300 Kuala Terengganu, Terengganu, Malaysia",Kuala Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),,,No,No,No,Yes,Yes,No,No,Yes,No,6,Seafood & Local Snacks,65.31,25.31,7.85
+Yes Corner Japanese Restaurant,,Kuala Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),,,Yes,No,No,Yes,Yes,No,No,No,No,5,Western & Fusion Food,60.92,21.48,15.36
+"Sri Aman Seafood Restaurant And Caterer. Hall Available For Edu-Training, Anniversary, Farewell","Jalan Tengku Ampuan Bariah, 21300 Kuala Terengganu, Terengganu, Malaysia",Kuala Terengganu,Seafood Restaurant,Seafood,4.0,Very Good (≥4.0★),,,No,No,No,No,Yes,No,No,No,No,1,Overall Dining Experience,68.78,21.36,7.16
+Adilroti,"Kios No. 3, Medan Selera, MBKT di bawah Jambatan Sultan Mahmud, Jalan Kuala Hiliran, Kampung Losong Haji Su, 21000 Kuala Terengganu, Terengganu, Malaysia",Kuala Terengganu,Breakfast Restaurant,Cafe,5.0,Excellent (≥4.5★),,,No,No,No,Yes,No,No,No,No,No,5,Western & Fusion Food,56.22,26.37,12.51
+Zie'S Corner,,Kuala Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),,,No,No,No,Yes,Yes,Yes,Yes,No,No,5,Western & Fusion Food,53.56,30.33,12.25
+Bintang Laut Restaurant,,Kuala Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),,,No,No,No,No,Yes,No,Yes,Yes,No,4,Malay Review Sentiment,78.54,13.94,3.82
+Restoran China Town,,Kuala Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),,,No,No,No,No,Yes,No,No,No,No,6,Seafood & Local Snacks,60.67,31.93,3.33
+Golden Dragon Restaurant,,Kuala Terengganu,Restaurant,Other,4.0,Very Good (≥4.0★),,,No,No,No,No,No,Yes,No,No,No,6,Seafood & Local Snacks,64.24,29.33,3.97
+Thai Bbq Seafood,,Kuala Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),,,No,No,No,No,No,No,No,No,No,1,Overall Dining Experience,65.66,17.99,10.86
+D'Penambang Floating Restaurant,,Kuala Terengganu,Restaurant,Other,2.0,Below Average (<3.0★),,,No,No,No,No,No,No,Yes,No,No,2,Traditional Malay Food,72.92,12.85,4.23
+Kst Ikan Bakar Kuala Ibai,"Lot 1228, Jln Sekolah pusat, Taman Midah, 20400 Kuala Terengganu, Terengganu, Malaysia",Kuala Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),,,No,No,No,Yes,No,Yes,Yes,No,No,1,Overall Dining Experience,63.06,24.12,8.81
+Rhopi.Trg,,Kuala Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),,,No,Yes,No,No,No,No,No,No,No,6,Seafood & Local Snacks,53.4,32.33,9.52
+4Fingers Crispy Chicken,,Kuala Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),,,No,Yes,No,No,No,No,No,No,No,1,Overall Dining Experience,71.75,18.47,4.67
+"Kedai Air Buah Gelas Besar Terengganu ""Air Buah Pak San""",,Kuala Terengganu,Restaurant,Other,1.0,Below Average (<3.0★),,,No,No,No,Yes,No,No,No,No,No,6,Seafood & Local Snacks,56.18,26.35,10.77
+Medan Ikan Bakar Kuala Ibai (Bawah Jambatan),"20400 Kuala Terengganu, Terengganu, Malaysia",Kuala Terengganu,Seafood Restaurant,Seafood,5.0,Excellent (≥4.5★),,,No,No,No,Yes,Yes,Yes,Yes,Yes,No,6,Seafood & Local Snacks,59.61,27.77,8.9
+Mk Galaxy Restaurant,"20100 Kuala Terengganu, Terengganu, Malaysia",Kuala Terengganu,Chinese Restaurant,Chinese,4.0,Very Good (≥4.0★),,,No,Yes,Yes,No,No,No,No,No,No,1,Overall Dining Experience,71.94,18.46,6.06
+368 Sam Hok Paet Thai Restaurant,,Kuala Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),,,Yes,No,No,No,No,No,No,Yes,No,6,Seafood & Local Snacks,71.62,20.64,4.82
+Naj D' Leaf,"59-B, Jalan Tok Lam, 20100 Kuala Terengganu, Terengganu, Malaysia",Kuala Terengganu,Restaurant,Other,4.0,Very Good (≥4.0★),,,No,No,No,Yes,No,No,No,No,No,6,Seafood & Local Snacks,61.74,25.49,8.97
+Oden Oishi,"Pantai, 20400 Kuala Terengganu, Terengganu, Malaysia",Kuala Terengganu,Restaurant,Other,3.0,Good (≥3.0★),,,No,No,No,Yes,No,No,Yes,No,No,4,Malay Review Sentiment,75.81,15.28,4.04
+Salaza & Sons Bike Cafe,"Kiosk 1,2,3 & 4,Tmn Awam Batu Buruk, 20400 Kuala Terengganu, Terengganu, Malaysia",Kuala Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),,,No,No,No,Yes,Yes,No,Yes,Yes,No,5,Western & Fusion Food,61.5,27.19,8.64
+Kd Fried Chicken ( Kdfc ),"58, Kampung Duyung Seberang Takir, 21300 Kuala Terengganu, Terengganu, Malaysia",Kuala Terengganu,Restaurant,Other,1.0,Below Average (<3.0★),,,No,No,No,Yes,Yes,No,Yes,No,No,1,Overall Dining Experience,65.7,22.09,9.32
+Sejati Chinese Mix Rice,"Kampung Wakaf Tembesu, 21300 Kuala Terengganu, Terengganu, Malaysia",Kuala Terengganu,Restaurant,Other,4.0,Very Good (≥4.0★),,,No,Yes,No,Yes,No,No,No,No,No,6,Seafood & Local Snacks,71.93,19.34,4.36
+Straits Restaurant,"107, Jalan Petani, Kampung Nesan Empat, 20000 Kuala Terengganu, Terengganu, Malaysia",Kuala Terengganu,Restaurant,Other,4.0,Very Good (≥4.0★),,,No,No,No,No,No,No,No,No,No,1,Overall Dining Experience,69.9,21.07,5.18
+Restoran Chuan Kee,"11, Jalan Kota Lama, 20300 Kuala Terengganu, Terengganu, Malaysia",Kuala Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),,,No,No,No,Yes,Yes,No,Yes,No,No,5,Western & Fusion Food,63.82,26.28,7.82
+T-Homemade Cafe,,Kuala Terengganu,Restaurant,Other,3.0,Good (≥3.0★),,,No,No,No,No,No,No,No,No,No,6,Seafood & Local Snacks,62.46,26.07,10.22
+One Cafe,"No 1, Tingkat Bawah, Wisma Armon, Jln Kamaruddin, 20400 Kuala Terengganu, Terengganu, Malaysia",Kuala Terengganu,Western Restaurant,Western,2.0,Below Average (<3.0★),,,No,No,No,No,Yes,No,No,No,No,1,Overall Dining Experience,83.54,5.33,3.34
+Restoran Hafeez,"1, Jalan Engku Pengiran Anom 2, 20300 Kuala Terengganu, Terengganu, Malaysia",Kuala Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),,,No,No,No,No,Yes,No,No,No,No,5,Western & Fusion Food,66.38,24.26,6.37
+Amki Cafe - Seberang Takir,"Hadapan Pejabat Perikanan, PT41119, Jalan Fikri, Taman Takir Perdana, 21300 Kuala Terengganu, Terengganu, Malaysia",Kuala Terengganu,Cafe,Cafe,5.0,Excellent (≥4.5★),,,No,No,No,Yes,Yes,No,Yes,No,No,5,Western & Fusion Food,68.93,21.22,5.96
+Aijaa Kitchen X Ayin Dine,"98, Jalan Banggol, 20100 Kuala Terengganu, Terengganu, Malaysia",Kuala Terengganu,Family Restaurant,Family,3.0,Good (≥3.0★),,,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,72.01,18.6,4.8
+Kedai Makan Al-Hijrah Oasis,"2131 B, Jalan Pasir Panjang, Kampung Bukit Bayas, 21100 Kuala Terengganu, Terengganu, Malaysia",Kuala Terengganu,Malaysian Restaurant,Malay,4.0,Very Good (≥4.0★),,,Yes,No,No,No,No,No,No,Yes,No,5,Western & Fusion Food,65.37,19.3,10.89
+Amz Seafood,,Kuala Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),,,No,No,No,Yes,Yes,Yes,Yes,Yes,No,1,Overall Dining Experience,53.22,28.96,12.7
+Dee Dee Restaurant,"1-0, Jalan Hiliran, 20300 Terengganu, Malaysia",Kuala Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),,,No,No,No,No,No,No,No,No,No,6,Seafood & Local Snacks,61.43,28.83,6.48
+Uncle Chua Signature (Pulau Warisan),,Kuala Terengganu,Restaurant,Other,4.0,Very Good (≥4.0★),,,No,Yes,No,Yes,Yes,Yes,No,No,No,5,Western & Fusion Food,57.35,23.87,15.32
+Concept Cafe,,Kuala Terengganu,Restaurant,Other,2.0,Below Average (<3.0★),,,No,No,No,No,No,No,No,No,No,1,Overall Dining Experience,58.28,16.04,7.93
+Restoran Dar Al Yaman,"Jalan Bandar Baru, Bandar Baru, 21100 Kuala Terengganu, Terengganu, Malaysia",Kuala Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),,,No,No,No,No,No,No,No,No,No,3,Location & Ambiance,71.52,19.38,5.94
+Restoran Mat Kedai Binjai,,Kuala Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),,,No,No,No,Yes,No,No,No,Yes,No,6,Seafood & Local Snacks,63.04,27.92,6.29
+Roselle,,Kuala Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),,,No,No,No,No,No,No,Yes,No,No,1,Overall Dining Experience,67.6,24.94,2.24
+Bumbu Babah,,Kuala Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),,,No,Yes,No,No,No,No,Yes,No,No,1,Overall Dining Experience,65.91,19.36,7.17
+Chuk Lim Vege Restaurant,"37, Jalan Syed Zain, 20300 Kuala Terengganu, Terengganu, Malaysia",Kuala Terengganu,Vegetarian Restaurant,Vegetarian,5.0,Excellent (≥4.5★),,,No,Yes,Yes,No,No,No,No,No,No,5,Western & Fusion Food,73.67,19.29,2.3
+The Pertama Steak & Sushi House,,Kuala Terengganu,Restaurant,Other,4.0,Very Good (≥4.0★),,,No,No,No,No,Yes,No,No,No,No,1,Overall Dining Experience,80.06,12.42,2.25
+Terradala Museum Cafe,"77A, Jalan Sultan Sulaiman, 20000 Kuala Terengganu, Terengganu, Malaysia",Kuala Terengganu,Cafe,Cafe,5.0,Excellent (≥4.5★),,,No,No,No,No,Yes,No,Yes,Yes,No,6,Seafood & Local Snacks,61.62,27.77,6.7
+The Beach Food Cafe,"No3 Bazaar MBKT jalan Kubang badak, Kampung Tok Jembal, 21300 Kuala Terengganu, Terengganu, Malaysia",Kuala Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),,,No,No,No,Yes,No,No,Yes,Yes,No,5,Western & Fusion Food,57.12,27.98,12.25
+Hoho Place Restaurant,"20100, Lot PT3759, Jalan Bandar, Kampung Banggul, 20100 Kuala Terengganu, Terengganu, Malaysia",Kuala Terengganu,Chinese Restaurant,Chinese,5.0,Excellent (≥4.5★),,,No,Yes,No,No,Yes,No,No,Yes,No,5,Western & Fusion Food,63.5,25.79,7.78
+Restoran Rafidah,,Kuala Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),,,No,No,No,No,No,No,Yes,No,No,5,Western & Fusion Food,70.51,21.93,2.69
+Mike 2 Seafood Restaurant,"226, Jalan Kampung Cina, 21000 Kuala Terengganu, Terengganu, Malaysia",Kuala Terengganu,Seafood Restaurant,Seafood,5.0,Excellent (≥4.5★),,,No,No,No,No,No,Yes,No,No,No,1,Overall Dining Experience,62.48,25.6,7.7
+Nasi Kerabu Warisan Nusantara,"Jalan Ibrahim, Kampung Bukit Besar, 21100 Kuala Terengganu, Terengganu, Malaysia",Kuala Terengganu,Restaurant,Other,4.0,Very Good (≥4.0★),,,No,No,No,No,No,No,No,No,No,2,Traditional Malay Food,53.75,25.42,11.58
+Warung Dalam Kenangan,,Kuala Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),,,No,No,No,Yes,No,No,Yes,No,No,1,Overall Dining Experience,71.91,17.79,5.78
+Nasi Kukus Sempoi Alias 2,"Lrg Kapas, Gong Kapas, 21100 Kuala Terengganu, Terengganu, Malaysia",Kuala Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),,,No,Yes,No,Yes,Yes,No,No,No,No,6,Seafood & Local Snacks,55.59,26.78,11.98
+The Mamak - Nasi Kandar,,Kuala Terengganu,Restaurant,Other,4.0,Very Good (≥4.0★),,,Yes,No,No,No,No,No,No,No,No,6,Seafood & Local Snacks,51.7,27.53,15.58
+D'Ganu Steamboat & Cafe,"Unnamed Road, Pulau Duyung Kecil, 20100 Kuala Terengganu, Terengganu, Malaysia",Kuala Terengganu,Family Restaurant,Family,5.0,Excellent (≥4.5★),,,No,No,No,No,Yes,No,Yes,No,No,6,Seafood & Local Snacks,57.19,26.3,14.33
+Mr.Dakgalbi Ktcc Mall,,Kuala Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),,,No,No,No,No,No,No,Yes,No,No,1,Overall Dining Experience,59.66,24.83,11.22
+Haji Pok Long Ict (Ikan Celup Tepung),,Kuala Terengganu,Restaurant,Other,3.0,Good (≥3.0★),,,No,No,No,Yes,No,No,Yes,No,No,6,Seafood & Local Snacks,64.38,19.55,9.93
+A&W Pantai Batu Buruk,"Jalan Pantai Batu Buruk, 20400 Kuala Terengganu, Terengganu, Malaysia",Kuala Terengganu,Fast Food Restaurant,Fast Food,5.0,Excellent (≥4.5★),,,No,No,No,No,No,No,Yes,No,No,1,Overall Dining Experience,65.38,20.54,9.18
+Kedai Makang Belagoangin,"Kampung Pancur, 21020 Kuala Terengganu, Terengganu, Malaysia",Kuala Terengganu,Brunch Restaurant,Cafe,4.0,Very Good (≥4.0★),,,No,No,No,Yes,Yes,No,No,No,No,1,Overall Dining Experience,51.01,28.75,14.68
+Woodfire,"WOODFIRE MAYANG MALL, LOT NO L3-36 AND KIOSK NO L3-K2 THIRD FLOOR, Jalan Sultan Zainal Abidin, Kampung Tanjung, 20000 Kuala Terengganu, Terengganu, Malaysia",Kuala Terengganu,Hamburger Restaurant,Western,5.0,Excellent (≥4.5★),,,No,No,No,No,No,No,Yes,No,No,5,Western & Fusion Food,66.3,29.31,1.66
+"Beranda Restaurant, Duyong Marina & Resort",,Kuala Terengganu,Restaurant,Other,3.0,Good (≥3.0★),,,No,No,No,No,Yes,No,Yes,No,Yes,3,Location & Ambiance,73.02,19.13,2.3
+Kak Pah Nasi Dagang,"Gerai 30, Pantai Batu Burok, Terengganu, Malaysia",Kuala Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),,,No,No,No,Yes,No,No,Yes,No,No,6,Seafood & Local Snacks,58.41,26.8,9.21
+Mcdonald'S Kuala Terengganu Dt,"Lot 3540, Jalan Sultan Mohammad, Padang Hiliran, 21100 Kuala Terengganu, Terengganu, Malaysia",Kuala Terengganu,Fast Food Restaurant,Fast Food,2.0,Below Average (<3.0★),,,No,No,No,No,No,Yes,No,Yes,No,1,Overall Dining Experience,64.52,25.23,6.6
+D'Suasane Ibai Restaurant,,Kuala Terengganu,Restaurant,Other,3.0,Good (≥3.0★),,,No,No,No,No,Yes,No,Yes,No,No,1,Overall Dining Experience,69.39,20.2,6.37
+Sedapdough Pizza,,Kuala Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),,,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,60.98,16.22,10.58
+Lagenda Restaurant At Raia Hotel & Convention Centre,"Jalan Lapangan Terbang, Kampung Telaga Batin, 21300 Kuala Terengganu, Terengganu, Malaysia",Kuala Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),,,No,No,No,No,Yes,No,No,Yes,No,3,Location & Ambiance,61.56,22.78,6.3
+Ah Hong Homemade (Ah Hong Cafe),,Kuala Terengganu,Restaurant,Other,4.0,Very Good (≥4.0★),,,No,No,No,No,Yes,No,No,No,No,3,Location & Ambiance,62.14,20.72,12.46
+Deelight Restaurant,"Batu 3 setengah, Kampung Wakaf Beruas, 21070 Kuala Terengganu, Terengganu, Malaysia",Kuala Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),,,No,No,No,No,No,No,No,Yes,No,5,Western & Fusion Food,69.82,23.76,3.9
+Indian Food,,Kuala Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),,,No,No,No,No,No,No,No,No,No,1,Overall Dining Experience,66.57,22.9,3.07
+Amirul Thai & Malay Restaurant,,Kuala Terengganu,Restaurant,Other,4.0,Very Good (≥4.0★),,,No,No,No,Yes,No,No,No,No,No,1,Overall Dining Experience,48.3,29.98,16.74
+Mare Nero - The Taaras Redang,"Peti Surat 126, Main Post Office, 20928 Kuala Terengganu, Terengganu, Malaysia",Kuala Terengganu,Italian Restaurant,Italian,4.0,Very Good (≥4.0★),,,No,No,No,No,No,No,No,No,No,1,Overall Dining Experience,60.04,20.83,11.56
+Lucky Star Kopitiam,,Kuala Terengganu,Restaurant,Other,4.0,Very Good (≥4.0★),,,Yes,No,No,Yes,Yes,No,No,No,No,5,Western & Fusion Food,76.81,17.87,3.42
+Jala Mas Coffee House,,Kuala Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),,,No,No,No,No,No,No,No,No,No,1,Overall Dining Experience,81.85,11.16,2.06
+Samsul Racha Tomyam Ala Thai,"Kampung Batu Enam, 21060 Kuala Terengganu, Terengganu, Malaysia",Kuala Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),,,No,No,No,Yes,Yes,No,No,No,No,6,Seafood & Local Snacks,71.78,13.08,9.33
+Nasi Kukus Umira,,Kuala Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),,,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,74.34,19.83,2.14
+Kedai Kopi Rong Shu Xia,,Kuala Terengganu,Restaurant,Other,4.0,Very Good (≥4.0★),,,No,No,No,No,No,No,No,No,No,6,Seafood & Local Snacks,66.33,24.44,5.63
+Taman Tamadun Islam ( Tti Management Sdn Bhd ),"Pulau Wan Man Losong PanglimaPerang, 21000 Kuala Terengganu, Terengganu, Malaysia",Kuala Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),,,No,No,No,Yes,Yes,No,Yes,Yes,No,3,Location & Ambiance,66.96,21.88,8.93
+Restaurant Teck Lai,,Kuala Terengganu,Restaurant,Other,4.0,Very Good (≥4.0★),,,No,No,No,No,Yes,No,No,No,No,1,Overall Dining Experience,68.9,20.51,6.28
+Perniagaan Nasi Minyak Tuan (Restaurant And Catering Services),,Kuala Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),,,No,No,No,No,No,No,No,No,No,1,Overall Dining Experience,41.95,37.39,11.35
+Ben Fishball Noodle,,Kuala Terengganu,Restaurant,Other,4.0,Very Good (≥4.0★),,,No,No,No,Yes,No,Yes,No,No,No,6,Seafood & Local Snacks,57.75,28.05,8.93
+Nr Cafe Pata,,Kuala Terengganu,Restaurant,Other,4.0,Very Good (≥4.0★),,,No,No,No,Yes,Yes,No,Yes,No,No,1,Overall Dining Experience,57.86,31.19,8.27
+Kedai Makan N Surprise,,Kampung Rhu Muda,Restaurant,Other,5.0,Excellent (≥4.5★),5.1885091,103.2222308,No,No,No,No,No,No,No,No,No,1,Overall Dining Experience,72.68,15.18,3.66
+Restoran Lempeng,,Marang,Malaysian Restaurant,Malay,5.0,Excellent (≥4.5★),5.2460379,103.1865342,Yes,No,No,No,No,No,Yes,No,No,3,Location & Ambiance,57.24,23.08,11.49
+Merchang Station (New Owner),,Kampung Pulau Rusa,Restaurant,Other,4.0,Very Good (≥4.0★),5.052857299999999,103.287243,No,No,No,No,No,No,Yes,No,No,1,Overall Dining Experience,56.82,28.33,8.78
+"D'Rhu Bayu Seafood Restaurant, Marang, Terengganu.",,Kuala Terengganu,Restaurant,Other,4.0,Very Good (≥4.0★),5.1748185,103.2287983,No,No,No,Yes,Yes,No,Yes,No,Yes,6,Seafood & Local Snacks,62.42,24.71,7.85
+D'Besi Ikan Celup Tepung,,Marang,Restaurant,Other,4.0,Very Good (≥4.0★),5.2052162,103.2079442,No,No,No,Yes,No,No,Yes,Yes,No,6,Seafood & Local Snacks,62.52,23.86,8.03
+Warung D Permata,,Kampung Ru Muda,Restaurant,Other,4.0,Very Good (≥4.0★),5.1795603,103.2248656,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,76.27,9.89,4.09
+Warung Che Din,,No Lot 1305 Jln Wakaf Tapai Kpg,Family Restaurant,Family,3.0,Good (≥3.0★),5.165207,103.1881755,No,No,No,Yes,No,No,Yes,No,No,1,Overall Dining Experience,65.98,20.62,6.31
+Mk Celup Tepung Kelulut,,Kampung Kelulut,Restaurant,Other,5.0,Excellent (≥4.5★),5.168250899999999,103.2312045,No,No,No,No,No,No,Yes,No,No,6,Seafood & Local Snacks,76.23,17.79,2.66
+Restoran Anjung Seri,,Kuala Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),5.5161383,102.9664848,No,No,No,No,No,No,Yes,No,No,1,Overall Dining Experience,45.98,24.5,14.86
+"Setiu Route T1, Warung Batu",,Kampung Bari Kecil,Family Restaurant,Family,5.0,Excellent (≥4.5★),5.560436,102.8586133,No,No,No,No,Yes,No,No,No,No,1,Overall Dining Experience,68.13,16.27,8.02
+Nasi Dagang Atas Tol - Kelulut,,Kelulut,Restaurant,Other,4.0,Very Good (≥4.0★),5.1774529,103.2277586,No,No,No,Yes,No,No,Yes,Yes,No,1,Overall Dining Experience,59.68,24.11,8.78
+Roti Paung Special Cmah,,Kampung Pasir Putih,Restaurant,Other,5.0,Excellent (≥4.5★),4.9827743,103.3266554,No,No,No,No,Yes,No,No,No,No,3,Location & Ambiance,70.32,17.62,7.35
+Kedai Makan,,Village,Restaurant,Other,5.0,Excellent (≥4.5★),5.0307989,103.2721232,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Kedai Nasi Dagang Kak Nani,,Marang,Restaurant,Other,5.0,Excellent (≥4.5★),5.1890652,103.2222819,No,No,No,No,Yes,No,Yes,No,No,1,Overall Dining Experience,50.01,28.19,18.38
+Kedai Makan Pantai Kelulut,,Marang,Restaurant,Other,4.0,Very Good (≥4.0★),5.1750174,103.2286954,No,No,No,No,No,No,Yes,No,No,1,Overall Dining Experience,68.15,21.28,3.83
+Nabihah Seafood,,Marang,Restaurant,Other,3.0,Good (≥3.0★),5.1943761,103.1009173,No,No,No,No,No,No,No,No,No,1,Overall Dining Experience,70.03,17.04,7.72
+"Restoran Hentian Rehat My Family, Setiu Terengganu.",,Kuala Terengganu,Restaurant,Other,4.0,Very Good (≥4.0★),5.5126741,102.7681927,No,No,No,Yes,No,No,No,Yes,No,2,Traditional Malay Food,75.9,17.83,2.01
+Mcts (Mr Celup Tepung Station),,Besut,Seafood Restaurant,Seafood,5.0,Excellent (≥4.5★),5.6001233,102.8216223,No,No,No,Yes,No,No,Yes,No,No,3,Location & Ambiance,61.4,24.23,7.9
+Kedai Makan Sri Pinang,,Kampung Ru Lima,Restaurant,Other,5.0,Excellent (≥4.5★),5.176378499999999,103.2277208,No,No,No,No,No,No,No,No,No,3,Location & Ambiance,57.94,19.04,13.92
+D'Perahu Setiu Seafood,,Besut,Restaurant,Other,3.0,Good (≥3.0★),5.539199399999999,102.7306706,No,No,No,Yes,No,No,Yes,Yes,No,1,Overall Dining Experience,66.76,18.69,8.8
+Dperahu Seafood,,Kampung Merang,Restaurant,Other,3.0,Good (≥3.0★),5.524964799999999,102.9598807,No,No,No,Yes,No,No,Yes,No,No,3,Location & Ambiance,60.95,32.01,4.54
+Setiu Beriani Corner,,Besut,Family Restaurant,Family,4.0,Very Good (≥4.0★),5.5193559,102.7462898,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,54.01,33.46,5.95
+Keropok Lekor 008 Kelulut,,Marang,Dried Seafood Store,Seafood,5.0,Excellent (≥4.5★),5.1722207,103.2294327,No,No,No,No,Yes,No,No,No,No,6,Seafood & Local Snacks,70.68,14.64,7.38
+Kedai Makan Sedap Murah Ueleen Corner,,Besut,Restaurant,Other,5.0,Excellent (≥4.5★),5.5074777,102.7799399,No,No,No,No,No,No,No,No,No,3,Location & Ambiance,72.06,13.18,7.92
+Nasken Coffee,,Kg Balik Bukit,Restaurant,Other,5.0,Excellent (≥4.5★),5.5170188,102.7554248,No,No,No,Yes,No,No,No,No,No,1,Overall Dining Experience,68.05,22.21,7.8
+Restoran Pok Shah Ikan Bakar Lunch Menu,,Kampung Berang,Restaurant,Other,4.0,Very Good (≥4.0★),5.0739778,103.0042929,No,No,No,No,Yes,No,No,No,No,4,Malay Review Sentiment,71.88,21.44,3.36
+Keropok Lekor Mek Han,,Kampung Tajin,Restaurant,Other,4.0,Very Good (≥4.0★),5.115825399999999,102.9957391,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,71.16,18.47,5.89
+Dnora Seafood & Western Banjir,,Kuala Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),5.476575899999999,102.7975049,No,No,No,No,No,No,No,No,No,1,Overall Dining Experience,74.59,15.6,4.45
+Wow Rc Setiu (Roti Blackpepper Joget Kambing),,Besut,Halal Restaurant,Other,4.0,Very Good (≥4.0★),5.516058699999999,102.7581669,No,No,No,No,No,No,No,No,No,3,Location & Ambiance,51.28,27.74,11.46
+Bayou Beach Cafe,,"4074, Jalan",Cafe,Cafe,2.0,Below Average (<3.0★),5.5977373,102.8241114,No,No,No,No,Yes,No,Yes,Yes,No,5,Western & Fusion Food,51.39,29.94,15.46
+Kfc,,Marang,Fast Food Restaurant,Fast Food,4.0,Very Good (≥4.0★),5.2072483,103.2063532,No,No,No,Yes,Yes,No,Yes,No,No,1,Overall Dining Experience,67.9,20.82,5.64
+Restoran Kampung Kita,,Kuala Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),5.6003333,102.7612377,No,No,No,No,No,No,Yes,No,No,4,Malay Review Sentiment,46.16,38.28,5.39
+Penarik Beach,,Jln Penarik,Tourist Attraction,Other,5.0,Excellent (≥4.5★),5.5929527,102.8287536,No,No,No,No,Yes,No,Yes,No,No,3,Location & Ambiance,60.17,23.89,9.82
+Theburgeritos,,Putera Jaya,Restaurant,Other,5.0,Excellent (≥4.5★),5.5062865,102.7852588,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,79.37,10.24,3.27
+Kedai Napi,,Besut,Restaurant,Other,4.0,Very Good (≥4.0★),5.5122725,102.7747414,No,No,No,No,No,No,No,No,No,1,Overall Dining Experience,70.6,13.52,7.16
+Rumbia Hill View Restaurant,,Besut,Asian Fusion Restaurant,Asian,5.0,Excellent (≥4.5★),5.512653299999999,102.7660958,No,No,No,No,Yes,No,No,No,No,1,Overall Dining Experience,64.07,21.73,5.48
+Kari Kepala Ikan Uwais Al Qarni Kg Telaga Kuala Berang,,Kampung Telaga,Family Restaurant,Family,5.0,Excellent (≥4.5★),5.0910681,102.9991828,No,No,No,Yes,No,No,No,No,No,4,Malay Review Sentiment,73.63,18.16,3.46
+Mrs. Mean'S Cafe,,Kuala Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),5.512708099999999,102.7660675,No,No,No,No,Yes,No,No,No,No,4,Malay Review Sentiment,70.17,17.67,6.86
+Chicken Dance ( Kuala Berang ),,G274A,Fast Food Restaurant,Fast Food,5.0,Excellent (≥4.5★),5.0733109,103.0113208,No,No,No,Yes,No,No,No,No,No,5,Western & Fusion Food,60.94,35.81,1.48
+Warung Mok Yah Mee Sup,,Kg Bukit Pelong,Restaurant,Other,5.0,Excellent (≥4.5★),5.5273654,102.737785,No,No,No,No,No,No,No,No,No,2,Traditional Malay Food,58.7,24.48,5.3
+Restoran Aroma Kampung,,Hulu Terengganu,Restaurant,Other,4.0,Very Good (≥4.0★),5.0735974,103.005029,No,Yes,No,No,No,No,Yes,No,No,6,Seafood & Local Snacks,64.19,22.26,8.63
+Restoran Diana Seafood,,Unknown,Restaurant,Other,1.0,Below Average (<3.0★),5.5182768,102.7480185,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,78.76,17.98,1.14
+Kedai Vendor 3 Hengget,,Kampung Buluh,Asian Restaurant,Asian,5.0,Excellent (≥4.5★),5.0713342,103.0118113,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Medan Ikan Bakar & Chalet I-Brang,,Kampung Buluh,Restaurant,Other,4.0,Very Good (≥4.0★),5.068577599999999,103.0079728,No,No,No,No,No,No,Yes,No,No,3,Location & Ambiance,62.32,23.35,6.31
+Roti Wap Pelangi,,Kampung Buluh,Fast Food Restaurant,Fast Food,5.0,Excellent (≥4.5★),5.5218455,102.7450315,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Safar Restaurant,,Hulu Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),5.0732247,103.0112273,No,No,No,No,Yes,No,No,No,No,1,Overall Dining Experience,62.63,22.09,8.35
+My Family Ikan Bakar,,Kuala Terengganu,Asian Restaurant,Asian,5.0,Excellent (≥4.5★),5.5126623,102.7682938,No,No,No,No,Yes,No,No,No,No,4,Malay Review Sentiment,73.81,16.23,5.56
+Restoran Selera Ulu,,Hulu Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),5.0761284,102.9979652,No,No,No,No,Yes,No,No,No,No,3,Location & Ambiance,67.42,20.7,5.44
+Kedai Makan Wan Dali,,Kampung Buluh,Asian Restaurant,Asian,5.0,Excellent (≥4.5★),5.5203191,102.7457023,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,66.04,24.14,4.66
+Combi Grill,,Jalan Astaka,Restaurant,Other,5.0,Excellent (≥4.5★),5.0718177,103.0101085,No,No,No,No,No,No,No,Yes,No,5,Western & Fusion Food,62.46,28.86,4.35
+Restoran Dkl Santapan Puteri,,Kampung Pak Kancil,Restaurant,Other,4.0,Very Good (≥4.0★),5.510720699999999,102.776831,No,No,No,No,No,No,No,No,No,2,Traditional Malay Food,81.87,5.37,3.84
+Warung Iman,,Kampung Rahmat,Restaurant,Other,5.0,Excellent (≥4.5★),5.0819442,103.0105805,No,No,No,No,No,No,No,No,No,1,Overall Dining Experience,57.85,22.29,10.09
+Amr Char Koteaw,,Hulu Terengganu,Asian Restaurant,Asian,5.0,Excellent (≥4.5★),5.0734808,103.0107891,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,66.96,25.88,2.56
+Bf Celup Tepung,,Kampung Rhu Sepuluh,Restaurant,Other,1.0,Below Average (<3.0★),5.5734708,102.8489928,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,52.57,43.68,1.29
+Kedai Nasi Ulam Sedap Sokmo Tepi Sungai,,Besut,Restaurant,Other,5.0,Excellent (≥4.5★),5.5223759,102.7450833,No,No,No,Yes,Yes,No,No,No,No,4,Malay Review Sentiment,66.53,26.03,5.38
+Kfc,,Besut,Chicken Restaurant,Fast Food,5.0,Excellent (≥4.5★),5.5211597,102.7475176,No,No,No,Yes,Yes,No,Yes,No,No,1,Overall Dining Experience,67.9,20.82,5.64
+Western'S Station,,Kg,Fast Food Restaurant,Fast Food,5.0,Excellent (≥4.5★),5.5106965,102.7768569,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,73.86,16.25,3.67
+Restoran Impian Maju (Adyra Daging Bakar),,Besut,Restaurant,Other,5.0,Excellent (≥4.5★),5.518288699999999,102.7480554,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+D'Perahu Seafood,,Dataran Syah,Restaurant,Other,3.0,Good (≥3.0★),5.337877799999999,103.1383251,Yes,No,No,Yes,Yes,No,No,Yes,No,6,Seafood & Local Snacks,60.65,26.76,9.3
+Kedai Makan Seri Gaung,,Hulu Terengganu,Restaurant,Other,3.0,Good (≥3.0★),5.0758864,102.9978025,No,No,No,Yes,Yes,No,No,No,No,1,Overall Dining Experience,61.37,20.23,10.74
+Warung Satay Sri Baung Permaisuri,,Besut,Restaurant,Other,3.0,Good (≥3.0★),5.5423152,102.7296242,No,No,No,No,Yes,No,No,No,No,5,Western & Fusion Food,67.25,18.69,8.02
+Kedai Makan Maa Selera Baung,,Kampung Gaung,Restaurant,Other,4.0,Very Good (≥4.0★),5.0758281,102.9987849,No,No,No,No,No,No,No,No,No,1,Overall Dining Experience,71.02,10.06,8.63
+Nasi Kerabu Gaung,,Hulu Terengganu,Restaurant,Other,4.0,Very Good (≥4.0★),5.0719638,102.9918453,No,No,No,No,No,No,Yes,No,No,2,Traditional Malay Food,62.67,18.84,6.69
+Kedai Makan Cikgu Rani,,Hulu Terengganu,Restaurant,Other,4.0,Very Good (≥4.0★),5.072847599999999,103.0120802,No,No,No,No,No,No,No,No,No,3,Location & Ambiance,71.5,15.28,6.97
+Mok Ngoh Nasi Dagang,,Kuala Terengganu,Malaysian Restaurant,Malay,5.0,Excellent (≥4.5★),5.274622,103.1742638,Yes,No,No,Yes,Yes,Yes,No,No,No,6,Seafood & Local Snacks,46.21,31.83,17.49
+Aboh Corner,,Kampung Buluh,Restaurant,Other,5.0,Excellent (≥4.5★),5.5221106,102.7453894,No,No,No,No,No,No,No,No,No,1,Overall Dining Experience,76.36,13.03,3.2
+Satay,,Besut,Restaurant,Other,3.0,Good (≥3.0★),5.5134282,102.7639728,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,47.38,31.62,12.19
+Kabinkuninggaung,,Kampung Gaung,Kebab Shop,Middle Eastern,4.0,Very Good (≥4.0★),5.0711869,102.9959767,Yes,No,No,No,No,No,No,No,No,3,Location & Ambiance,74.29,7.4,5.3
+Aminah Tom Yam,,Besut,Restaurant,Other,4.0,Very Good (≥4.0★),5.5225124,102.7442313,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,74.29,16.9,2.7
+"Pantai Penarik, Setiu",,Unknown,Hotel,Other,4.0,Very Good (≥4.0★),5.617865699999999,102.806672,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,3,Location & Ambiance,56.97,26.72,13.63
+Selera Kampung Since 1990,,Jalan Besar,Asian Restaurant,Asian,5.0,Excellent (≥4.5★),5.082546499999999,102.997763,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Kedai Dapur Aryan,,Hulu Terengganu,Restaurant,Other,4.0,Very Good (≥4.0★),5.0879129,102.9983245,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,77.98,6.32,4.52
+"Warung Ct, Kampung Telaga",,Hulu Terengganu,Breakfast Restaurant,Cafe,4.0,Very Good (≥4.0★),5.0849797,102.9976339,No,No,No,No,No,No,No,No,No,2,Traditional Malay Food,80.48,11.98,2.39
+Kedai Nasi Kerabu Kambing Bakar Kg.Buruk,,Besut,Restaurant,Other,5.0,Excellent (≥4.5★),5.529465699999999,102.7481805,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,61.84,24.21,5.79
+Myta Food Cafe & Bistro,,Besut,Family Restaurant,Family,4.0,Very Good (≥4.0★),5.5198584,102.7491231,No,No,No,No,No,No,No,No,No,1,Overall Dining Experience,69.61,18.86,3.37
+Marissa Kedai Hijau,,Marang,Restaurant,Other,5.0,Excellent (≥4.5★),5.1906385,103.2205078,No,No,No,No,No,No,No,No,No,6,Seafood & Local Snacks,40.46,39.12,7.27
+Umi Sup Tulang Patin Tempoyak,,Besut,Restaurant,Other,5.0,Excellent (≥4.5★),5.519064999999999,102.7463692,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,54.72,29.75,5.36
+Warung Capati & Tose Pok Din,,Hulu Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),5.0733252,103.0095444,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Az Seafood,,Besut,Restaurant,Other,5.0,Excellent (≥4.5★),5.518115,102.7509675,No,No,No,Yes,No,No,No,No,No,1,Overall Dining Experience,57.69,18.53,16.65
+Kedai Wani,,Kuala Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),5.5285533,102.7402057,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Katsetiu Villas,,Setiu,Resort Hotel,Other,5.0,Excellent (≥4.5★),5.5536747,102.8833423,No,No,No,Yes,Yes,Yes,Yes,Yes,Yes,1,Overall Dining Experience,55.79,29.19,11.24
+Kedai Makan Gulai Ayam Kampung Kak Yah,,Besut,Restaurant,Other,4.0,Very Good (≥4.0★),5.5222203,102.7452095,No,No,No,No,No,No,No,No,No,1,Overall Dining Experience,77.39,11.37,3.4
+Keropok Lekor Wawa Merang & Iwawa Cafe,,Bandar,Food Manufacturing Supply,Other,3.0,Good (≥3.0★),5.5215013,102.9626593,No,No,No,No,No,No,No,No,No,6,Seafood & Local Snacks,60.61,24.65,8.71
+Kedai Usop Roti Canai,,Besut,Restaurant,Other,4.0,Very Good (≥4.0★),5.5193531,102.7449298,No,No,No,Yes,No,No,No,Yes,No,4,Malay Review Sentiment,74.8,11.85,4.54
+Authentic Terengganu Breakfast(11B),,Hulu Terengganu,Breakfast Restaurant,Cafe,3.0,Good (≥3.0★),5.0888095,102.9983751,No,No,No,Yes,No,No,No,No,No,2,Traditional Malay Food,62.86,11.37,9.22
+Kedai Makan Baung Meraung,,Simpang Gaung,Restaurant,Other,3.0,Good (≥3.0★),5.0760669,102.9981865,No,No,No,Yes,No,No,Yes,No,No,4,Malay Review Sentiment,72.29,15.03,3.94
+Warung Anak Manja,,Hulu Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),5.0760731,102.9984154,No,No,No,No,No,No,No,No,No,2,Traditional Malay Food,76.56,13.46,3.56
+Secret Recipe Kuala Berang,,Jln Pasar,Restaurant,Other,5.0,Excellent (≥4.5★),5.0711565,103.0123515,No,No,No,Yes,No,No,No,No,No,1,Overall Dining Experience,67.72,22.38,5.1
+Arel Burger,,Kampung Rahmat,Restaurant,Other,5.0,Excellent (≥4.5★),5.0732533,103.009564,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,74.43,14.74,3.43
+Adam Tomyam,,Besut,Restaurant,Other,4.0,Very Good (≥4.0★),5.5135388,102.7636359,No,Yes,No,No,No,No,No,No,No,1,Overall Dining Experience,60.15,25.74,6.28
+Floating Restaurant,,Chalok,Bistro,Western,3.0,Good (≥3.0★),5.516270899999999,102.7579963,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Restoran Mawar Mekar,,Hulu Terengganu,Restaurant,Other,4.0,Very Good (≥4.0★),5.0761734,103.0110821,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,81.97,11.15,2.13
+Warung Pokok Jambu Madi Ayu Jalan Pasar Nasi Ayam,,Hulu Terengganu,Lunch Restaurant,Malay,5.0,Excellent (≥4.5★),5.073015,103.012278,Yes,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Kedai Saloma Tajin,,Hulu Terengganu,Restaurant,Other,4.0,Very Good (≥4.0★),5.119161,102.9895531,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Warung Kak Ngah,,Hulu Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),5.086130499999999,102.9977477,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Arel Burger,,Kampung Pauh,Hamburger Restaurant,Western,5.0,Excellent (≥4.5★),5.079503,102.9784329,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,74.43,14.74,3.43
+Kelulut Beach,,Lumpur,Tourist Attraction,Other,5.0,Excellent (≥4.5★),5.1694238,103.231504,No,No,No,Yes,Yes,No,Yes,No,No,3,Location & Ambiance,61.9,26.61,7.15
+Ratoh Ketam Seafood Corner,,Kampung Rahmat,Seafood Restaurant,Seafood,5.0,Excellent (≥4.5★),5.072638899999999,103.0101189,No,No,No,Yes,No,No,No,No,No,4,Malay Review Sentiment,72.55,18.64,4.82
+Kedai Mee Celup,,Besut,Restaurant,Other,1.0,Below Average (<3.0★),5.5156193,102.7592172,No,No,No,No,No,No,No,No,No,1,Overall Dining Experience,71.0,18.83,4.79
+Warung Bunga Selasih (Tomyam),,Hulu Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),5.0733817,103.0095422,No,No,No,Yes,Yes,No,No,Yes,No,4,Malay Review Sentiment,81.86,13.56,1.36
+Twinto Burger Permaisuri,,Besut,Restaurant,Other,5.0,Excellent (≥4.5★),5.5208216,102.7482548,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,83.26,4.81,3.44
+Mat Corner Cafe,,Hulu Terengganu,Asian Restaurant,Asian,5.0,Excellent (≥4.5★),5.0747661,103.0117673,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+16 Bro Cafe,,Hulu Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),5.0740492,103.0042485,No,No,No,No,No,No,No,No,No,3,Location & Ambiance,79.85,14.31,2.11
+Tapow Station,,Hulu Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),5.0730437,103.0097507,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,81.65,5.95,4.28
+Nasi Ayam Yunnan,,Pantai Batu Buruk,Restaurant,Other,5.0,Excellent (≥4.5★),5.3199711,103.1541183,No,No,No,No,Yes,No,No,No,No,1,Overall Dining Experience,65.03,23.8,7.29
+Hr Mee Champa 3 - Kuala Berang,,Hulu Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),5.072184099999999,103.0101011,No,No,No,No,Yes,No,No,No,No,5,Western & Fusion Food,60.92,25.47,9.32
+Papa King Pizza,,Kampung Gaung,Pizza Restaurant,Western,5.0,Excellent (≥4.5★),5.0760577,102.9991537,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,65.08,29.14,1.67
+Kafe Sifu Teh Lapis,,Hulu Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),5.0731212,102.9970361,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,63.81,17.22,15.66
+Kak Zai Ayam Berempah,,Kampung Buluh,Restaurant,Other,5.0,Excellent (≥4.5★),5.524555599999999,102.7431341,No,No,No,No,No,No,No,Yes,No,4,Malay Review Sentiment,76.04,11.69,6.13
+Dapur Bear,,Kampung Pauh,Hamburger Restaurant,Western,5.0,Excellent (≥4.5★),5.072870099999999,102.9795611,No,Yes,No,No,No,No,No,No,No,4,Malay Review Sentiment,44.49,41.16,9.71
+Kedai Roti Canai Pok Din,,Hulu Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),5.1139217,102.9964833,No,No,No,No,Yes,No,No,No,No,1,Overall Dining Experience,25.2,18.05,17.11
+Pok Na Soya,,Hulu Terengganu,Hawker Stall,Malay,5.0,Excellent (≥4.5★),5.0795599,103.0149307,Yes,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+D'Nibong Family,,Besut,Restaurant,Other,5.0,Excellent (≥4.5★),5.5131508,102.7707981,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,74.56,14.73,4.21
+Mirashi Oden,,Hulu Terengganu,Fast Food Restaurant,Fast Food,5.0,Excellent (≥4.5★),5.0825423,102.9974565,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Zurainalong,,Besut,Restaurant,Other,1.0,Below Average (<3.0★),5.5208441,102.7441772,No,No,No,No,No,No,No,No,No,2,Traditional Malay Food,45.98,45.4,6.56
+Suria Link Boat Service,,Marang,Transportation Service,Other,5.0,Excellent (≥4.5★),5.2043875,103.2076862,No,No,No,Yes,No,No,No,No,No,1,Overall Dining Experience,53.53,34.47,8.39
+Kedai Nasi Ayam & Royak Ayam Viral,,Kampung Tajin,Restaurant,Other,5.0,Excellent (≥4.5★),5.1155467,102.9959277,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,48.03,41.78,3.52
+Nnburger,,Hulu Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),5.0728471,102.9970395,No,Yes,No,No,No,No,No,No,No,4,Malay Review Sentiment,74.89,19.61,1.92
+Warung Nasi Lemak Daun Pisang Kb,,Hulu Terengganu,Restaurant,Other,4.0,Very Good (≥4.0★),5.073067099999999,103.0081273,No,No,No,No,No,No,No,No,No,2,Traditional Malay Food,57.2,39.27,1.07
+Warung Mr Baung Iiii,,Kampung Gaung,Restaurant,Other,5.0,Excellent (≥4.5★),5.072009,102.9999791,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Subway (Kuala Berang),,Kuala Terengganu,Restaurant,Other,1.0,Below Average (<3.0★),5.0728246,103.0104025,No,Yes,No,No,No,No,No,No,No,1,Overall Dining Experience,68.79,19.71,6.76
+Tabir Ganda Sdn Bhd,,Besut,Bistro,Western,5.0,Excellent (≥4.5★),5.516270899999999,102.7579964,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Kedai Umi Tomyam,,Kampung Buluh,Restaurant,Other,4.0,Very Good (≥4.0★),5.5234842,102.7478637,No,No,No,No,No,No,No,No,No,2,Traditional Malay Food,71.56,15.7,4.18
+Nasi Dagang Cik Der,,Kampung Telaga,Restaurant,Other,5.0,Excellent (≥4.5★),5.0888148,102.9983304,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,90.88,2.62,1.87
+Kampung Darat Pak Chan,,Marang,Park,Other,5.0,Excellent (≥4.5★),5.1937251,103.2115035,No,No,No,No,No,No,No,No,No,3,Location & Ambiance,74.15,14.84,3.18
+"Ayam Gunting,Sushi & Air Balang Hadapan Hospital",,Besut,Fast Food Restaurant,Fast Food,5.0,Excellent (≥4.5★),5.5135439,102.7702063,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Karim Masakan Panas,,Besut,Seafood Restaurant,Seafood,5.0,Excellent (≥4.5★),5.5374307,102.7320677,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,79.15,18.64,0.77
+Gerai Nasi Lemak Cik Nor,,Kampung Langgar,Nasi Goreng Restaurant,Malay,5.0,Excellent (≥4.5★),5.0995464,103.0110803,Yes,No,No,No,No,No,No,No,No,2,Traditional Malay Food,88.12,3.52,2.52
+Sarapanpagi Eatry,,Kuala Terengganu,Cafe,Cafe,5.0,Excellent (≥4.5★),5.3468743,103.1173706,No,No,No,No,No,No,No,No,No,1,Overall Dining Experience,78.4,5.22,4.94
+Nasi Ayam Kasturi Pok Piee,,Hulu Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),5.089171,103.0126362,No,No,No,No,No,No,No,No,No,2,Traditional Malay Food,81.88,5.36,3.84
+Permai Penyayang Cafe Dan Chalet,,Besut,Restaurant,Other,4.0,Very Good (≥4.0★),5.5295507,102.7379176,No,No,No,No,No,No,Yes,No,No,4,Malay Review Sentiment,74.46,18.17,2.34
+Pizza Hut Delivery Kuala Berang,,Lot Bg,Pizza Restaurant,Western,4.0,Very Good (≥4.0★),5.0732354,103.0104699,No,No,No,No,No,No,No,No,No,1,Overall Dining Experience,71.94,16.87,7.37
+Nasi Lemak Lerek,,Hulu Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),5.0730413,103.0097093,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,66.15,30.26,1.24
+Zul Selasih Seafood,,Hulu Terengganu,Seafood Restaurant,Seafood,4.0,Very Good (≥4.0★),5.0734273,103.0095328,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Satay Bangkok & Twin Burger,,Kampung Pak Kancil,Restaurant,Other,4.0,Very Good (≥4.0★),5.5107117,102.7768667,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Kak Ain Pisang & Keropok Goreng,,Hulu Terengganu,Fast Food Restaurant,Fast Food,5.0,Excellent (≥4.5★),5.0730185,103.0122688,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+M U N O H,,Kampung Buluh,Restaurant,Other,4.0,Very Good (≥4.0★),5.0713769,103.0100643,No,Yes,No,No,Yes,No,No,No,No,4,Malay Review Sentiment,73.42,20.99,2.27
+Aqish Burger,,Kampung Buluh,Restaurant,Other,5.0,Excellent (≥4.5★),5.522928299999999,102.7440705,No,No,No,No,No,No,No,No,No,2,Traditional Malay Food,82.86,4.98,3.55
+Ayu Restaurant,,Malaysia,Restaurant,Other,5.0,Excellent (≥4.5★),5.5161835,102.7579686,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Kedai Makan Pok Loh,,Besut,Family Restaurant,Family,5.0,Excellent (≥4.5★),5.5170339,102.7538894,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Sup Belut Tajin,,Kampung Tajin,Restaurant,Other,5.0,Excellent (≥4.5★),5.109408,102.9975733,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Nasi Dagang/Nasi Minyak/Nasi Lemak/Pulut Kuning Kuala Berang,,Kampung Rahmat,Brunch Restaurant,Cafe,5.0,Excellent (≥4.5★),5.0761113,103.0116795,No,No,No,No,No,No,No,No,No,2,Traditional Malay Food,55.64,28.83,5.36
+Hijeera,,Lot 5826,Restaurant,Other,5.0,Excellent (≥4.5★),5.1170541,102.9951317,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Kedai Syed Nasir,,Besut,Restaurant,Other,5.0,Excellent (≥4.5★),5.5205961,102.7461502,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Jeti Merang,,Kuala Terengganu,Ferry Terminal,Other,5.0,Excellent (≥4.5★),5.53371,102.9470918,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+"Abc ,Pisang Goreng .",,Hulu Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),5.0853271,103.0113991,No,No,No,No,No,No,Yes,No,No,4,Malay Review Sentiment,65.8,20.48,6.68
+Sia Bee Khiaw Restaurant,,Hulu Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),5.069146,102.997071,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Crocodile Rock Bistro,,Pulau Perhentian Kecil,Bistro,Western,5.0,Excellent (≥4.5★),5.9041966,102.7157545,No,Yes,Yes,No,No,Yes,Yes,No,No,1,Overall Dining Experience,62.56,26.1,6.23
+Kb Shisha Point 99,,Hulu Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),5.0732642,103.0143991,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,66.07,12.99,6.34
+D'Tarom,,Besut,Restaurant,Other,5.0,Excellent (≥4.5★),5.515935,102.7571267,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Sarapan Pagi 5.30Am,,Kampung Gaung,Breakfast Restaurant,Cafe,5.0,Excellent (≥4.5★),5.0758372,102.9981257,No,No,No,No,No,No,No,No,No,6,Seafood & Local Snacks,41.07,38.64,7.28
+Nasi Ayam Retro,,Besut,Restaurant,Other,5.0,Excellent (≥4.5★),5.5176207,102.7532058,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Safari Thai Seafood,,Malaysia,Restaurant,Other,5.0,Excellent (≥4.5★),5.069149,102.997072,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Kafeteria Sekolah Menengah Sains,,Hulu Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),5.120741499999999,102.9957811,No,No,No,No,No,No,No,No,No,1,Overall Dining Experience,84.06,3.85,3.65
+Restoran Nabila Khan,,Unknown,Restaurant,Other,5.0,Excellent (≥4.5★),5.089152,102.99851,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Karim Seafood,,Besut,Asian Restaurant,Asian,5.0,Excellent (≥4.5★),5.5289305,102.7395096,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Kedai Warisan Moklong,,Besut,Restaurant,Other,5.0,Excellent (≥4.5★),5.5197482,102.7491749,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Kedai Nasi Ayam Kak Ani,,Hulu Terengganu,Family Restaurant,Family,5.0,Excellent (≥4.5★),5.119161,102.9895531,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+D'Tajin Corner,,Kampung Tajin,Restaurant,Other,5.0,Excellent (≥4.5★),5.1093137,102.9975759,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Raja Burger,,Kampung Rahmat,Hamburger Restaurant,Western,5.0,Excellent (≥4.5★),5.0800959,103.0159185,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Kak Lah Mini Restaurant,,Hulu Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),5.0700935,103.0174845,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Dapo Bonda Kuala Berang,,Hulu Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),5.091622,103.0006778,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Kedai Makan Pok De Baung,,Kampung Kuala Pueh,Restaurant,Other,5.0,Excellent (≥4.5★),5.0761087,102.9982114,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Mat Nor Takoyaki,,Kampung Buluh,Restaurant,Other,5.0,Excellent (≥4.5★),5.5218639,102.7450475,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Warung 11 Pagi,,Hulu Terengganu,Breakfast Restaurant,Cafe,5.0,Excellent (≥4.5★),5.0726684,102.9830718,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Restoran Sripermaisuri Sohor Sengoti,,Besut,Restaurant,Other,5.0,Excellent (≥4.5★),5.521469499999999,102.7474899,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Kedai Bunga Anjung Puspa Ent.,,Besut,Restaurant,Other,5.0,Excellent (≥4.5★),5.5189637,102.7469038,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Aliff Burger Permaisuri Stop Centre,,Kampung Buluh,Hawker Stall,Malay,5.0,Excellent (≥4.5★),5.521652,102.7461897,Yes,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Kb Corner (Nasi Berlauk Kelatey),,Kampung Rahmat,Restaurant,Other,5.0,Excellent (≥4.5★),5.0766635,103.0152624,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+King Manggo Shake,,Besut,Snack Bar,Other,5.0,Excellent (≥4.5★),5.517661899999999,102.7529776,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Isa Nasi Ayam Ajil,,Hulu Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),5.0866365,102.9976425,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+The Grand Puteri Hotel,,Kuala Terengganu,Hotel,Other,5.0,Excellent (≥4.5★),5.3331006,103.1380089,No,No,No,No,No,Yes,Yes,Yes,No,1,Overall Dining Experience,68.93,23.61,4.43
+Gulai Kawoh Dapur Kayu Viral,,Jalan Besar,Restaurant,Other,5.0,Excellent (≥4.5★),5.091622,103.0006778,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Cempedak Goreng Gaung,,Kampung Gaung,Hawker Stall,Malay,5.0,Excellent (≥4.5★),5.0775505,102.9973342,Yes,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Bo'S Roaster & Burger,,Hulu Terengganu,Fast Food Restaurant,Fast Food,5.0,Excellent (≥4.5★),5.0734237,103.0132182,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,72.0,8.62,5.75
+Tuan Ahmad Tuan Abdullah Restaurant,,Kampung Telaga,Bistro,Western,5.0,Excellent (≥4.5★),5.0895341,102.9986875,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Pok Shah Ayam Goreng,,Hulu Terengganu,Chicken Restaurant,Fast Food,5.0,Excellent (≥4.5★),5.0740352,103.004283,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Ar Pro Pisang Goreng Crispy,,Besut,Restaurant,Other,5.0,Excellent (≥4.5★),5.5363778,102.7323027,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Ryabysuria Merang Holiday Park,,Kampung Rhu Tapai,Resort Hotel,Other,5.0,Excellent (≥4.5★),5.5211111,102.975,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Chobby Seafood,,Besut,Asian Restaurant,Asian,5.0,Excellent (≥4.5★),5.83013749999999,102.5570156,No,Yes,No,No,Yes,No,No,No,No,6,Seafood & Local Snacks,69.45,18.06,7.58
+"Mateema Ikan Bakar Dan Seafood,Kampung Raja Besut,Terengganu (The Best Ikan Bakar Dapur Arang In Besut)",,Besut,Restaurant,Other,4.0,Very Good (≥4.0★),5.79293009999999,102.5600073,No,No,No,No,Yes,Yes,Yes,No,No,1,Overall Dining Experience,61.41,28.26,5.15
+Magari Station (Western Besut),,Kampung Pengkalan Nyireh,Western Restaurant,Western,4.0,Very Good (≥4.0★),5.8175428,102.570572399999,No,Yes,Yes,No,No,No,No,No,No,5,Western & Fusion Food,67.39,24.01,5.17
+88 Lucky Seafood Restaurant,,Besut,Seafood Restaurant,Seafood,5.0,Excellent (≥4.5★),5.8318271,102.557941,No,No,No,No,Yes,No,Yes,No,No,6,Seafood & Local Snacks,63.91,24.5,9.07
+Hillmee Seafood,,Jalan Semerak,Thai Restaurant,Thai,4.0,Very Good (≥4.0★),5.8302331,102.551205299999,No,Yes,No,Yes,No,No,No,Yes,No,1,Overall Dining Experience,80.99,8.74,5.41
+Aji Aji Seafood,,Kampung Padang Baloh,Seafood Restaurant,Seafood,4.0,Very Good (≥4.0★),5.785836,102.5578982,No,No,No,No,Yes,No,No,No,No,6,Seafood & Local Snacks,70.79,21.78,4.87
+Nenos Kitchen,,", Jalan Batu Tumbuh",Western Restaurant,Western,5.0,Excellent (≥4.5★),5.7651834,102.5631851,No,No,No,No,No,Yes,Yes,Yes,No,5,Western & Fusion Food,74.08,13.04,6.76
+Niey'S Nasi Air,,"Gm 1817, Mukim",Restaurant,Other,5.0,Excellent (≥4.5★),5.8083056,102.570655699999,No,Yes,Yes,Yes,Yes,No,No,No,No,1,Overall Dining Experience,58.06,25.84,12.17
+Tussy Cafe,,Besut,Restaurant,Other,5.0,Excellent (≥4.5★),5.8332783,102.558036199999,No,Yes,No,No,No,No,Yes,No,No,6,Seafood & Local Snacks,75.74,11.64,7.45
+D'Besut Seafood,,Besut,Asian Restaurant,Asian,5.0,Excellent (≥4.5★),5.8292638,102.5529632,No,No,No,No,No,No,No,No,No,1,Overall Dining Experience,68.85,18.44,4.86
+Cucu Raja Ikan Bakar,,Kampung Gertak Seratus,Restaurant,Other,4.0,Very Good (≥4.0★),5.8334788,102.541927899999,No,No,No,Yes,Yes,No,Yes,No,No,6,Seafood & Local Snacks,51.46,31.95,10.61
+Fairfield Kitchen,,Kuala Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),5.8318125,102.5634906,No,No,No,No,No,No,No,No,No,3,Location & Ambiance,87.62,3.68,2.53
+Restoran Kak Zie,,Kampung Teluk Bayu,Restaurant,Other,1.0,Below Average (<3.0★),5.83348999999999,102.5387263,No,No,No,No,Yes,No,No,Yes,No,4,Malay Review Sentiment,77.9,14.32,4.05
+Zul Ikan Bakar,,Besut,Restaurant,Other,5.0,Excellent (≥4.5★),5.8283285,102.5622965,No,Yes,No,Yes,Yes,No,No,No,No,1,Overall Dining Experience,61.78,23.0,12.75
+Restoran Chekna,,Besut,Thai Restaurant,Thai,5.0,Excellent (≥4.5★),5.8308317,102.5575322,No,No,No,No,No,No,No,No,No,1,Overall Dining Experience,62.96,20.88,6.97
+Supian Tomyam,,Besut,Restaurant,Other,5.0,Excellent (≥4.5★),5.8304396,102.5570126,No,Yes,No,No,Yes,Yes,No,No,No,1,Overall Dining Experience,62.12,24.56,8.01
+Kedai Nasi Berlauk Moksu Yah Tok Sabah,,Besut,Restaurant,Other,5.0,Excellent (≥4.5★),5.8275136,102.5324266,No,No,No,No,No,No,No,No,No,6,Seafood & Local Snacks,71.51,17.54,6.04
+Nasi Berlauk Ayoh Su Jak,,Besut,Restaurant,Other,5.0,Excellent (≥4.5★),5.8282595,102.5633792,No,No,No,Yes,No,No,No,No,No,6,Seafood & Local Snacks,50.31,31.83,12.39
+Kuala Besut Terminal Cafe,,Besut,Restaurant,Other,5.0,Excellent (≥4.5★),5.8298441,102.552106299999,No,No,No,No,No,No,No,No,No,3,Location & Ambiance,66.32,20.03,8.61
+T'Kaf,,Besut,Restaurant,Other,3.0,Good (≥3.0★),5.8320082,102.5582032,No,No,No,No,Yes,No,No,No,No,1,Overall Dining Experience,56.39,24.0,14.31
+Kedai Kopi Aji Aji,,Jalan Pejabat,Restaurant,Other,5.0,Excellent (≥4.5★),5.79637789999999,102.5638539,No,No,No,No,No,No,No,Yes,No,4,Malay Review Sentiment,76.29,15.03,4.78
+Nasi Air Abe Mae,,Besut,Restaurant,Other,3.0,Good (≥3.0★),5.8325666,102.5533832,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,73.15,14.13,3.72
+Kedai Nasi Ayam,,Kampung Alor Teratai,Restaurant,Other,5.0,Excellent (≥4.5★),5.8321951,102.537738699999,No,No,No,No,Yes,No,No,Yes,No,4,Malay Review Sentiment,88.61,6.34,2.21
+Restoran Aiman Aida,,Besut,Restaurant,Other,1.0,Below Average (<3.0★),5.82976409999999,102.5484329,No,No,No,No,No,No,No,No,No,1,Overall Dining Experience,74.77,14.84,3.13
+Cherofee Coffee And Sandwich Smoke (Coffee Besut),,Kampung Gong Kepas,Restaurant,Other,5.0,Excellent (≥4.5★),5.77851899999999,102.5521521,No,No,No,Yes,No,Yes,Yes,No,No,5,Western & Fusion Food,54.14,25.09,12.3
+Anak Besut Container Cafe,,Besut,Restaurant,Other,4.0,Very Good (≥4.0★),5.7694585,102.548422199999,No,No,No,Yes,Yes,No,No,No,No,1,Overall Dining Experience,76.65,17.26,3.38
+Restoran D'Lampu (Ikan Bakar),,Besut,Restaurant,Other,5.0,Excellent (≥4.5★),5.80592689999999,102.5460183,No,No,No,Yes,No,No,No,No,No,1,Overall Dining Experience,65.18,16.76,11.19
+Sofiyan Seafood,,Besut,Seafood Restaurant,Seafood,4.0,Very Good (≥4.0★),5.8304607,102.556931499999,No,No,No,No,No,No,No,No,No,1,Overall Dining Experience,67.56,20.65,7.1
+Nasi Lemak Cek Nie,,Besut,Restaurant,Other,4.0,Very Good (≥4.0★),5.8276188,102.5538902,No,No,No,Yes,Yes,No,No,No,No,1,Overall Dining Experience,60.46,20.43,12.75
+Grey House Cafe,,Besut,Western Restaurant,Western,4.0,Very Good (≥4.0★),5.78539089999999,102.5784087,Yes,No,No,Yes,Yes,No,No,No,No,1,Overall Dining Experience,78.71,12.71,2.72
+Masakan Panas Ala Thai Kuala Besut & Mee Cambo,,Besut,Restaurant,Other,5.0,Excellent (≥4.5★),5.83854199999999,102.5349945,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Samudera Cafe,,Belakang,Restaurant,Other,5.0,Excellent (≥4.5★),5.83253069999999,102.5578908,No,No,No,No,No,Yes,No,No,No,3,Location & Ambiance,47.62,46.66,1.66
+Restoran Poknoor Ikan Bakar 2,,Kg Pengkalan Nyireh,Restaurant,Other,5.0,Excellent (≥4.5★),5.8122656,102.574250499999,No,No,No,No,Yes,No,No,No,No,1,Overall Dining Experience,67.95,18.82,9.19
+Ayam Penyet Soho,,Alor Lintang,Ayam Penyet Restaurant,Indonesian,5.0,Excellent (≥4.5★),5.768807,102.546042899999,Yes,No,No,No,No,No,No,No,No,2,Traditional Malay Food,66.86,27.4,1.86
+Cheetita Dim Sum,,Jalan Limbongan,Dim Sum Restaurant,Chinese,5.0,Excellent (≥4.5★),5.8007273,102.581558199999,Yes,No,No,Yes,No,No,No,No,No,6,Seafood & Local Snacks,68.66,19.59,7.58
+Monkey Hut Cafe & Bed,,Perhentian Kecil Island,Restaurant,Other,5.0,Excellent (≥4.5★),5.91832689999999,102.721767599999,No,No,No,No,No,Yes,Yes,No,No,1,Overall Dining Experience,68.48,25.03,3.98
+Adams Kitchen By Chef Pijie,,Besut,Restaurant,Other,5.0,Excellent (≥4.5★),5.8081735,102.5704142,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,70.26,17.0,8.12
+Celup Tepung Dikolam Mandi Teluk Bayu,,Kampung Teluk Bayu,Seafood Restaurant,Seafood,5.0,Excellent (≥4.5★),5.83960109999999,102.5389963,No,No,No,No,Yes,No,Yes,Yes,No,1,Overall Dining Experience,68.28,22.7,2.79
+Captain Jack'S,,Besut,Restaurant,Other,5.0,Excellent (≥4.5★),5.83095969999999,102.5579961,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,65.08,19.44,7.3
+Kedai Kuning 2,,Kampung Pengkalan Nyireh,Family Restaurant,Family,5.0,Excellent (≥4.5★),5.8111806,102.5713186,No,No,No,No,No,No,No,No,No,3,Location & Ambiance,59.1,24.02,16.21
+Warung Anak Tanjung,,Kampung Gertak Seratus,Restaurant,Other,3.0,Good (≥3.0★),5.832824,102.542838899999,No,No,No,No,No,No,No,No,No,5,Western & Fusion Food,58.04,19.94,8.31
+Ruliz Aiskrim & Pizza,,Jalan Keluang,Ice Cream Shop,Cafe,4.0,Very Good (≥4.0★),5.7869081,102.5763439,No,No,No,No,Yes,No,No,No,No,4,Malay Review Sentiment,78.76,6.24,4.42
+Restoran Rumbia Western & Seafood,,Besut,Restaurant,Other,1.0,Below Average (<3.0★),5.7910506,102.5627615,No,Yes,No,Yes,Yes,No,No,No,No,1,Overall Dining Experience,59.82,31.58,5.83
+Kampung Pachakan Ikan Bakar,,Besut,Restaurant,Other,4.0,Very Good (≥4.0★),5.83903829999999,102.5339188,No,No,No,Yes,No,No,No,No,No,1,Overall Dining Experience,59.09,23.91,9.89
+Mee Celup Kak Dah Rosid,,Kuala Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),5.8323928,102.549507499999,No,No,No,No,Yes,No,No,No,No,1,Overall Dining Experience,68.05,18.52,7.77
+Warung Satar & Otok Otok,,Besut,Hawker Stall,Malay,5.0,Excellent (≥4.5★),5.829504,102.5562606,Yes,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,72.3,22.21,1.89
+Rosemarry Cafe,,Pulau Perhentian Kecil,Restaurant,Other,5.0,Excellent (≥4.5★),5.9170137,102.716621899999,No,No,No,No,No,No,Yes,Yes,No,3,Location & Ambiance,58.34,25.93,10.94
+Warung Khemah Putih,,Pulau Perhentian Kecil,Restaurant,Other,5.0,Excellent (≥4.5★),5.8972036,102.730258499999,No,Yes,No,No,Yes,Yes,Yes,No,No,6,Seafood & Local Snacks,73.52,20.94,3.48
+Restaurant Kak Sah,,Besut,Family Restaurant,Family,5.0,Excellent (≥4.5★),5.8307109,102.5579425,No,Yes,No,No,No,No,No,No,No,4,Malay Review Sentiment,68.11,20.64,5.27
+Zaleha Kitchen,,"61 & 62, Lorong Lima",Seafood Restaurant,Seafood,2.0,Below Average (<3.0★),5.831167,102.5573546,No,No,No,No,No,Yes,No,Yes,No,1,Overall Dining Experience,67.22,22.91,5.83
+Restaurant Mj,,Besut,Restaurant,Other,5.0,Excellent (≥4.5★),5.89652399999999,102.7296659,No,No,No,No,Yes,Yes,No,Yes,Yes,1,Overall Dining Experience,65.93,24.84,6.2
+Keropok Lekor Zaki,,Kampung Nail,Restaurant,Other,5.0,Excellent (≥4.5★),5.8279374,102.5540261,No,No,No,No,No,No,Yes,No,No,4,Malay Review Sentiment,64.0,21.04,9.61
+Suwa-Sano Cafe Besut Seafood Bakar,,Alor Lintang,Restaurant,Other,5.0,Excellent (≥4.5★),5.7682271,102.545252499999,No,No,No,No,No,No,No,No,No,5,Western & Fusion Food,66.66,20.48,5.17
+Kedai Sattar,,Kampung Seberang Kastam,Restaurant,Other,2.0,Below Average (<3.0★),5.82708439999999,102.564139099999,No,No,No,Yes,No,No,No,No,No,2,Traditional Malay Food,67.45,23.23,4.41
+Transit Cafe,,Besut,Restaurant,Other,5.0,Excellent (≥4.5★),5.83255509999999,102.557774999999,No,No,No,No,No,No,No,No,No,1,Overall Dining Experience,50.48,31.56,5.21
+Selera Merdeka Tom Yam Seafood Pak Hashim,,Besut,Restaurant,Other,5.0,Excellent (≥4.5★),5.8329211,102.557754899999,No,No,No,No,No,No,Yes,No,No,6,Seafood & Local Snacks,58.46,31.78,6.45
+Abe Gee Tomyam,,Kampung Gertak Seratus,Restaurant,Other,3.0,Good (≥3.0★),5.8331156,102.542536099999,No,No,No,Yes,No,No,No,No,No,1,Overall Dining Experience,69.77,16.08,4.24
+Kak Su Laksa Dan Laksam,,Kampung Pengkalan Nyireh,Restaurant,Other,5.0,Excellent (≥4.5★),5.8083532,102.570454599999,No,No,No,No,No,No,No,No,No,2,Traditional Malay Food,91.16,2.62,1.87
+Jak Sate Dataran,,Besut,Satay Restaurant,Malay,5.0,Excellent (≥4.5★),5.8331436,102.558174,Yes,No,No,No,No,No,Yes,No,No,2,Traditional Malay Food,59.53,28.53,5.47
+Mee Champa Rokandis,,Kampung Paya Rawa,Restaurant,Other,5.0,Excellent (≥4.5★),5.7802238,102.5810758,No,No,No,No,Yes,No,Yes,No,No,4,Malay Review Sentiment,72.07,16.14,6.02
+Kedai Nasi Air Kak Long,,Besut,Soup Shop,Malay,4.0,Very Good (≥4.0★),5.83259369999999,102.555942,Yes,No,No,Yes,No,No,Yes,No,No,4,Malay Review Sentiment,76.44,8.85,6.72
+De 'Daun,,Besut,Restaurant,Other,3.0,Good (≥3.0★),5.82982489999999,102.5521022,No,No,No,No,No,No,No,No,No,1,Overall Dining Experience,55.32,30.4,11.25
+Kin A-Rai Restaurant,,Kampung Mas Sekupang,Thai Restaurant,Thai,4.0,Very Good (≥4.0★),5.8014904,102.567274,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,63.43,23.42,6.13
+Kari Kepala Ikan Merah Haji Musa,,Kampung Seberang Kastam,Family Restaurant,Family,5.0,Excellent (≥4.5★),5.82870759999999,102.562148999999,No,No,No,No,Yes,No,No,No,No,1,Overall Dining Experience,68.4,17.56,7.6
+Din Tomyam Seafood,,Besut,Thai Restaurant,Thai,2.0,Below Average (<3.0★),5.83192949999999,102.5576476,No,No,No,No,No,No,Yes,No,No,1,Overall Dining Experience,68.62,16.04,7.56
+49 Ikan Bakar Tepi Sungai,,Kampung Cawat,Seafood Restaurant,Seafood,4.0,Very Good (≥4.0★),5.8179827,102.5589421,No,No,No,No,Yes,No,Yes,No,No,4,Malay Review Sentiment,74.8,19.69,3.02
+Kak Tie Nasi Kerabu,,Besut,Restaurant,Other,4.0,Very Good (≥4.0★),5.7929454,102.568090599999,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,72.13,16.91,4.01
+Perhentian Idaman Cafe,,Pulau Perhentian Kecil,Family Restaurant,Family,5.0,Excellent (≥4.5★),5.8973811,102.7300927,No,Yes,No,No,Yes,No,No,No,No,6,Seafood & Local Snacks,60.82,26.13,8.41
+Tasha Pizza,,Besut,Pizza Restaurant,Western,5.0,Excellent (≥4.5★),5.82913889999999,102.5524897,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Aa Cafe,,Besut,Buffet Restaurant,Buffet,3.0,Good (≥3.0★),5.83112569999999,102.5583795,No,No,No,No,Yes,No,Yes,No,No,4,Malay Review Sentiment,83.1,9.49,4.23
+Nasi Berlauk Malam Kakda,,Besut,Restaurant,Other,5.0,Excellent (≥4.5★),5.829759,102.5485631,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,76.08,13.35,3.14
+Tuna Bay Restaurant,,Pulau Perhentian Besar,Restaurant,Other,5.0,Excellent (≥4.5★),5.894031,102.7382478,Yes,No,No,No,No,Yes,Yes,No,No,5,Western & Fusion Food,52.58,26.0,16.77
+Dapo Mak Cik Bawang,,Besut,Restaurant,Other,5.0,Excellent (≥4.5★),5.8298122,102.556623699999,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Restoran Gemilang,,Kuala Terengganu,Restaurant,Other,3.0,Good (≥3.0★),5.8035415,102.569344399999,No,No,No,Yes,No,No,No,No,No,1,Overall Dining Experience,75.04,16.77,3.05
+Warung Ombak Biru,,Kuala Terengganu,Family Restaurant,Family,4.0,Very Good (≥4.0★),5.82792969999999,102.5564467,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,67.54,18.94,4.21
+Rasa Restaurant,,Kampung Pasir Panjang,Restaurant,Other,3.0,Good (≥3.0★),5.9217321,102.723021199999,No,Yes,No,No,Yes,No,Yes,No,No,6,Seafood & Local Snacks,57.18,26.88,13.43
+Roti Canai Sarang Burung,,Kampung Gertak Seratus,Restaurant,Other,5.0,Excellent (≥4.5★),5.8341859,102.5408714,No,No,No,No,Yes,No,No,No,No,4,Malay Review Sentiment,68.55,25.22,2.0
+Taman By Esdelight,,Besut,Restaurant,Other,3.0,Good (≥3.0★),5.7916343,102.573827099999,No,No,No,No,No,No,Yes,Yes,No,4,Malay Review Sentiment,61.43,25.88,10.62
+Ayam Tempayan Kg Raja,,Besut,Chicken Restaurant,Fast Food,5.0,Excellent (≥4.5★),5.80623639999999,102.5454771,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,60.87,24.24,8.69
+Sekoci,,Pulau Perhentian Kecil,Restaurant,Other,5.0,Excellent (≥4.5★),5.919232,102.7170647,No,No,No,No,No,No,Yes,Yes,No,1,Overall Dining Experience,66.88,18.55,10.64
+Maggi Tomyam Air Nyiur,,Besut,Restaurant,Other,5.0,Excellent (≥4.5★),5.8341666,102.5411645,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,81.3,5.36,3.84
+Warung Wok,,Jalan Pekan Baru,Restaurant,Other,5.0,Excellent (≥4.5★),5.8293436,102.5515312,No,No,No,Yes,Yes,No,No,No,No,3,Location & Ambiance,62.86,27.13,8.16
+Kedai Makan Tamada,,Besut,Restaurant,Other,4.0,Very Good (≥4.0★),5.8272372,102.553386899999,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,92.77,2.09,1.48
+Dapur Kak Mai Coway,,Besut,Restaurant,Other,5.0,Excellent (≥4.5★),5.8233207,102.5687557,No,No,No,No,Yes,No,No,No,No,1,Overall Dining Experience,81.23,8.63,3.09
+Nasi Kukus Alom,,Kampung Air Tawar,Restaurant,Other,3.0,Good (≥3.0★),5.82016,102.5688558,No,No,No,Yes,Yes,No,No,No,No,2,Traditional Malay Food,64.03,27.76,5.62
+Kedai Abe Lan,,Besut,Restaurant,Other,4.0,Very Good (≥4.0★),5.8285487,102.5630321,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,71.87,20.43,4.58
+Pizza Best,,Besut,Restaurant,Other,5.0,Excellent (≥4.5★),5.79774129999999,102.5652578,No,No,No,No,No,No,No,No,No,1,Overall Dining Experience,71.06,15.51,8.46
+Fadzly Sambal Factory,,Besut,Malaysian Restaurant,Malay,5.0,Excellent (≥4.5★),5.7725612,102.5490269,Yes,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,62.31,25.0,4.25
+Dperahu Thaifood,,Jalan Bukit Keluang,Thai Restaurant,Thai,5.0,Excellent (≥4.5★),5.8057297,102.5999899,No,No,No,No,No,Yes,Yes,No,No,6,Seafood & Local Snacks,53.57,30.59,11.18
+Anjung Bahtera Restaurant,,Besut,Restaurant,Other,3.0,Good (≥3.0★),5.7981614,102.5647484,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Santai Restaurant,,Besut,Restaurant,Other,4.0,Very Good (≥4.0★),5.9209328,102.7222176,No,No,No,No,Yes,No,Yes,No,No,1,Overall Dining Experience,68.13,18.71,10.74
+Kopi Ais Mamu Ikat Tepi Kuala Besut X Kacip Thingy,,Kampung Gertak Seratus,Coffee Shop,Cafe,5.0,Excellent (≥4.5★),5.833652,102.5421942,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,82.07,5.16,3.68
+3R Char Kuey Teow,,Besut,Restaurant,Other,5.0,Excellent (≥4.5★),5.82971029999999,102.552315,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Zani Burger,,Mukimkampung,Hamburger Restaurant,Western,5.0,Excellent (≥4.5★),5.80817559999999,102.5706154,No,Yes,No,No,No,No,No,No,No,1,Overall Dining Experience,52.44,24.63,21.36
+Mie Ikan Bakar Jeti,,Besut,Restaurant,Other,5.0,Excellent (≥4.5★),5.83214619999999,102.5578479,No,No,No,No,Yes,No,Yes,No,No,1,Overall Dining Experience,63.53,22.52,7.89
+Demong Cafe,,Besut,Restaurant,Other,5.0,Excellent (≥4.5★),5.8078747,102.586074799999,No,No,No,No,No,No,Yes,No,No,6,Seafood & Local Snacks,80.51,10.96,4.37
+Ayunie Nasi Kukus Ayam Berempah,,Kampung Alor Pisang,Family Restaurant,Family,3.0,Good (≥3.0★),5.8297542,102.5488664,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,77.14,9.68,4.02
+Kedai Depe Rumoh,,Besut,Dessert Shop,Cafe,5.0,Excellent (≥4.5★),5.8321853,102.5521588,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,64.11,21.72,8.84
+Kfc Petron Kg Raja,,Kampung Mas Sekupang,Fast Food Restaurant,Fast Food,5.0,Excellent (≥4.5★),5.80100829999999,102.5676917,No,No,No,No,No,No,No,No,No,1,Overall Dining Experience,76.51,10.99,4.56
+Kedai Makan Masakan Panas(Lampu),,Kampung Gong Bayor,Malaysian Restaurant,Malay,5.0,Excellent (≥4.5★),5.7547485,102.568868,Yes,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Edy Kafe,,Kampung Sentosa,Restaurant,Other,3.0,Good (≥3.0★),5.8163766,102.5709991,No,No,No,No,No,No,No,No,No,2,Traditional Malay Food,66.21,23.61,6.88
+Anggun Bestari Boutique Cafe,,Jln Tok Saboh,Restaurant,Other,5.0,Excellent (≥4.5★),5.8241483,102.5263373,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+My Rasa Cafe,,Besut,Restaurant,Other,4.0,Very Good (≥4.0★),5.8329585,102.557833399999,No,No,No,No,No,No,No,No,No,3,Location & Ambiance,63.08,24.11,4.11
+Abe Yiee Nasi Kukus,,Kampung Alor Pisang,Restaurant,Other,5.0,Excellent (≥4.5★),5.8322202,102.537725799999,No,No,No,No,No,No,No,No,No,6,Seafood & Local Snacks,48.65,47.78,1.4
+The Barat Restoran,,Kuala Terengganu,Restaurant,Other,3.0,Good (≥3.0★),5.90020549999999,102.7392005,No,Yes,No,No,Yes,Yes,Yes,Yes,No,5,Western & Fusion Food,65.36,27.54,4.93
+Tasty Bowl 2,,Besut,Restaurant,Other,1.0,Below Average (<3.0★),5.8300459,102.5510235,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,81.22,15.4,1.23
+Cendol Durian Ketagih,,Kampung Gertak Seratus,Restaurant,Other,5.0,Excellent (≥4.5★),5.8340777,102.541254,No,No,No,No,No,No,No,No,No,1,Overall Dining Experience,56.27,23.91,16.71
+Sate Awe Lembey,,Besut,Satay Restaurant,Malay,5.0,Excellent (≥4.5★),5.8280122,102.5538059,Yes,No,No,No,No,No,No,No,No,1,Overall Dining Experience,83.02,4.44,3.74
+Selera Kotaputra,,Besut,Restaurant,Other,4.0,Very Good (≥4.0★),5.7964473,102.564099399999,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Restoran Warisan Tok Ayah Seafood,,Besut,Restaurant,Other,1.0,Below Average (<3.0★),5.8246116,102.570236299999,No,No,No,No,Yes,No,No,No,No,4,Malay Review Sentiment,72.01,18.74,4.41
+Keropok Lekor J91,,Kampung Pachakan,Restaurant,Other,4.0,Very Good (≥4.0★),5.8405156,102.532346499999,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,74.51,17.4,4.32
+Sri Tanjung Restaurant,,Pulau Perhentian Besar,Restaurant,Other,5.0,Excellent (≥4.5★),5.90212709999999,102.7396265,No,No,No,No,No,No,Yes,No,No,5,Western & Fusion Food,70.4,17.61,7.67
+Nasken Coffee Kampung Raja,,Besut,Restaurant,Other,4.0,Very Good (≥4.0★),5.78227789999999,102.555022799999,No,No,No,Yes,No,No,Yes,No,No,1,Overall Dining Experience,70.14,18.1,6.72
+Nasi Kerabu Golok Kg Raja,,Besut,Breakfast Restaurant,Cafe,5.0,Excellent (≥4.5★),5.7972202,102.5638925,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,62.69,35.89,0.49
+Ombak Cafe,,Malaysia,Restaurant,Other,4.0,Very Good (≥4.0★),5.91492629999999,102.7168384,No,Yes,Yes,No,No,No,Yes,Yes,No,1,Overall Dining Experience,59.74,22.51,11.8
+Bayu Restaurant,,Besut,Restaurant,Other,1.0,Below Average (<3.0★),5.8948117,102.7228576,No,Yes,Yes,No,No,No,No,No,No,1,Overall Dining Experience,71.68,20.79,2.78
+You&Me Thai Street And Western,,"154, Jl. Besar",Restaurant,Other,4.0,Very Good (≥4.0★),5.73619719999999,102.5036306,No,Yes,No,Yes,Yes,No,No,Yes,No,4,Malay Review Sentiment,68.19,18.58,6.42
+Warung Nasi Kerabu Nasi Lemak Sara,,Kampung Lampu,Restaurant,Other,3.0,Good (≥3.0★),5.8228047,102.551387699999,No,No,No,No,No,No,No,No,No,2,Traditional Malay Food,58.78,25.24,8.98
+D'Hatimu Coffee,,Alor Lintang Ii,Restaurant,Other,5.0,Excellent (≥4.5★),5.775147,102.5501693,No,No,No,Yes,Yes,No,Yes,No,No,5,Western & Fusion Food,74.14,16.08,5.97
+Ohlala Divers,,Perhentian Kecil,Restaurant,Other,5.0,Excellent (≥4.5★),5.92143229999999,102.7232492,No,No,No,No,Yes,Yes,Yes,Yes,Yes,1,Overall Dining Experience,62.3,24.25,9.47
+Pak Awie'S Nasi Air,,Besut,Restaurant,Other,2.0,Below Average (<3.0★),5.825469,102.5698826,No,No,No,Yes,Yes,Yes,Yes,No,No,1,Overall Dining Experience,54.95,29.86,11.3
+Din Satay,,Kampung Pengkalan Nyireh,Restaurant,Other,4.0,Very Good (≥4.0★),5.8078274,102.5706419,No,No,No,No,No,No,No,No,No,1,Overall Dining Experience,71.59,8.55,7.08
+Restoran Kerabat Raja Ikan Bakar,,Kampung Gong Kepas,Restaurant,Other,5.0,Excellent (≥4.5★),5.7819762,102.5548166,No,No,No,No,No,No,No,No,No,2,Traditional Malay Food,58.6,36.95,1.55
+Kilang Keropok Ikan Natrah,,Kampung Pachakan,Fish & Chips Restaurant,Western,3.0,Good (≥3.0★),5.8425182,102.535454399999,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,71.67,17.12,3.76
+Warung Klasik Je (Roti Tempayan),,Besut,Restaurant,Other,4.0,Very Good (≥4.0★),5.7954593,102.5659031,No,No,No,No,No,No,Yes,No,No,5,Western & Fusion Food,66.04,21.37,4.04
+Mama Cafe,,Kampung Pengkalan Nyireh,Breakfast Restaurant,Cafe,5.0,Excellent (≥4.5★),5.80089329999999,102.5755329,No,No,No,No,No,No,No,No,No,1,Overall Dining Experience,62.21,30.94,2.12
+Gerai Kaktie Nasi Kueh Pagi,,Kampung Alor Pisang,Restaurant,Other,5.0,Excellent (≥4.5★),5.8251322,102.5526027,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,74.93,14.27,6.77
+Temu Primula Hotel,,Besut,Restaurant,Other,1.0,Below Average (<3.0★),5.82684869999999,102.567353799999,No,No,No,No,Yes,No,Yes,Yes,No,1,Overall Dining Experience,76.35,16.84,4.04
+Madi Ikan Bakar & Masakan Panas,,Madi Ikan Bakar,Restaurant,Other,5.0,Excellent (≥4.5★),5.81797999999999,102.5492641,No,No,No,Yes,No,No,No,No,No,4,Malay Review Sentiment,67.16,22.94,3.12
+Nasi Dagang Nasi Minyak Roti Canai Besut(Restoran Mak Su Yah),,Besut,Rice Restaurant,Malay,5.0,Excellent (≥4.5★),5.7936687,102.5673934,Yes,No,No,No,No,No,No,No,No,3,Location & Ambiance,72.94,9.96,7.87
+Anjung Selera Cafe,,Besut,Asian Restaurant,Asian,5.0,Excellent (≥4.5★),5.829355,102.5515267,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+3 Fish Restaurant,,Pulau Perhentian Besar,Restaurant,Other,5.0,Excellent (≥4.5★),5.8305362,102.5570693,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Sate Songkok,,Besut,Satay Restaurant,Malay,5.0,Excellent (≥4.5★),5.8291201,102.5525917,Yes,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Ruzie Ayam Proses,,Besut,Chicken Shop,Other,5.0,Excellent (≥4.5★),5.8214438,102.5674781,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Penang Ori Cafe Char Koay Teow,,Besut,Restaurant,Other,4.0,Very Good (≥4.0★),5.8121535,102.573929999999,No,No,No,Yes,No,No,No,No,No,4,Malay Review Sentiment,70.3,19.23,5.04
+Zanna Keropok Lekor D7,,Besut,Restaurant,Other,1.0,Below Average (<3.0★),5.8290694,102.5534797,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,84.52,4.44,3.18
+Wan Tomyam,,Besut,Asian Restaurant,Asian,1.0,Below Average (<3.0★),5.8405894,102.5328735,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,86.45,7.8,1.77
+Abe Pastry Mek Bungo Cafe,,Besut,Bakery,Cafe,5.0,Excellent (≥4.5★),5.8014988,102.595106199999,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Bomb Burger,,Besut,Fast Food Restaurant,Fast Food,5.0,Excellent (≥4.5★),5.8049025,102.570814099999,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+D Bulatan Lampu,,Kampung Pulau Salim,Hawker Stall,Malay,5.0,Excellent (≥4.5★),5.80630669999999,102.545379799999,Yes,No,No,No,No,No,No,No,No,2,Traditional Malay Food,71.6,12.56,8.23
+Nasi Berlauk Malam Kg. Nail,,Kampung Nail,Restaurant,Other,5.0,Excellent (≥4.5★),5.8265212,102.5529265,No,No,No,No,Yes,No,No,No,No,4,Malay Review Sentiment,68.11,22.9,5.07
+Kedai Monggeng Taman Sri Intan,,Besut,Restaurant,Other,3.0,Good (≥3.0★),5.832101,102.5368573,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Anjung Selera Kota Putera,,Besut,Breakfast Restaurant,Cafe,5.0,Excellent (≥4.5★),5.7929452,102.5620517,No,No,No,Yes,No,No,Yes,No,No,3,Location & Ambiance,80.56,15.27,1.3
+Kedai Makan Pak Yub,,Besut,Restaurant,Other,1.0,Below Average (<3.0★),5.8340685,102.5411745,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Dataran,,Besut,Tourist Attraction,Other,3.0,Good (≥3.0★),5.8329148,102.558090499999,No,No,No,Yes,No,No,Yes,No,No,3,Location & Ambiance,67.14,20.04,6.84
+Lekorr Kita,,Kampung Air Tawar,Fast Food Restaurant,Fast Food,2.0,Below Average (<3.0★),5.82033919999999,102.5686534,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,52.66,39.75,2.62
+"Berdekatan Stesen Minyak Bhp, Sempadan Terengganu - Kelantan",,Besut,Restaurant,Other,5.0,Excellent (≥4.5★),5.8385126,102.534995,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Medan Ikan Bakar Check Pah,,Besut,Restaurant,Other,3.0,Good (≥3.0★),5.8301687,102.5626164,No,No,No,No,No,No,No,No,No,2,Traditional Malay Food,88.98,3.31,2.36
+Kak Ani Ayam Bakar,,Kampung Pengkalan Nyireh,Breakfast Restaurant,Cafe,3.0,Good (≥3.0★),5.8126435,102.5727052,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,62.37,26.63,4.49
+Dapur'S Abi Andak,,Besut,Restaurant,Other,5.0,Excellent (≥4.5★),5.7975658,102.560599299999,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Kedai Nasi Ayam Corner Lot Goreng,,Kampung Gertak Seratus,Restaurant,Other,1.0,Below Average (<3.0★),5.8327817,102.5430635,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,91.91,2.32,1.66
+Kak Da Lampu Hijau,,Besut,Thai Restaurant,Thai,5.0,Excellent (≥4.5★),5.8307008,102.539159,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Selera Ikan Bakar,,Kampung Alor Pisang,Restaurant,Other,5.0,Excellent (≥4.5★),5.8215439,102.550477399999,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Pisang Goreng Mok Yoh,,Belakang Balai Polis,Restaurant,Other,3.0,Good (≥3.0★),5.79431539999999,102.565567199999,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,48.24,37.18,7.78
+The Pickers Cafe,,Besut,Restaurant,Other,5.0,Excellent (≥4.5★),5.8321135,102.536870999999,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+La Wood Cafe,,Besut,Restaurant,Other,5.0,Excellent (≥4.5★),5.8312079,102.556854,No,No,No,No,Yes,No,No,No,Yes,1,Overall Dining Experience,66.15,24.31,5.78
+Bonsai Thai Food Restaurant,,Besut,Restaurant,Other,5.0,Excellent (≥4.5★),5.8300288,102.5469761,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,73.89,14.78,6.05
+Amr Nasi Kandar Melayu,,Besut,Restaurant,Other,5.0,Excellent (≥4.5★),5.7948696,102.5614803,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,72.12,22.6,1.82
+Long Beach Cafe Espresso,,Pulau Perhentian Kecil,Coffee Shop,Cafe,3.0,Good (≥3.0★),5.9180394,102.7218786,No,No,No,No,No,No,Yes,No,Yes,1,Overall Dining Experience,65.03,23.29,8.24
+Kedai Burger Sep Kito,,Besut,Fast Food Restaurant,Fast Food,5.0,Excellent (≥4.5★),5.8351092,102.5478057,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Tidak Lagi Beroperasi.,,Besut,Restaurant,Other,5.0,Excellent (≥4.5★),5.797553,102.5656138,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,67.17,26.77,1.87
+Elycermat Corner,,Kampung Gong Kepas,Restaurant,Other,5.0,Excellent (≥4.5★),5.7831494,102.5549691,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Warung Kak Ani Nasi Ayam Bakar,,Kampung Gertak Seratus,Restaurant,Other,4.0,Very Good (≥4.0★),5.8340058,102.541585599999,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,50.4,35.07,11.77
+Restoran The Dapo,,Jalan Bunga Raya 4,Western Restaurant,Western,3.0,Good (≥3.0★),4.7442066,103.4169969,No,No,No,No,No,Yes,Yes,No,No,1,Overall Dining Experience,62.38,24.31,8.57
+4Fingers Crispy Chicken,,Jalan Yahya Ahmad,Restaurant,Other,5.0,Excellent (≥4.5★),4.7581155,103.4177988,No,Yes,No,No,No,No,No,No,No,1,Overall Dining Experience,71.75,18.47,4.67
+D'Arianna Restoran,,Taman Pantai Sura,Restaurant,Other,4.0,Very Good (≥4.0★),4.7421045,103.427177199999,No,No,No,Yes,Yes,No,Yes,No,No,6,Seafood & Local Snacks,62.69,26.18,7.76
+Manis Cafe,,Sura Hujung,Restaurant,Other,5.0,Excellent (≥4.5★),4.7213163,103.4241825,No,No,No,Yes,Yes,No,No,No,No,1,Overall Dining Experience,56.84,28.43,10.42
+Uncle Chua Signatures,,Dungun,Restaurant,Other,5.0,Excellent (≥4.5★),4.75615709999999,103.4194213,Yes,Yes,No,Yes,No,No,Yes,Yes,No,5,Western & Fusion Food,59.42,26.91,10.04
+Pattaya One Restaurant,,Taman Jaya,Family Restaurant,Family,3.0,Good (≥3.0★),4.72885879999999,103.4219182,No,No,No,No,No,No,No,No,No,6,Seafood & Local Snacks,81.35,10.78,3.8
+Restaurant C.B.Wee,,Dungun,Chinese Restaurant,Chinese,2.0,Below Average (<3.0★),4.8091848,103.4146026,Yes,No,No,Yes,Yes,No,Yes,No,No,1,Overall Dining Experience,66.83,20.75,10.49
+Mak Wan Mee Sup Melayu Champa,,Dungun,Restaurant,Other,4.0,Very Good (≥4.0★),4.7254384,103.414838899999,No,No,No,Yes,No,No,No,No,No,5,Western & Fusion Food,58.28,24.14,10.39
+Martion Western Food,,Jalan Pantai Sura,Western Restaurant,Western,2.0,Below Average (<3.0★),4.730874,103.431627999999,No,No,No,No,Yes,No,Yes,Yes,No,5,Western & Fusion Food,73.24,20.7,3.19
+Kakilima.My,,Pt15817 Â€¢ Pt15818 Â€¢ Pt15819 Â€¢ Pt15820 Gf,Restaurant,Other,4.0,Very Good (≥4.0★),4.7540099,103.4198814,No,No,No,No,No,Yes,Yes,No,No,5,Western & Fusion Food,57.72,24.42,12.24
+Hbo Pink House,,Kampung Sura Jeti,Restaurant,Other,5.0,Excellent (≥4.5★),4.7488635,103.4247072,No,No,No,Yes,No,No,Yes,No,No,6,Seafood & Local Snacks,62.58,27.45,5.27
+Aroma Kitchen,,Kampung Sura Selatan,Western Restaurant,Western,5.0,Excellent (≥4.5★),4.7205246,103.436180799999,No,Yes,No,No,Yes,No,Yes,No,No,5,Western & Fusion Food,75.99,15.18,5.61
+Maro Western Bukit Chatak,,Kampung Kubang Miang,Western Restaurant,Western,5.0,Excellent (≥4.5★),4.7656,103.4065,No,No,No,No,No,No,No,Yes,No,4,Malay Review Sentiment,75.51,15.87,5.06
+Nelayan Restoran Pulau Serai (Misi Azlina),,Kampung Pulau Serai,Bar,Other,5.0,Excellent (≥4.5★),4.8085868,103.4241407,No,No,No,No,Yes,Yes,Yes,No,No,5,Western & Fusion Food,56.23,21.13,14.32
+Ketapang Restaurant,,Kampung Pak Sabah,Restaurant,Other,5.0,Excellent (≥4.5★),4.7555116,103.411486299999,No,No,No,No,No,No,No,No,No,1,Overall Dining Experience,75.15,14.39,3.17
+Famous Fried Chicken,,Kuala Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),4.7548809,103.4192886,No,No,No,Yes,Yes,No,Yes,No,No,1,Overall Dining Experience,74.11,15.05,6.2
+Singgang Ulam Budu,,Dungun,Malaysian Restaurant,Malay,3.0,Good (≥3.0★),4.73281399999999,103.430872,Yes,No,No,No,Yes,Yes,Yes,No,No,5,Western & Fusion Food,55.56,29.33,11.34
+Skymaze Pizza,,Hujung,Western Restaurant,Western,5.0,Excellent (≥4.5★),4.7209688,103.4360612,No,No,No,No,Yes,No,Yes,Yes,No,5,Western & Fusion Food,69.9,19.5,7.84
+Daebak Chickeng,,Jalan Sura Gate,Restaurant,Other,4.0,Very Good (≥4.0★),4.7540445,103.4200012,No,No,No,No,No,No,No,No,No,5,Western & Fusion Food,71.8,20.25,2.51
+Rezto Cafe,,Dungun,Restaurant,Other,1.0,Below Average (<3.0★),4.7540673,103.414955499999,No,No,No,No,Yes,Yes,Yes,No,No,1,Overall Dining Experience,68.37,22.73,3.78
+Pine Beach Cafe/Restaurant,,Dungun,Western Restaurant,Western,5.0,Excellent (≥4.5★),4.7614051,103.4187681,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,79.23,12.18,2.62
+Hana Burger,,Jalan Yahya Ahmad,Hamburger Restaurant,Western,4.0,Very Good (≥4.0★),4.7540755,103.4160309,No,No,No,No,No,No,No,No,No,5,Western & Fusion Food,59.9,27.13,6.06
+Tuah Kopi,,Tanah Lot,Cafe,Cafe,5.0,Excellent (≥4.5★),4.7734334,103.4186886,No,No,No,Yes,Yes,No,Yes,Yes,No,6,Seafood & Local Snacks,69.37,19.96,4.06
+Ban Yeow Seafood Restaurant,,"Batu, 49, Jalan Paka",Seafood Restaurant,Seafood,5.0,Excellent (≥4.5★),4.7413463,103.4183963,No,No,No,Yes,Yes,Yes,Yes,No,No,1,Overall Dining Experience,67.34,23.31,7.9
+Azie Cafe,,Dungun,Restaurant,Other,3.0,Good (≥3.0★),4.75447439999999,103.4143247,No,No,No,No,Yes,No,No,No,No,4,Malay Review Sentiment,79.18,12.92,2.42
+Bakatawa,,Kampung Sura Gate,Family Restaurant,Family,5.0,Excellent (≥4.5★),4.74962229999999,103.4244835,No,No,No,No,No,No,Yes,Yes,No,4,Malay Review Sentiment,59.75,29.32,5.12
+Di Atas Sungei,,Jalan,Restaurant,Other,5.0,Excellent (≥4.5★),4.8120113,103.4231428,No,Yes,No,No,No,No,No,Yes,No,1,Overall Dining Experience,57.12,28.17,11.55
+Restaurant Tanjung Jara,,Dungun,Malaysian Restaurant,Malay,2.0,Below Average (<3.0★),4.8110092,103.4152189,Yes,No,No,No,No,No,No,No,No,1,Overall Dining Experience,72.72,14.68,6.32
+Teratai Terrace,,Dungun,Restaurant,Other,4.0,Very Good (≥4.0★),4.8111222,103.4234323,No,No,No,No,No,No,No,Yes,No,3,Location & Ambiance,63.57,23.9,3.91
+Era Cafe,,"Batu 48, Jalan Besar",Malaysian Restaurant,Malay,4.0,Very Good (≥4.0★),4.7460495,103.4155455,Yes,No,No,Yes,Yes,No,No,Yes,No,2,Traditional Malay Food,57.52,28.95,7.46
+Yuan Jie Restaurant (Tian Xiang),,Dungun,Restaurant,Other,4.0,Very Good (≥4.0★),4.77691739999999,103.4243884,No,No,No,No,Yes,No,No,No,No,6,Seafood & Local Snacks,62.68,26.08,7.51
+Maya La Cottage,,Kampung Teluk Lipat,Store,Other,5.0,Excellent (≥4.5★),4.76187799999999,103.418759,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,76.56,6.97,4.89
+Secret Recipe,,Kampung Sura Gate,Restaurant,Other,4.0,Very Good (≥4.0★),4.755987,103.4191997,No,No,No,Yes,No,No,No,No,No,1,Overall Dining Experience,71.13,20.03,3.94
+Azuwa Caf,,Taman Raya,Restaurant,Other,5.0,Excellent (≥4.5★),4.7507436,103.4150923,No,No,No,Yes,No,No,No,No,No,5,Western & Fusion Food,77.01,12.36,3.4
+Kedai Roti Canai Kadir,,Kampung Pak Sabah,Restaurant,Other,3.0,Good (≥3.0★),4.7556654,103.408648,No,No,No,No,Yes,No,No,No,No,4,Malay Review Sentiment,72.04,16.14,7.27
+Laila Tomyam Maju,,Kampung Sura Jeti,Restaurant,Other,4.0,Very Good (≥4.0★),4.7467381,103.4253597,No,No,No,No,Yes,No,Yes,No,No,6,Seafood & Local Snacks,79.08,16.47,1.47
+Nasi Kerabu Sebenar,,Dungun,Family Restaurant,Family,5.0,Excellent (≥4.5★),4.7612725,103.4216435,No,No,No,No,No,No,No,No,No,1,Overall Dining Experience,62.7,25.48,7.59
+No.6 Foodcourt Suragate,,Kuala Terengganu,Restaurant,Other,2.0,Below Average (<3.0★),4.7589841,103.4173805,No,No,No,Yes,No,No,No,No,No,3,Location & Ambiance,65.96,24.82,2.71
+Keropok Cap Bot Nelayan,,Taman Sufa,Restaurant,Other,4.0,Very Good (≥4.0★),4.7553776,103.4164734,No,No,No,Yes,Yes,No,No,Yes,No,6,Seafood & Local Snacks,61.13,25.72,8.52
+Restoran Santong,,Kuala Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),4.7129414,103.410390999999,No,No,No,No,Yes,No,No,No,No,6,Seafood & Local Snacks,72.47,18.35,3.96
+Restoran & Katering Kusyam Nasi Kukus,,Dungun,Restaurant,Other,5.0,Excellent (≥4.5★),4.7519034,103.4154094,No,No,No,No,No,No,No,No,No,3,Location & Ambiance,66.19,19.64,7.89
+Satay Dato Keramat,,Taman Sura Jati,Restaurant,Other,4.0,Very Good (≥4.0★),4.7438714,103.4265362,No,No,No,No,No,No,No,No,No,2,Traditional Malay Food,49.13,30.39,7.69
+Restoran Buluh Perindu,,Taman Raya,Restaurant,Other,5.0,Excellent (≥4.5★),4.7503293,103.414825999999,No,No,No,No,Yes,No,No,No,No,1,Overall Dining Experience,62.51,24.18,9.58
+Orange & Black Cafe - Shell Out Viral,,Kampung Pak Sabah,Restaurant,Other,5.0,Excellent (≥4.5★),4.7560343,103.4103482,No,No,No,No,Yes,No,No,No,No,4,Malay Review Sentiment,70.87,17.11,6.15
+Restoran Mateen,,Jalan,Restaurant,Other,5.0,Excellent (≥4.5★),4.75440789999999,103.419387399999,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Pok Din Kopi Power,,Dungun,Restaurant,Other,5.0,Excellent (≥4.5★),4.7497,103.405914299999,No,No,No,No,No,No,No,No,No,2,Traditional Malay Food,66.34,23.8,3.2
+Wann Seafood,,Jalan Baru Pak Sabah,Family Restaurant,Family,5.0,Excellent (≥4.5★),4.7556117,103.410367,No,No,No,No,No,No,No,No,No,2,Traditional Malay Food,42.16,37.43,14.66
+Chillaxgate Restaurant,,Dungun,Restaurant,Other,4.0,Very Good (≥4.0★),4.75531179999999,103.418917999999,No,No,No,No,No,No,No,No,No,2,Traditional Malay Food,54.78,30.62,4.79
+Restoran Putera Duyong,,Dungun,Restaurant,Other,5.0,Excellent (≥4.5★),4.7789595,103.426716599999,No,Yes,No,No,Yes,Yes,Yes,No,No,6,Seafood & Local Snacks,54.66,30.39,11.56
+Restaurant Lian Fong Yuen,,Dungun,Restaurant,Other,3.0,Good (≥3.0★),4.7777557,103.424292499999,No,No,No,Yes,No,Yes,No,No,No,6,Seafood & Local Snacks,70.98,18.98,5.11
+Cozy Cafe,,Kuala Terengganu,Restaurant,Other,2.0,Below Average (<3.0★),4.7563265,103.422888,No,No,No,No,Yes,No,No,No,No,4,Malay Review Sentiment,55.46,22.57,12.68
+Roti Canai Sedak Molek,,Kampung Sura Gate,Breakfast Restaurant,Cafe,3.0,Good (≥3.0★),4.7552933,103.4164093,No,No,No,No,No,No,No,Yes,No,4,Malay Review Sentiment,65.52,22.73,5.45
+Din Maju Streetfood,,Kampung Sura Jeti,Family Restaurant,Family,5.0,Excellent (≥4.5★),4.7509665,103.422038399999,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,92.76,4.75,0.86
+Subway,,Jalan Sura Gate,Sandwich Shop,Western,1.0,Below Average (<3.0★),4.75645449999999,103.418848,No,No,No,No,No,No,No,No,No,1,Overall Dining Experience,62.91,19.74,9.92
+Medan Ikan Bakar Seri Warisan,,"171, Jalan Pasar",Restaurant,Other,4.0,Very Good (≥4.0★),4.7788205,103.426670899999,No,Yes,No,Yes,Yes,No,Yes,Yes,No,1,Overall Dining Experience,50.74,29.63,10.79
+Laksa,,Kampung Sura Jeti,Restaurant,Other,5.0,Excellent (≥4.5★),4.7540732,103.4196855,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,90.37,7.06,0.74
+Kayu Manis Restaurant,,Mukim,Restaurant,Other,1.0,Below Average (<3.0★),4.64774149999999,103.432152199999,No,No,No,Yes,Yes,Yes,No,Yes,Yes,1,Overall Dining Experience,63.02,22.95,9.19
+Warung Aa Maju,,Kampung Pak Sabah,Restaurant,Other,5.0,Excellent (≥4.5★),4.7545094,103.4063824,No,No,No,No,No,No,No,No,No,1,Overall Dining Experience,72.03,14.68,6.75
+,,Dungun,Restaurant,Other,5.0,Excellent (≥4.5★),4.7247578,103.4209959,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Satay Kajang,,Jalan,Restaurant,Other,4.0,Very Good (≥4.0★),4.755318,103.418915399999,No,No,No,No,Yes,No,No,No,No,5,Western & Fusion Food,66.06,22.73,7.98
+Dungun Curry House Nasi Daun Pisang,,Taman Raya,Restaurant,Other,1.0,Below Average (<3.0★),4.74840829999999,103.414807299999,No,No,No,Yes,No,No,Yes,No,No,1,Overall Dining Experience,70.03,21.86,4.41
+Tanjong Jara Resort,,Dungun,Resort Hotel,Other,5.0,Excellent (≥4.5★),4.8118345,103.4225697,No,No,No,Yes,Yes,Yes,Yes,Yes,No,3,Location & Ambiance,57.23,25.5,14.59
+Utiq Cafe,,Jalan Kenanga,Restaurant,Other,5.0,Excellent (≥4.5★),4.7508325,103.4220284,No,No,No,No,Yes,No,Yes,No,No,1,Overall Dining Experience,76.13,9.32,4.35
+Ikan Bakar Darul Falah,,Jalan Lapangan Terbang,Restaurant,Other,2.0,Below Average (<3.0★),4.7264658,103.422454699999,No,No,No,No,No,Yes,No,No,No,1,Overall Dining Experience,64.94,23.92,6.56
+Ayam Gepuk Rempah Jogja,,Hadapan Jpam,Halal Restaurant,Other,3.0,Good (≥3.0★),4.7689408,103.4208075,No,No,No,Yes,No,No,No,No,No,5,Western & Fusion Food,58.18,24.16,12.15
+Takoyaki By Matjicko Kitchen,,Taman Pantai,Japanese Restaurant,Japanese,5.0,Excellent (≥4.5★),4.7549472,103.4202967,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Ocean Cafe,,Kampung Teluk Lipat,Restaurant,Other,5.0,Excellent (≥4.5★),4.76243579999999,103.4200462,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,55.63,24.15,16.73
+Kedai Roti Tempayan,,Kampung Pantai,Restaurant,Other,3.0,Good (≥3.0★),4.7703326,103.4217278,No,No,No,No,No,No,Yes,No,No,5,Western & Fusion Food,55.09,22.96,12.0
+Mok Teh Yang,,Dungun,Restaurant,Other,4.0,Very Good (≥4.0★),4.8259378,103.4172239,No,No,No,Yes,No,No,Yes,No,No,6,Seafood & Local Snacks,63.3,20.07,11.54
+Restoran Salamath,,Dungun,Indian Restaurant,Indian,5.0,Excellent (≥4.5★),4.7451959,103.4159059,Yes,No,No,No,No,No,No,Yes,No,1,Overall Dining Experience,71.89,15.5,6.59
+Adin Cafe,,Jln Gong Pasir,Restaurant,Other,5.0,Excellent (≥4.5★),4.74967329999999,103.4112521,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Azack Pizza,,Taman Sufa,Pizza Takeout,Other,5.0,Excellent (≥4.5★),4.75587209999999,103.416641399999,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Kiddo'S Cafe,,Dungun,Restaurant,Other,5.0,Excellent (≥4.5★),4.7573973,103.416843599999,No,No,No,No,No,No,No,No,No,6,Seafood & Local Snacks,72.7,17.9,5.3
+Ma Ani Selera Kampung,,Dungun,Restaurant,Other,3.0,Good (≥3.0★),4.76156449999999,103.421621399999,No,No,No,No,No,No,Yes,No,No,6,Seafood & Local Snacks,61.05,18.43,11.7
+Cherating Tomyam Seafood,,Dungun,Restaurant,Other,5.0,Excellent (≥4.5★),4.7471268,103.4150918,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,65.4,13.85,6.43
+Celup Tepung Tepi Pantai,,Dungun,Malaysian Restaurant,Malay,3.0,Good (≥3.0★),4.7562042,103.422884,Yes,No,No,No,No,No,Yes,Yes,No,4,Malay Review Sentiment,71.08,16.87,3.64
+Eleven Kitchen Street,,Jalan Pak Sabah,Hamburger Restaurant,Western,5.0,Excellent (≥4.5★),4.7559444,103.4113892,No,No,No,No,No,No,No,No,No,1,Overall Dining Experience,66.47,8.1,7.67
+Marrybrown,,Sura Gate,Fast Food Restaurant,Fast Food,1.0,Below Average (<3.0★),4.75664359999999,103.4192044,No,No,No,No,No,No,No,No,No,1,Overall Dining Experience,59.63,23.46,10.29
+Mcdonald'S,,Jalan Baru Pak Sabah,Fast Food Restaurant,Fast Food,4.0,Very Good (≥4.0★),4.7552576,103.4144985,No,No,No,Yes,No,No,No,No,No,1,Overall Dining Experience,66.49,23.67,6.5
+Burger Coconut Shake Pokyoko Dungun Terengganu Malaysia,,Kampung Sura Hujung,Fast Food Restaurant,Fast Food,5.0,Excellent (≥4.5★),4.7248874,103.433511,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Joehan Nasi Kukus,,Dungun,Restaurant,Other,5.0,Excellent (≥4.5★),4.71961919999999,103.421025899999,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,59.33,29.45,5.08
+Snack Day,,Kampung Sura Jeti,Ice Cream Shop,Cafe,3.0,Good (≥3.0★),4.7518347,103.423865999999,No,No,No,Yes,Yes,Yes,Yes,No,No,6,Seafood & Local Snacks,54.59,31.77,9.21
+Ak Steamboat,,Jalan Bunga Raya 3,Restaurant,Other,2.0,Below Average (<3.0★),4.7458094,103.416332599999,No,No,No,No,Yes,No,Yes,No,No,4,Malay Review Sentiment,71.78,15.45,7.61
+Sushi King,,Kuala Terengganu,Japanese Restaurant,Japanese,5.0,Excellent (≥4.5★),4.757637,103.418072999999,No,No,No,No,Yes,No,No,No,No,1,Overall Dining Experience,74.11,16.99,5.51
+Kedai Makan D'Ru,,Kuala Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),4.75409589999999,103.414811899999,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Ayam Pusing 360,,Kampung Kubang Catak,Chicken Restaurant,Fast Food,5.0,Excellent (≥4.5★),4.7645683,103.4092191,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,50.68,28.64,9.0
+Warong Singgah Sokmo,,Kampung Sura Jeti,Restaurant,Other,5.0,Excellent (≥4.5★),4.7496113,103.4243894,No,No,No,No,Yes,No,Yes,No,No,4,Malay Review Sentiment,63.57,25.28,6.23
+Kedai Keropok Lekor 1010 (Aneka Keropok),,Taman Raya,Restaurant,Other,5.0,Excellent (≥4.5★),4.7459152,103.4161175,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,77.26,6.54,4.85
+Chef Ena Kitchen Outlets,,Kampung Pak Sabah,Western Restaurant,Western,5.0,Excellent (≥4.5★),4.756062,103.410534399999,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Ayam Golek Hawaii,,Jalan Bunga Raya,Restaurant,Other,5.0,Excellent (≥4.5★),4.74769379999999,103.4186591,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,39.84,39.11,7.27
+D' Pantai Tomyam,,"363, Jalan Pantai Sura",Restaurant,Other,5.0,Excellent (≥4.5★),4.7472981,103.425161199999,No,No,No,No,No,No,Yes,No,No,6,Seafood & Local Snacks,66.11,22.87,4.58
+Kfc Petron Dungun Southbound Drivethru,,Taman Raya,Fast Food Restaurant,Fast Food,5.0,Excellent (≥4.5★),4.74774919999999,103.4159648,No,No,No,Yes,No,No,Yes,No,No,1,Overall Dining Experience,80.36,12.02,2.86
+Mee Celup Legend,,Taman Pantai,Restaurant,Other,5.0,Excellent (≥4.5★),4.75525889999999,103.4213886,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,81.3,5.36,3.84
+Keropok Losong Lekor 996 (Dungun),,"Batu 48, Jalan Paka",Restaurant,Other,5.0,Excellent (≥4.5★),4.7501844,103.4148585,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,89.53,3.0,2.15
+Nasi Dagang Ori Gong Pasir,,Lorong Surau,Restaurant,Other,4.0,Very Good (≥4.0★),4.7486931,103.412825399999,No,No,No,No,No,No,No,No,No,1,Overall Dining Experience,58.32,29.85,4.78
+Bam Patty By Budak Kitchen,,Kampung Kubang Miang,Restaurant,Other,3.0,Good (≥3.0★),4.763597,103.4086483,No,No,No,Yes,Yes,No,No,No,No,5,Western & Fusion Food,72.3,17.06,5.55
+Mee Sup Celup Warisan,,Taman Pantai,Restaurant,Other,5.0,Excellent (≥4.5★),4.7552904,103.421724099999,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,82.59,5.0,3.58
+Nasi Ayam Hainan Sue'S Style,,Kuala Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),4.7543488,103.4193774,No,No,No,No,No,No,No,No,No,1,Overall Dining Experience,78.34,5.94,4.69
+Restaurant Saiful 21,,Kuala Terengganu,Restaurant,Other,1.0,Below Average (<3.0★),4.7540436,103.4153966,No,No,No,No,Yes,No,No,No,No,1,Overall Dining Experience,77.01,13.94,4.64
+Acid Dungun Corner,,Kampung Pak Sabah,Restaurant,Other,4.0,Very Good (≥4.0★),4.7573617,103.4035816,No,No,No,No,No,No,No,No,No,5,Western & Fusion Food,74.38,16.76,2.95
+Warung No 5,,Kampung Sura Gate,Breakfast Restaurant,Cafe,4.0,Very Good (≥4.0★),4.7546611,103.4151859,No,No,No,No,No,No,No,No,No,2,Traditional Malay Food,65.87,16.68,12.11
+Warung Resepi Gugel,,Jalan Sura Gate,Seafood Restaurant,Seafood,5.0,Excellent (≥4.5★),4.7560281,103.418503,No,No,No,No,No,No,No,No,No,1,Overall Dining Experience,71.73,18.01,3.21
+Hi Bob/Uncle Bob Fried Chicken,,Taman Pantai,Fast Food Restaurant,Fast Food,5.0,Excellent (≥4.5★),4.755292,103.4215322,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,69.31,17.9,6.34
+Satay Adi,,Batu 48,Restaurant,Other,5.0,Excellent (≥4.5★),4.7504522,103.416241599999,No,No,No,No,No,No,No,No,No,2,Traditional Malay Food,57.22,36.06,2.32
+Ayam Gepuk Pak Gembus,,Mukim,Asian Restaurant,Asian,1.0,Below Average (<3.0★),4.7547871,103.419761799999,No,No,No,No,No,Yes,No,Yes,No,1,Overall Dining Experience,73.56,14.58,6.62
+Warung Dee Roti Canai,,Dungun,Breakfast Restaurant,Cafe,4.0,Very Good (≥4.0★),4.7428779,103.412302,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,68.21,22.01,3.05
+Ayam Penyet Ap,,Jalan Bukit Pak Sabah,Restaurant,Other,2.0,Below Average (<3.0★),4.75642219999999,103.4043647,No,No,No,No,No,No,No,No,No,1,Overall Dining Experience,89.24,2.77,2.41
+Nasi Dagang Sapa Malam,,Taman Raya,Restaurant,Other,5.0,Excellent (≥4.5★),4.74891949999999,103.4149126,No,No,No,No,No,No,No,No,No,6,Seafood & Local Snacks,64.17,20.32,7.15
+Nasi Dagang Pok Yusop,,Kuala Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),4.7555834,103.415808,No,No,No,No,No,No,No,No,No,2,Traditional Malay Food,58.18,27.34,8.05
+Sudu Garfu,,Kuala Terengganu,Restaurant,Other,4.0,Very Good (≥4.0★),4.7534737,103.4150214,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Sambalado Corner & Biryani Damsyiq,,Jalan Yahya Ahmad,Restaurant,Other,5.0,Excellent (≥4.5★),4.7541804,103.416097999999,No,No,No,No,No,No,No,No,No,2,Traditional Malay Food,56.07,39.1,1.84
+Dessert Singgit,,Dungun,Restaurant,Other,5.0,Excellent (≥4.5★),4.7550707,103.4222221,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Satey Norizan,,Kampung Alor Tembesu,Restaurant,Other,5.0,Excellent (≥4.5★),4.7498369,103.411263699999,No,No,No,No,No,No,No,No,No,2,Traditional Malay Food,85.62,4.27,3.05
+Ah Wah Pan Mee Pasar,,Dungun,Breakfast Restaurant,Cafe,5.0,Excellent (≥4.5★),4.7786816,103.4214918,No,No,No,No,No,No,No,No,No,5,Western & Fusion Food,67.95,19.27,3.82
+Dgn Point,,"49, Jalan Besar",Restaurant,Other,3.0,Good (≥3.0★),4.7425995,103.4176708,No,No,No,No,Yes,Yes,No,Yes,No,4,Malay Review Sentiment,71.62,13.11,8.19
+Akok Open Bako Dlm Van,,Dungun,Restaurant,Other,5.0,Excellent (≥4.5★),4.7551437,103.4184351,No,No,No,No,No,No,No,No,No,6,Seafood & Local Snacks,73.04,16.69,3.15
+Roti Jala House,,Dungun,Restaurant,Other,5.0,Excellent (≥4.5★),4.7554674,103.413411799999,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,85.19,4.25,3.04
+Kampung Burger Cawangan Dungun Cawangan 2 Taman Poket (Arena Square),,Dungun,Fast Food Restaurant,Fast Food,5.0,Excellent (≥4.5★),4.769273,103.4180616,No,No,No,No,No,No,No,No,No,5,Western & Fusion Food,44.62,44.07,4.25
+Riverbank Dungun Guesthouse & Caf,,Jalan Rajawali,Restaurant,Other,5.0,Excellent (≥4.5★),4.7850823,103.4205046,No,No,No,Yes,No,No,Yes,Yes,Yes,1,Overall Dining Experience,65.75,24.14,6.86
+Warung D'Selekoh,,Taman Raya,Restaurant,Other,5.0,Excellent (≥4.5★),4.75220479999999,103.4169299,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Qimily Celup Tepung,,Kampung Sura Gate,Asian Restaurant,Asian,3.0,Good (≥3.0★),4.7458633,103.425802499999,No,No,No,No,Yes,No,Yes,No,No,6,Seafood & Local Snacks,68.08,21.44,7.53
+Siakap Garing Cili Songkhla,,"Batu 48, Jalan Paka",Restaurant,Other,5.0,Excellent (≥4.5★),4.7504031,103.4147885,No,Yes,No,No,No,No,Yes,No,No,1,Overall Dining Experience,62.33,20.76,9.09
+D' Apple Fried Chicken,,Dungun,Chicken Restaurant,Fast Food,5.0,Excellent (≥4.5★),4.75502609999999,103.414445,No,Yes,No,No,Yes,No,Yes,Yes,No,4,Malay Review Sentiment,77.76,16.4,3.68
+Bana Burger,,Jalan Baru Pak Sabah,Hawker Stall,Malay,5.0,Excellent (≥4.5★),4.7551375,103.414793199999,Yes,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Char Kuey Teow Orang Mude By Fz Corner,,Taman Raya,Asian Restaurant,Asian,5.0,Excellent (≥4.5★),4.747055,103.415505,No,No,No,No,No,No,No,No,No,1,Overall Dining Experience,85.39,4.06,3.18
+Jubille Nasi Ayam,,Kuala Terengganu,Hawker Stall,Malay,5.0,Excellent (≥4.5★),4.748796,103.412301,Yes,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,59.79,28.41,9.63
+Kedai Makan Pak Sabah,,Dungun,Asian Restaurant,Asian,5.0,Excellent (≥4.5★),4.7558039,103.409815999999,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Kedai Makan Maidam Kak Ton,,Jalan Teluk Lipat,Breakfast Restaurant,Cafe,5.0,Excellent (≥4.5★),4.76001319999999,103.421927099999,No,No,No,No,No,No,No,No,No,2,Traditional Malay Food,57.02,29.45,8.5
+Kedai Makan Tomyam Pok Tek,,Kampung Pak Sabah,Restaurant,Other,3.0,Good (≥3.0★),4.74605219999999,103.4092017,No,Yes,No,Yes,No,No,No,Yes,No,4,Malay Review Sentiment,57.44,26.3,4.93
+Mee Sup Sue Bunga,,Dungun,Asian Restaurant,Asian,5.0,Excellent (≥4.5★),4.7539763,103.4169007,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,53.08,26.91,15.39
+"Kedai Makan Sup Tulang Dan Sup Belut,Amz Mudahkire Ent.",,Dungun,Restaurant,Other,1.0,Below Average (<3.0★),4.756116,103.405581399999,No,No,No,Yes,Yes,No,No,Yes,No,4,Malay Review Sentiment,74.06,16.45,6.22
+Keda Makang Mamamia,,Dungun,Restaurant,Other,5.0,Excellent (≥4.5★),4.7542835,103.4143624,No,No,No,Yes,Yes,No,No,No,No,4,Malay Review Sentiment,71.79,16.9,6.26
+Dungun,,Dungun,Restaurant,Other,1.0,Below Average (<3.0★),4.75853349999999,103.4139313,No,No,No,No,No,No,No,No,No,1,Overall Dining Experience,66.5,8.08,7.66
+Seroja Indah Resepi,,Kampung Cacar,Malaysian Restaurant,Malay,5.0,Excellent (≥4.5★),4.6193982,103.444759699999,Yes,No,No,Yes,No,No,Yes,No,No,6,Seafood & Local Snacks,55.79,26.1,11.2
+Pejabat Belia Dan Sukan Daerah,,Kampung Pak Sabah,Restaurant,Other,4.0,Very Good (≥4.0★),4.7461348,103.409569199999,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,69.95,11.54,8.09
+Goreng Pisang Crispy Gong Pasir Dungun( Gpc ),,Kampung Gong Pasir,Fast Food Restaurant,Fast Food,5.0,Excellent (≥4.5★),4.7489507,103.4111653,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Dungun Check Point,,Dungun,Restaurant,Other,4.0,Very Good (≥4.0★),4.7675247,103.4198643,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Shandong Restaurant,,Lorong Nibung Stesen 6,Restaurant,Other,5.0,Excellent (≥4.5★),4.7591806,103.4107911,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Goreng Pisang Nge Kuih Mokcik Jaroh,,Kampung Sura,Restaurant,Other,4.0,Very Good (≥4.0★),4.7536939,103.4123262,No,No,No,No,No,No,No,No,No,2,Traditional Malay Food,75.25,11.05,5.64
+Warung Kak Da,,Kuala Terengganu,Hawker Stall,Malay,5.0,Excellent (≥4.5★),4.7546235,103.4144833,Yes,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,84.63,8.39,5.65
+Dungun Check Point And Services Cafe,,Kampung Teluk Lipat,Family Restaurant,Family,5.0,Excellent (≥4.5★),4.76185709999999,103.4187595,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Papa Teh Dine & Chill - Port Laksa Penang Padu Di Terengganu !,,Kampung Sura Tengah,Restaurant,Other,5.0,Excellent (≥4.5★),4.73340849999999,103.430585499999,No,No,No,No,Yes,Yes,Yes,No,No,1,Overall Dining Experience,57.56,27.58,10.12
+Plato Cafe,,"41, Jalan Mustaffa",Asian Restaurant,Asian,5.0,Excellent (≥4.5★),4.7685799,103.4183762,No,No,No,No,Yes,No,No,No,No,2,Traditional Malay Food,60.18,25.05,7.29
+Derak Cafe,,"Batu 49, Jalan Paka",Restaurant,Other,5.0,Excellent (≥4.5★),4.7396186,103.4187474,No,No,No,Yes,No,No,No,No,No,1,Overall Dining Experience,69.18,22.6,4.49
+Dungun Yong Tau Fuu (Balai Besar),,Malaysia,Restaurant,Other,5.0,Excellent (≥4.5★),4.7343367,103.412398799999,No,No,No,Yes,Yes,No,No,No,No,1,Overall Dining Experience,75.75,12.13,4.49
+Hotel Uitm,,Kampung Sura Hujung,Hotel,Other,4.0,Very Good (≥4.0★),4.707774,103.441058,No,No,No,Yes,Yes,Yes,Yes,Yes,Yes,1,Overall Dining Experience,53.07,31.24,10.72
+Stesen Celup Tepung Pata,,Dungun,Restaurant,Other,1.0,Below Average (<3.0★),4.74946229999999,103.4245244,No,No,No,No,No,No,Yes,No,No,4,Malay Review Sentiment,73.59,16.57,4.93
+Taman Teluk Lipat,,Kuala Terengganu,Restaurant,Other,3.0,Good (≥3.0★),4.75974519999999,103.4196145,No,No,No,No,No,No,Yes,No,No,6,Seafood & Local Snacks,85.84,4.41,3.06
+Warung Tok Yeh,,Kuala Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),4.7538617,103.419427,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,74.65,7.27,5.21
+Ayam Gepuk Ag ( Cawangan Dungun ),,Taman Sufa,Indonesian Restaurant,Indonesian,3.0,Good (≥3.0★),4.75579259999999,103.4191816,Yes,No,No,No,No,Yes,No,Yes,No,4,Malay Review Sentiment,69.55,25.27,3.28
+Sheikh Syed Mohamad Restaurant,,Dungun,Malaysian Restaurant,Malay,5.0,Excellent (≥4.5★),4.7555102,103.412245,Yes,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+The Retreat Tanjung Jara,,Kampung Kubang Putat,Lodging,Other,1.0,Below Average (<3.0★),4.80093959999999,103.4278416,No,No,No,No,Yes,No,Yes,Yes,No,1,Overall Dining Experience,68.49,22.4,6.88
+Kedai Keropok Lekor Gong Pasir,,Kampung Gong Pasir Jabi,Restaurant,Other,4.0,Very Good (≥4.0★),4.74583529999999,103.4096295,No,No,No,No,No,No,No,No,No,1,Overall Dining Experience,63.24,24.97,3.89
+Jemput Singgoh,,Kampung Paya,Restaurant,Other,5.0,Excellent (≥4.5★),4.7418251,103.4129854,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Patin Tempoyak Resipi Ori Temerloh,,Kampung Sura Pantai,Restaurant,Other,5.0,Excellent (≥4.5★),4.75359169999999,103.4234919,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Nasi Kukus A&A ( ),,Kuala Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),4.7548276,103.4196372,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,71.08,27.14,0.63
+Shawarma Habibiy,,Dungun,Hawker Stall,Malay,5.0,Excellent (≥4.5★),4.7589042,103.4178807,Yes,No,No,Yes,No,No,No,No,No,4,Malay Review Sentiment,73.6,15.89,4.51
+Roti Canai Pok Weil,,Kampung Pak Sabah,Restaurant,Other,4.0,Very Good (≥4.0★),4.7560839,103.4099348,No,No,No,No,No,No,No,No,No,2,Traditional Malay Food,59.27,28.51,4.25
+Burger Siang Hari,,Taman Sufa,Restaurant,Other,5.0,Excellent (≥4.5★),4.7560369,103.417288,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Warung Boye,,Jalan Alor Tembesu,Restaurant,Other,5.0,Excellent (≥4.5★),4.75583629999999,103.414907399999,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Burger Sura Gate -Beger Bijork King,,Jalan Haji Zainal Abidin,Restaurant,Other,5.0,Excellent (≥4.5★),4.7572274,103.416789299999,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Restoran Dapur Cikgu,,Dungun,Restaurant,Other,5.0,Excellent (≥4.5★),4.7554053,103.413018499999,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Gemilang International (M) Sdn. Bhd.,,Dungun,Halal Restaurant,Other,5.0,Excellent (≥4.5★),4.7546684,103.4149358,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Nara Tomyam,,Kuala Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),4.7556711,103.410841499999,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Ayam Gepuk Ibuk Bapak,,Dungun,Indonesian Restaurant,Indonesian,1.0,Below Average (<3.0★),4.7521172,103.4156115,Yes,No,No,No,No,No,No,No,No,1,Overall Dining Experience,65.23,19.5,12.14
+Medan Selera No. 8,,Dungun,Restaurant,Other,5.0,Excellent (≥4.5★),4.75892489999999,103.4172541,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Nasi Kerabu,,"2300, Darul Iman",Asian Restaurant,Asian,5.0,Excellent (≥4.5★),4.7435702,103.4233678,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Master Pisang,,Kampung Sura Gate,Family Restaurant,Family,1.0,Below Average (<3.0★),4.7552493,103.418908,No,No,No,No,Yes,No,No,No,No,4,Malay Review Sentiment,74.95,19.22,3.82
+Rahmatt Tomyam,,Kuala Terengganu,Thai Restaurant,Thai,3.0,Good (≥3.0★),4.753286,103.415021799999,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,70.86,16.94,5.18
+Pawang Corner Char Kuey Teow,,Taman Raya,Fast Food Restaurant,Fast Food,4.0,Very Good (≥4.0★),4.7500992,103.4152934,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Ngk,,Kampung Alor Tembesu,Restaurant,Other,5.0,Excellent (≥4.5★),4.75606499999999,103.416116,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+D.Juicylicious Kedai Air Buoh,,Dungun,Family Restaurant,Family,5.0,Excellent (≥4.5★),4.7537863,103.4120185,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Kedai Mee Sup Matsaid,,Kampung Pak Sabah,Restaurant,Other,2.0,Below Average (<3.0★),4.7545152,103.4070879,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Kedai Pak Sabah Frozen,,Kampung Sura,Restaurant,Other,5.0,Excellent (≥4.5★),4.75419949999999,103.412154199999,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Thai Seafood Tomyam Kelapa,,Kampung Teluk Lipat,Restaurant,Other,5.0,Excellent (≥4.5★),4.7618994,103.420395899999,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Aedeliciouspizza &Burgerstation,,Taman Pantai,Fast Food Restaurant,Fast Food,5.0,Excellent (≥4.5★),4.75495899999999,103.420728799999,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Roti Canai Pokcik,,Taman Sufa,Family Restaurant,Family,5.0,Excellent (≥4.5★),4.755375,103.418914199999,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Nasi Kerabu Mat Anip,,Batu 48,Asian Restaurant,Asian,5.0,Excellent (≥4.5★),4.7528367,103.4150564,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Gtr Burger Kg Kubang Miang,,Kuala Terengganu,Fast Food Restaurant,Fast Food,5.0,Excellent (≥4.5★),4.7565367,103.4070417,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Tokmie Nasi Dagang,,Kampung Pak Sabah,Malaysian Restaurant,Malay,5.0,Excellent (≥4.5★),4.754891,103.408763999999,Yes,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Thesona Yong Tau Foo,,Jln Gong Pasir,Restaurant,Other,5.0,Excellent (≥4.5★),4.75045999999999,103.409301899999,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Warong Tomyam Ikan 4S,,Unknown,Restaurant,Other,4.0,Very Good (≥4.0★),5.0727655,103.046082599999,No,No,No,Yes,No,No,No,No,No,1,Overall Dining Experience,60.79,26.05,7.71
+Kb Rampai Restaurant,,Kampung Batu 24,Restaurant,Other,5.0,Excellent (≥4.5★),5.0735518,103.0299704,No,No,No,No,Yes,Yes,No,No,No,1,Overall Dining Experience,68.31,17.04,8.73
+Erra Restoran,,Hulu Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),5.0719286,103.0258229,No,No,No,No,Yes,No,No,No,No,2,Traditional Malay Food,61.9,20.1,8.33
+Warung Mr.Baung,,Hulu Terengganu,Restaurant,Other,4.0,Very Good (≥4.0★),5.172039,102.8333883,No,Yes,No,Yes,No,Yes,No,No,No,6,Seafood & Local Snacks,68.87,21.42,6.75
+Warung Mek Lamah - Masakan Dapur Kayu,,Kampung Dusun,Restaurant,Other,5.0,Excellent (≥4.5★),5.0670429,102.9452467,No,No,No,Yes,No,No,No,No,No,6,Seafood & Local Snacks,68.39,21.16,5.56
+Keropok Lekor Kuala Berang (Kb Leko Hq),,Kg Batu 24,Fish & Chips Restaurant,Western,5.0,Excellent (≥4.5★),5.07273109999999,103.0249381,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,64.7,22.64,8.09
+Cpn Restaurant,,Kampung Batu 24,Restaurant,Other,5.0,Excellent (≥4.5★),5.0727952,103.0248532,No,No,No,Yes,No,No,No,No,No,6,Seafood & Local Snacks,60.56,29.33,7.29
+Restoran Sup Sri Adidah,,Kuala Terengganu,Malaysian Restaurant,Malay,4.0,Very Good (≥4.0★),5.0765687,103.0979569,Yes,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,72.56,13.9,4.14
+Surimu Coffee House,,Kampung Batu 23,Western Restaurant,Western,5.0,Excellent (≥4.5★),5.07229529999999,103.0460313,No,No,No,No,No,No,Yes,Yes,No,5,Western & Fusion Food,66.81,17.88,10.76
+Umira Nasi Kukus Kuala Berang,,Hulu Terengganu,Restaurant,Other,4.0,Very Good (≥4.0★),5.0731456,103.0220969,No,No,No,No,No,No,No,No,No,1,Overall Dining Experience,66.82,16.49,6.31
+Murtabak Rusa Warisan Kota Temir,,Hulu Terengganu,Asian Restaurant,Asian,2.0,Below Average (<3.0★),5.0657833,102.9567261,No,No,No,Yes,Yes,No,Yes,No,No,4,Malay Review Sentiment,70.38,19.76,6.38
+Laila Restaurant,,Batu 22,Thai Restaurant,Thai,5.0,Excellent (≥4.5★),5.0720272,103.052519499999,No,No,No,No,No,No,No,No,No,1,Overall Dining Experience,72.26,16.12,5.05
+Dinung Cafe,,"No 4, Jalan Taman Tiras",Cafe,Cafe,5.0,Excellent (≥4.5★),5.073367,103.0238897,No,No,No,No,No,No,Yes,No,No,4,Malay Review Sentiment,67.11,23.24,5.72
+Fatehah & Family Corner,,Hulu Terengganu,Restaurant,Other,4.0,Very Good (≥4.0★),5.0735971,103.017224,No,No,No,Yes,No,No,No,No,No,6,Seafood & Local Snacks,59.36,28.89,6.48
+Cuyie Restaurant,,Hulu Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),5.0719991,103.0254073,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Ban Munok Cafe,,Hulu Terengganu,Restaurant,Other,2.0,Below Average (<3.0★),5.073333,103.0241288,No,No,No,No,Yes,No,No,Yes,No,1,Overall Dining Experience,65.84,23.2,5.86
+Pak Tam Restoran,,Kampung Rahmat,Asian Restaurant,Asian,4.0,Very Good (≥4.0★),5.0744291,103.020663399999,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,64.9,25.31,3.26
+D'Payang Kitchen,,Bukit Tok Bat,Restaurant,Other,5.0,Excellent (≥4.5★),5.0731405,103.0262242,No,No,No,No,No,No,No,No,No,1,Overall Dining Experience,70.65,15.6,4.86
+Restoran Kak Zah,,Kampung Batu 24,Restaurant,Other,4.0,Very Good (≥4.0★),5.0727034,103.025824899999,No,No,No,Yes,Yes,No,No,No,No,3,Location & Ambiance,61.08,27.16,4.98
+Famous Fried Chicken,,Hulu Terengganu,Fast Food Restaurant,Fast Food,5.0,Excellent (≥4.5★),5.0733266,103.020844,No,No,No,Yes,Yes,No,Yes,No,No,1,Overall Dining Experience,74.11,15.05,6.2
+The Payek Cafe,,Taman Bestari Gong Badak,Western Restaurant,Western,5.0,Excellent (≥4.5★),5.3970077,103.074787899999,No,No,No,Yes,No,No,No,No,No,1,Overall Dining Experience,66.37,18.24,7.2
+Baba Tomyam Restaurant,,Kampung Batu 24,Thai Restaurant,Thai,5.0,Excellent (≥4.5★),5.0734324,103.0232212,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Eyka Seafood Restoran,,Jln Stesen Bas Lama,Restaurant,Other,5.0,Excellent (≥4.5★),5.07090459999999,103.0118408,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,79.86,9.14,4.08
+Rancabali Cafe,,Hulu Terengganu,Restaurant,Other,3.0,Good (≥3.0★),5.07136599999999,103.035029,No,No,No,No,No,No,No,No,No,2,Traditional Malay Food,55.65,38.97,1.86
+Kfc Kuala Berang,,"Taman, Jalan Sungai Bajar",Fast Food Restaurant,Fast Food,5.0,Excellent (≥4.5★),5.07381109999999,103.021602699999,No,No,No,No,Yes,No,No,No,No,1,Overall Dining Experience,68.0,19.23,6.11
+Restoran Polis Evo,,Kuala Terengganu,Restaurant,Other,3.0,Good (≥3.0★),5.0818373,103.0259241,No,No,No,No,No,No,No,No,No,1,Overall Dining Experience,68.89,25.53,2.54
+K Ilah,,Kuala Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),5.07716829999999,103.016789899999,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,52.56,31.9,5.36
+Lantana Char Kuetiau & Mi Rebus,,Banggol Rotan Saga,Asian Restaurant,Asian,5.0,Excellent (≥4.5★),5.0792657,103.019809,No,No,No,No,No,No,No,No,No,5,Western & Fusion Food,46.4,45.23,3.06
+Sahabatku Restoran,,Hulu Terengganu,Restaurant,Other,3.0,Good (≥3.0★),5.0732434,103.013819,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,74.65,7.27,5.21
+Selera Nasi Kukus,,Hulu Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),5.0734601,103.0313834,No,No,No,Yes,No,No,No,No,No,1,Overall Dining Experience,63.07,22.07,7.69
+Nasi Kunyit Soru,,Hulu Terengganu,Asian Restaurant,Asian,5.0,Excellent (≥4.5★),5.0732057,103.014150199999,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,52.58,31.88,5.36
+Amr Char Koteaw,,Hulu Terengganu,Asian Restaurant,Asian,5.0,Excellent (≥4.5★),5.0734808,103.0107891,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,66.96,25.88,2.56
+Coconut Shake Kuala Berang,,Jalan Taman Kenanga,Hawker Stall,Malay,5.0,Excellent (≥4.5★),5.0738926,103.0200005,Yes,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+K Restoran Kak Nur,,Hulu Terengganu,Restaurant,Other,1.0,Below Average (<3.0★),5.0725204,103.011524999999,No,No,No,No,Yes,No,Yes,No,No,1,Overall Dining Experience,65.74,20.24,4.64
+Rumah Singgah Cafe,,Kampung Batu 24,Restaurant,Other,1.0,Below Average (<3.0★),5.0713989,103.0349655,No,No,No,Yes,No,No,No,No,No,4,Malay Review Sentiment,59.78,28.26,10.16
+Senor Corner,,Hulu Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),5.07261549999999,103.0261785,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,73.2,16.35,3.38
+Garasi Cafe,,Kampung Lebak,Restaurant,Other,5.0,Excellent (≥4.5★),5.0569814,103.014451499999,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,85.19,4.25,3.04
+Kedai Sikyang Wiwa Fc,,"Lot 6568, Jalan",Restaurant,Other,5.0,Excellent (≥4.5★),5.07262149999999,103.0294141,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,63.87,27.55,2.76
+Roti Sarang Burung,,Hulu Terengganu,Restaurant,Other,4.0,Very Good (≥4.0★),5.0561763,103.001851,No,No,No,No,No,No,No,No,No,3,Location & Ambiance,56.36,25.65,11.71
+Pok Tam Western,,Hulu Terengganu,Western Restaurant,Western,3.0,Good (≥3.0★),5.074285,103.0206204,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,90.13,2.9,2.01
+Warung Jawa,,Kampung Kuala Pueh,Restaurant,Other,5.0,Excellent (≥4.5★),5.0657461,102.9377892,No,No,No,No,No,No,No,No,No,2,Traditional Malay Food,57.68,27.51,8.03
+Roti Binjai Legend (Kayu Keramat Gergasi),,Kampung Buluh,Restaurant,Other,5.0,Excellent (≥4.5★),5.0579298,103.0058184,No,No,No,No,Yes,No,No,No,No,5,Western & Fusion Food,67.28,18.24,10.38
+Der Okb Catering Restaurant,,Hulu Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),5.0731642,103.036782399999,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,79.87,7.83,3.65
+Warung Villa Lebak,,Hulu Terengganu,Restaurant,Other,4.0,Very Good (≥4.0★),5.0587851,103.0177868,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,66.2,23.51,4.39
+Dsobrie,,Kampung Buluh,Restaurant,Other,5.0,Excellent (≥4.5★),5.0705472,103.0119576,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,87.74,3.52,2.52
+Chang Wang Restaurant,,Hulu Terengganu,Chinese Restaurant,Chinese,1.0,Below Average (<3.0★),5.0733847,103.011750999999,No,No,No,No,No,No,No,No,No,1,Overall Dining Experience,41.71,27.52,9.3
+Rr Station,,Bandar,Restaurant,Other,1.0,Below Average (<3.0★),5.0706542,103.011985099999,No,No,No,No,No,No,No,No,No,5,Western & Fusion Food,30.09,29.86,28.93
+Sri Tanjung Seafood,,Hulu Terengganu,Restaurant,Other,2.0,Below Average (<3.0★),5.0846635,103.0255622,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,72.43,16.73,6.14
+Restoran Man Mee Udang,,Hulu Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),5.0774386,103.0734394,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Dapple Fried Chicken Kuala Berang,,Hulu Terengganu,Fast Food Restaurant,Fast Food,5.0,Excellent (≥4.5★),5.0705136,103.012458799999,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,85.05,8.78,2.82
+Warung Cik Yah,,Hulu Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),5.0619036,103.0188391,No,No,No,No,No,No,No,No,No,2,Traditional Malay Food,79.99,5.85,4.18
+Restoran Azimah,,Kampung Batu 24,Restaurant,Other,5.0,Excellent (≥4.5★),5.0732861,103.028049099999,No,No,No,No,No,No,No,No,No,2,Traditional Malay Food,78.8,12.56,3.0
+Rojak Kateh Madu Dapur Arang,,Kampung Bukit Tok Bat,Restaurant,Other,2.0,Below Average (<3.0★),5.0763234,103.028349499999,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,60.65,11.29,8.08
+Warung Norazila Selera Kampung,,Kuala Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),5.31739439999999,103.1339028,No,No,No,No,No,No,No,No,No,5,Western & Fusion Food,68.16,18.95,5.77
+Warung Family Tieypyan,,Hulu Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),5.0623916,103.008067099999,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Mei Fong Curry Noodles,,Kampung Banggul,Noodle Shop,Malay,3.0,Good (≥3.0★),5.333011,103.1327719,Yes,Yes,No,No,Yes,Yes,No,Yes,No,5,Western & Fusion Food,62.12,27.15,8.44
+Churros Kuala Berang By Orked Dchurros,,Kampung Batu 24,Hawker Stall,Malay,5.0,Excellent (≥4.5★),5.0731781,103.027469099999,Yes,No,No,No,No,No,No,Yes,No,4,Malay Review Sentiment,51.44,28.21,14.07
+Nasi Dagang Corner,,Kampung Batu 24,Restaurant,Other,4.0,Very Good (≥4.0★),5.0736425,103.0257092,No,No,No,Yes,No,No,No,No,No,1,Overall Dining Experience,79.46,10.87,2.96
+Warung Bakso Pok Daud,,Tg Putat,Asian Restaurant,Asian,5.0,Excellent (≥4.5★),5.0585444,103.014327099999,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Gerai Makan Tiang Kayu,,Hulu Terengganu,Restaurant,Other,3.0,Good (≥3.0★),5.0640407,103.0193862,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,81.3,5.36,3.84
+Aima Grill Fish Restaurant,,Unknown,Restaurant,Other,5.0,Excellent (≥4.5★),5.78350009999999,103.013092,No,No,No,No,No,No,Yes,Yes,No,6,Seafood & Local Snacks,69.18,22.78,4.94
+Nasi Bajet Bawah Jejantas,,Kampung Batu 24,Restaurant,Other,5.0,Excellent (≥4.5★),5.0733242,103.028747099999,No,No,No,No,No,No,No,No,No,2,Traditional Malay Food,62.44,32.29,1.83
+Juara Menu Desa,,Hulu Terengganu,Restaurant,Other,4.0,Very Good (≥4.0★),5.0693056,103.020345499999,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Warung Rakaf,,Hulu Terengganu,Restaurant,Other,3.0,Good (≥3.0★),5.0728824,103.027495199999,No,No,No,No,No,No,No,No,No,1,Overall Dining Experience,84.06,3.85,3.65
+Warung Pokmat,,Kampung Buluh,Diner,Western,5.0,Excellent (≥4.5★),5.0617689,103.0071256,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,90.88,2.62,1.87
+Ayam Gepuk Pak Zayn,,Kampung Batu 24,Asian Restaurant,Asian,5.0,Excellent (≥4.5★),5.07326249999999,103.021846599999,No,No,No,No,No,No,No,No,No,5,Western & Fusion Food,40.74,38.91,19.1
+Viena Kunafa,,Hulu Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),5.072901,103.014851999999,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,84.83,4.6,3.05
+Nasi Ayam Kampung D Anie,,Kampung Lebak,Restaurant,Other,5.0,Excellent (≥4.5★),5.0606525,103.018323299999,No,No,No,No,No,No,No,No,No,2,Traditional Malay Food,80.42,9.28,3.21
+Yy Coffe,,Kampung Lebak,Restaurant,Other,5.0,Excellent (≥4.5★),5.0717953,103.0254262,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Rumah Abah,,Hulu Terengganu,Family Restaurant,Family,5.0,Excellent (≥4.5★),5.05771829999999,102.9993739,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Hulu Terengganu District Council,,Hulu Terengganu,Local Government Office,Other,4.0,Very Good (≥4.0★),5.0731148,103.009256499999,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,72.83,15.24,7.1
+The Sosej 'Sedak Nunggeng',,Hulu Terengganu,Thai Restaurant,Thai,5.0,Excellent (≥4.5★),5.0732935,103.014655199999,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Kedai Nasi Belauk Bawah Pokok,,Hulu Terengganu,Breakfast Restaurant,Cafe,3.0,Good (≥3.0★),5.0709855,103.0120967,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Samurai Street Burger,,Pekan,Hamburger Restaurant,Western,5.0,Excellent (≥4.5★),5.0738911,103.0172017,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,80.66,11.89,2.87
+Kedai Ayam Gunting Cikman,,Kampung Batu 24,Fried Chicken Takeaway,Other,5.0,Excellent (≥4.5★),5.0729352,103.0284016,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Milan Satay Seafood And Drinks,,Jalan Besar,Restaurant,Other,1.0,Below Average (<3.0★),5.0732997,103.0169683,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,77.47,16.67,3.03
+Kantin Depoh Jkr,,Kampung Batu 24,Restaurant,Other,5.0,Excellent (≥4.5★),5.0743208,103.0218677,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Warung Selera Libas,,Kuala Terengganu,Restaurant,Other,4.0,Very Good (≥4.0★),5.0791952,103.0221466,No,No,No,No,Yes,No,No,No,No,4,Malay Review Sentiment,60.61,24.01,8.67
+Warung Batu Bersurat,,Kampung Buluh,Restaurant,Other,5.0,Excellent (≥4.5★),5.05619169999999,103.0034489,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Teratak Bonda,,Kampung Bukit Tok Bat,Restaurant,Other,5.0,Excellent (≥4.5★),5.0746348,103.018246699999,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Kedai Warung Mek,,Jalan Seri Berang,Malaysian Restaurant,Malay,5.0,Excellent (≥4.5★),5.0791854,103.0202762,Yes,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Geraialong Warongkampong,,Hulu Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),5.0636052,103.007744399999,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Nasi Kerabu Kufa,,Hulu Terengganu,Breakfast Restaurant,Cafe,5.0,Excellent (≥4.5★),5.07350859999999,103.013975199999,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,64.41,22.69,4.06
+Restaurant Stuff Crab,,Kampung Dusun Nyior,Restaurant,Other,5.0,Excellent (≥4.5★),4.23135109999999,103.4282899,No,No,No,Yes,No,No,Yes,No,No,6,Seafood & Local Snacks,63.65,21.44,11.28
+Warung Mee Rebus Telur Masin,,Kampung Buluh,Meat Dish Restaurant,Other,5.0,Excellent (≥4.5★),5.062556,103.007505999999,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Roti Canai Sedap Padu,,Hulu Terengganu,Breakfast Restaurant,Cafe,1.0,Below Average (<3.0★),5.0734144,103.0155192,No,No,No,No,No,No,No,Yes,No,4,Malay Review Sentiment,80.62,8.31,6.56
+Aminah Nasi Dagang,,Hulu Terengganu,Breakfast Restaurant,Cafe,5.0,Excellent (≥4.5★),5.07238809999999,103.012408799999,No,No,No,No,No,No,No,No,No,2,Traditional Malay Food,59.13,33.71,2.15
+Warung Kak Ani Kg Temir,,Kampung Temir,Fast Food Restaurant,Fast Food,5.0,Excellent (≥4.5★),5.06325519999999,102.9578701,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Nia Cafe,,Malaysia,Cafe,Cafe,5.0,Excellent (≥4.5★),5.89315349999999,102.7387122,No,No,No,No,Yes,No,Yes,No,No,1,Overall Dining Experience,54.27,28.18,12.31
+Nasi Kukus Sedap Awek Comey,,"Lot 11500, Gertak Serong",Family Restaurant,Family,5.0,Excellent (≥4.5★),5.07323149999999,103.0281042,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Amin Nasi Kerabu,,Kampung Berang,Family Restaurant,Family,5.0,Excellent (≥4.5★),5.0741765,103.0039731,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Suite18 Boutique Hotel,,Kampung Banggul,Hotel,Other,5.0,Excellent (≥4.5★),5.3347457,103.1340908,No,No,No,Yes,Yes,No,No,Yes,No,1,Overall Dining Experience,59.97,32.16,5.0
+Pisang Cheese Zana,,Hulu Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),5.0609472,103.0069924,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Ayam Gepuk Sambal Bawang + Lada,,Hulu Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),5.0729956,103.0085209,No,No,No,No,No,No,No,No,No,2,Traditional Malay Food,65.45,20.37,7.12
+Felda Residence,,Kuala Terengganu,Hotel,Other,4.0,Very Good (≥4.0★),5.3286783,103.132502899999,No,No,No,No,No,No,Yes,No,No,1,Overall Dining Experience,73.98,13.41,8.87
+Roti John Abdul,,Hulu Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),5.0732861,103.0144751,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Warung Patin Tempoyak & Ulam Budu,,Hulu Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),5.073748,103.0192991,No,No,No,No,No,No,No,No,No,2,Traditional Malay Food,81.88,5.36,3.84
+Warung Family Nasi Kukus,,Kampung Bukit Kuang,Restaurant,Other,5.0,Excellent (≥4.5★),5.07635399999999,103.0184862,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+10 Pots Steamboat & Grill,,Jalan Raja Udang 2,Buffet Restaurant,Buffet,5.0,Excellent (≥4.5★),4.21697299999999,103.421652999999,No,No,No,No,No,No,No,No,No,1,Overall Dining Experience,80.16,13.61,2.05
+Tong Juan Restaurant,,Kampung Dusun Nyior,Chinese Restaurant,Chinese,5.0,Excellent (≥4.5★),4.23147239999999,103.428049,Yes,No,No,No,Yes,No,No,No,No,6,Seafood & Local Snacks,70.57,23.9,3.44
+4Fingers Crispy Chicken,,Bandar,Restaurant,Other,5.0,Excellent (≥4.5★),4.22375,103.419865899999,No,Yes,No,No,No,No,No,No,No,1,Overall Dining Experience,71.75,18.47,4.67
+Kakilima,,"Lot Belakang Dominos Pizza, Sebaris Dengan Doco Murah, Sebelah Butik Bokitta",Restaurant,Other,5.0,Excellent (≥4.5★),4.22499109999999,103.4207194,No,No,No,No,Yes,No,Yes,Yes,No,1,Overall Dining Experience,71.62,14.06,11.0
+Mamatin Kitchen,,Kampung Mak Lagam,Restaurant,Other,5.0,Excellent (≥4.5★),4.1923465,103.4100722,No,No,No,Yes,Yes,No,No,Yes,No,6,Seafood & Local Snacks,49.43,26.91,16.18
+Casa Dinda By Nostimo'S,,Kampung Gong Pauh,Restaurant,Other,5.0,Excellent (≥4.5★),4.2287786,103.4188496,No,No,No,Yes,No,No,No,No,No,1,Overall Dining Experience,69.88,22.69,3.64
+Secret Recipe,,Unknown,Restaurant,Other,5.0,Excellent (≥4.5★),4.2241222,103.4188174,No,No,No,Yes,No,No,No,No,No,1,Overall Dining Experience,71.13,20.03,3.94
+Steven Coffee House,,Malaysia,Restaurant,Other,5.0,Excellent (≥4.5★),4.2205201,103.4202112,No,Yes,No,Yes,Yes,No,No,No,No,1,Overall Dining Experience,62.44,27.52,7.8
+Banafsha,,Kampung Gong Pauh,Fast Food Restaurant,Fast Food,5.0,Excellent (≥4.5★),4.2345915,103.4189361,No,No,No,Yes,No,No,No,Yes,No,5,Western & Fusion Food,66.41,18.91,9.75
+Kemaman Station Kopitiam,,Taman Cukai Utama,Restaurant,Other,4.0,Very Good (≥4.0★),4.2214797,103.419178899999,No,No,No,Yes,Yes,No,Yes,Yes,No,1,Overall Dining Experience,69.83,20.77,4.53
+Sushi Kemaman (Sushi Ying),,Kampung Gong Pauh,Delivery Restaurant,Fast Food,2.0,Below Average (<3.0★),4.2313987,103.410151399999,No,No,No,No,No,No,No,No,No,1,Overall Dining Experience,67.6,19.07,5.4
+"Fuddrehab Chukai, Terengganu (Best Nasi Arab In Kemaman)",,Besut,Fusion Restaurant,Asian,5.0,Excellent (≥4.5★),4.2425261,103.4229713,No,No,No,Yes,No,No,Yes,No,No,5,Western & Fusion Food,61.93,23.99,10.43
+Layali Al Arab,,Taman Cukai Utama,Restaurant,Other,5.0,Excellent (≥4.5★),4.22038849999999,103.4204116,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,70.87,17.84,5.64
+Kampung Kitchen,,Kemaman,Restaurant,Other,5.0,Excellent (≥4.5★),4.2065158,103.4353603,No,No,No,Yes,No,No,Yes,No,No,6,Seafood & Local Snacks,75.55,14.47,4.89
+Restoran Tong Cheng,,Kemaman,Chinese Restaurant,Chinese,1.0,Below Average (<3.0★),4.228274,103.4272,No,No,No,No,Yes,No,No,No,No,6,Seafood & Local Snacks,65.5,27.3,4.98
+A&W,,Kampung Gong Pauh,Fast Food Restaurant,Fast Food,5.0,Excellent (≥4.5★),4.2332253,103.4216156,No,No,No,No,No,No,No,No,No,1,Overall Dining Experience,66.71,19.39,7.35
+Kedai Kopi Hai Peng,,Kampung Gong Pauh,Coffee Shop,Cafe,5.0,Excellent (≥4.5★),4.2347041,103.4218514,No,No,No,Yes,No,No,No,Yes,No,6,Seafood & Local Snacks,52.61,26.42,15.76
+Al-Baik Restoran,,Kampung Janda,Restaurant,Other,5.0,Excellent (≥4.5★),4.23099259999999,103.367326699999,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Restoran Laguna Ikan Bakar,,Kemaman,Restaurant,Other,1.0,Below Average (<3.0★),4.2058208,103.4386449,No,No,No,No,Yes,No,Yes,No,No,6,Seafood & Local Snacks,54.64,24.82,9.91
+Gerai D'Bira Bukit Geliga,,Kemaman,Restaurant,Other,5.0,Excellent (≥4.5★),4.2075398,103.433523999999,No,No,No,No,Yes,No,No,No,No,4,Malay Review Sentiment,71.42,21.99,2.77
+Restoran Guan Fatt,,Kampung Dusun Nyior,Restaurant,Other,4.0,Very Good (≥4.0★),4.2290629,103.4281994,No,No,No,Yes,No,No,No,No,No,1,Overall Dining Experience,65.72,20.25,9.45
+Leong Seafood Restaurant,,Kemaman,Restaurant,Other,5.0,Excellent (≥4.5★),4.22882839999999,103.426653899999,No,No,No,No,No,No,No,No,No,1,Overall Dining Experience,61.53,25.38,8.54
+Chubit Chubit Ikan Bakar Telok Kalong,,Kemaman,Family Restaurant,Family,5.0,Excellent (≥4.5★),4.28645699999999,103.4776071,No,Yes,No,Yes,No,No,Yes,No,No,1,Overall Dining Experience,49.0,33.0,11.71
+Galley,,Kemaman,Restaurant,Other,5.0,Excellent (≥4.5★),4.2510252,103.4243944,No,No,No,No,Yes,No,No,No,No,1,Overall Dining Experience,63.65,18.37,9.98
+Kedai Nasi Budu - Ani Selera Kampung,,Kuala Terengganu,Restaurant,Other,4.0,Very Good (≥4.0★),4.2224704,103.4362075,No,No,No,No,No,No,Yes,Yes,No,6,Seafood & Local Snacks,59.6,23.28,10.59
+Restoran Abu Nur,,Kemaman,Restaurant,Other,5.0,Excellent (≥4.5★),4.2450426,103.406690599999,No,No,No,Yes,No,No,No,No,No,4,Malay Review Sentiment,68.37,19.64,7.25
+Warung Aziz Satar,,Kampung Geliga Cik Akob,Restaurant,Other,4.0,Very Good (≥4.0★),4.2139554,103.4363358,No,No,No,Yes,No,No,Yes,Yes,No,6,Seafood & Local Snacks,49.28,28.25,13.34
+Kemaman Sizzling Hot Plate.,,Kampung Dusun Nyior,Restaurant,Other,4.0,Very Good (≥4.0★),4.23250999999999,103.427496999999,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,59.86,24.36,7.88
+Restaurant Farhan,,Jalan Cukai Utama 2,Restaurant,Other,5.0,Excellent (≥4.5★),4.22122809999999,103.418029699999,No,No,No,Yes,No,No,No,No,No,3,Location & Ambiance,54.95,27.05,12.5
+Miss Cabin Western Food,,Kampung Gong Limau,Western Restaurant,Western,5.0,Excellent (≥4.5★),4.2454547,103.4139938,No,No,No,Yes,No,No,No,Yes,No,5,Western & Fusion Food,60.09,27.62,8.65
+Kedai Makan D' Syukur,,Jalan Air Putih,Restaurant,Other,5.0,Excellent (≥4.5★),4.2399368,103.405140199999,No,No,No,No,No,No,No,No,No,1,Overall Dining Experience,76.76,10.47,5.19
+Kemaman Kitchen,,Kampung Gong Limau,Restaurant,Other,5.0,Excellent (≥4.5★),4.24765229999999,103.410756299999,No,No,No,No,Yes,No,No,No,No,1,Overall Dining Experience,67.2,17.37,8.13
+Warung Sup Petaling Street,,Batu 2 1/2,Soup Kitchen,Other,5.0,Excellent (≥4.5★),4.2425976,103.3946237,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,78.13,11.67,4.78
+"Satar & Otak-Otak Che Wan Geliga,Kemaman Trg.",,"6209, Jalan Geliga Pantai",Restaurant,Other,5.0,Excellent (≥4.5★),4.202495,103.4386081,No,No,No,Yes,No,No,No,No,No,3,Location & Ambiance,44.95,31.16,17.3
+De' Office Cafe & Restaurant,,Taman Cukai Utama,Restaurant,Other,5.0,Excellent (≥4.5★),4.22309869999999,103.4192504,No,No,No,No,Yes,Yes,No,No,No,1,Overall Dining Experience,70.08,22.71,4.5
+Keladi Western Hut,,Jalan Air Putih,Restaurant,Other,2.0,Below Average (<3.0★),4.2350857,103.3851914,No,No,No,No,Yes,No,No,No,No,5,Western & Fusion Food,73.27,17.86,5.5
+Z&R Station 2,,Jalan Tiong,Malaysian Restaurant,Malay,5.0,Excellent (≥4.5★),4.22512629999999,103.4204621,Yes,No,No,No,No,Yes,No,Yes,No,5,Western & Fusion Food,67.8,20.51,8.99
+Kim Wah Chicken Rice,,Kampung Dusun Nyior,Restaurant,Other,3.0,Good (≥3.0★),4.23098559999999,103.4269188,Yes,No,No,Yes,No,Yes,No,Yes,No,5,Western & Fusion Food,63.09,22.2,8.48
+Awie Satar & Otak-Otak,,Kemaman,Restaurant,Other,1.0,Below Average (<3.0★),4.223758,103.4378031,No,No,No,Yes,No,No,No,No,No,3,Location & Ambiance,56.89,26.23,13.11
+Restoran Sin Bing Kee,,Jalan Sulaimani,Restaurant,Other,5.0,Excellent (≥4.5★),4.231304,103.4283966,Yes,No,No,No,No,No,No,No,No,6,Seafood & Local Snacks,69.49,19.6,3.61
+Restaurant Win Thong Zen,,Kemaman,Chinese Restaurant,Chinese,4.0,Very Good (≥4.0★),4.22005059999999,103.4248978,No,Yes,No,No,No,No,No,No,No,6,Seafood & Local Snacks,72.77,17.2,5.27
+Kilang Keropok Araf,,Kampung Paya Berenjut,Food Manufacturer,Other,5.0,Excellent (≥4.5★),4.1873776,103.4254227,No,No,No,No,Yes,No,Yes,Yes,No,6,Seafood & Local Snacks,65.28,23.72,6.97
+Restoran Sri Pandan,,Kampung Pengkalan Pandan,Restaurant,Other,5.0,Excellent (≥4.5★),4.22537839999999,103.4120248,No,No,No,Yes,No,No,No,No,No,1,Overall Dining Experience,60.11,24.2,8.14
+Nasi Arab Al Joud,,Geliga,Restaurant,Other,5.0,Excellent (≥4.5★),4.1919455,103.4338107,No,No,No,No,Yes,No,No,No,No,1,Overall Dining Experience,61.86,28.53,6.91
+Serasa Thai,,Kemaman,Restaurant,Other,5.0,Excellent (≥4.5★),4.198005,103.4165787,No,No,No,No,Yes,No,No,No,No,1,Overall Dining Experience,78.62,14.04,2.28
+Kedai Makan Kuala,,Kemaman,Restaurant,Other,5.0,Excellent (≥4.5★),4.2390298,103.4448357,No,No,No,No,No,No,No,No,No,5,Western & Fusion Food,59.28,29.67,4.37
+Restoran Malaysia (Seafood),,Kampung Dusun Nyior,Chinese Restaurant,Chinese,4.0,Very Good (≥4.0★),4.2313954,103.428182499999,No,Yes,No,No,No,No,Yes,No,No,6,Seafood & Local Snacks,70.7,21.93,4.98
+Kedai Kopi Tim Kam Leng,,Kampung Dusun Nyior,Restaurant,Other,4.0,Very Good (≥4.0★),4.2295115,103.4288744,No,No,No,No,No,No,No,No,No,6,Seafood & Local Snacks,67.65,24.36,4.65
+Kenny Rogers Roasters,,Taman Cukai Utama,Restaurant,Other,5.0,Excellent (≥4.5★),4.2241475,103.4190574,No,No,No,Yes,Yes,No,No,No,No,1,Overall Dining Experience,62.49,29.12,3.59
+Nasi Arab Toif,,Taman Geliga Sakti,Restaurant,Other,1.0,Below Average (<3.0★),4.1908367,103.4329618,No,No,No,No,Yes,No,No,No,No,4,Malay Review Sentiment,69.16,22.24,3.78
+"Baiduri Kitchen Kemaman Ikan Bakar, Masakan Thai & Panas",,Kemaman,Ikan Bakar Restaurant,Malay,4.0,Very Good (≥4.0★),4.1989106,103.437776,Yes,No,No,No,Yes,No,Yes,No,No,1,Overall Dining Experience,59.3,29.58,6.37
+The Waroong,,Kemaman,Restaurant,Other,5.0,Excellent (≥4.5★),4.2334419,103.382630999999,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,58.58,22.19,11.83
+Terang By Adda,,Jalan Kampung Tempurung,Restaurant,Other,5.0,Excellent (≥4.5★),4.2332786,103.3989301,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,69.04,14.47,6.56
+Restoran Baiduri,,Kemaman,Malaysian Restaurant,Malay,5.0,Excellent (≥4.5★),4.19670399999999,103.436225999999,Yes,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,64.22,29.89,1.91
+Botok Food Corner,,Kemaman,Malaysian Restaurant,Malay,5.0,Excellent (≥4.5★),4.233627,103.421185499999,Yes,No,No,Yes,No,No,No,No,No,4,Malay Review Sentiment,71.22,20.33,4.61
+Resteron Ikan Bakar Hulala,,Kampung Dusun Nyior,Chinese Restaurant,Chinese,4.0,Very Good (≥4.0★),4.2290183,103.4275722,No,No,No,No,No,No,No,No,No,6,Seafood & Local Snacks,73.41,18.66,3.13
+Warung 4111,,Kampung Gong Pauh,Bakery,Cafe,5.0,Excellent (≥4.5★),4.2351522,103.4142612,No,Yes,No,No,No,No,No,Yes,No,2,Traditional Malay Food,66.53,21.08,6.67
+Kawa Signature,,Jalan Raja Udang 2,Restaurant,Other,5.0,Excellent (≥4.5★),4.2174543,103.422592299999,No,No,No,No,Yes,No,No,Yes,No,1,Overall Dining Experience,71.37,19.56,3.12
+Warung Roti Tempayan,,Kemaman,Restaurant,Other,5.0,Excellent (≥4.5★),4.2403655,103.4211211,No,No,No,Yes,No,No,No,No,No,5,Western & Fusion Food,66.42,22.14,7.72
+Geliga Bus Terminal Food Court,,Kemaman,Restaurant,Other,5.0,Excellent (≥4.5★),4.20663819999999,103.4345754,Yes,No,Yes,Yes,No,No,No,No,No,5,Western & Fusion Food,53.64,29.26,9.6
+Mans Kitchen - Roti Tempayan,,Kampung Pengkalan Pandan,Breakfast Restaurant,Cafe,4.0,Very Good (≥4.0★),4.22629559999999,103.415133799999,No,No,No,Yes,No,No,No,No,No,1,Overall Dining Experience,65.46,18.86,7.77
+Warung Bira Perahu,,Kemaman,Restaurant,Other,4.0,Very Good (≥4.0★),4.240298,103.441760399999,No,No,No,Yes,No,No,Yes,No,No,6,Seafood & Local Snacks,57.25,32.28,5.9
+Kemaman Nasi Dagang,,"01, Jalan Dusun Nyior",Restaurant,Other,1.0,Below Average (<3.0★),4.2264569,103.4284934,No,No,No,No,No,No,No,No,No,1,Overall Dining Experience,68.05,27.26,1.48
+Abezi Nasi Kerabu,,Kampung Gong Pauh,Restaurant,Other,5.0,Excellent (≥4.5★),4.2374254,103.4144012,No,No,No,Yes,No,No,No,No,No,1,Overall Dining Experience,41.6,33.06,14.37
+Subway,,Jalan Kedidi Kiri,Fast Food Restaurant,Fast Food,5.0,Excellent (≥4.5★),4.2223036,103.42139,No,No,No,No,No,No,No,No,No,1,Overall Dining Experience,62.91,19.74,9.92
+Kfc,,Jalan Lebai Saras,Chicken Restaurant,Fast Food,1.0,Below Average (<3.0★),4.23276459999999,103.423905499999,No,No,No,Yes,Yes,No,Yes,No,No,1,Overall Dining Experience,67.9,20.82,5.64
+Selera Awie,,Kemaman,Restaurant,Other,4.0,Very Good (≥4.0★),4.2305626,103.4210603,No,No,No,No,No,No,No,Yes,No,2,Traditional Malay Food,62.39,21.84,9.19
+Restaurant Ridzuan Wong,,Kemaman,Malaysian Restaurant,Malay,5.0,Excellent (≥4.5★),4.2013279,103.4381003,Yes,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Telenggok,,Kampung Pengkalan Pandan,Family Restaurant,Family,5.0,Excellent (≥4.5★),4.22499329999999,103.411238099999,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Restoran Kak Na Patin Poyok,,Kemaman,Malaysian Restaurant,Malay,4.0,Very Good (≥4.0★),4.1913893,103.4102654,Yes,No,No,No,Yes,No,No,No,No,4,Malay Review Sentiment,82.3,12.88,1.54
+Che Mah Nasi Kukus,,Lot 340 Jalan Lojin Boyok,Restaurant,Other,4.0,Very Good (≥4.0★),4.2288367,103.428497499999,No,No,No,Yes,No,No,No,No,No,5,Western & Fusion Food,52.24,28.21,13.83
+Ah Yan Fish Noodle,,Kampung Jakar,Restaurant,Other,4.0,Very Good (≥4.0★),4.22493339999999,103.4269563,No,No,No,No,No,No,No,No,No,6,Seafood & Local Snacks,77.81,17.89,1.91
+Kedai Makan(Nasi Lemak Crispy Fried Chicken )Kemaman,,Kampung Gong Limau,Restaurant,Other,5.0,Excellent (≥4.5★),4.2383971,103.421979799999,No,No,No,No,No,No,Yes,No,No,4,Malay Review Sentiment,64.91,26.77,3.44
+Qalut Bistro - Restaurant & Catering,,Kampung Gong Limau,Halal Restaurant,Other,5.0,Excellent (≥4.5★),4.2395359,103.4177902,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Ayam Gepuk Pak Gembus,,Jalan Camar,Restaurant,Other,4.0,Very Good (≥4.0★),4.2222256,103.4207084,No,No,No,No,No,Yes,No,Yes,No,1,Overall Dining Experience,73.56,14.58,6.62
+Mee Ikan Ayah Ku,,Kuala Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),4.239508,103.4440893,No,No,No,No,No,No,No,No,No,2,Traditional Malay Food,64.79,25.43,4.46
+Restoran Asam Pedas Selera Kampung,,Kampung Geliga Besar,Malaysian Restaurant,Malay,5.0,Excellent (≥4.5★),4.1954047,103.434953999999,Yes,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Kedai Makan Teh Yah Nasi Dagang,,"1, Jalan Air Putih",Restaurant,Other,2.0,Below Average (<3.0★),4.2372554,103.413519999999,No,No,No,No,No,No,No,No,No,1,Overall Dining Experience,55.7,29.01,10.34
+Mr Churros (Chukai),,Kampung Gong Limau,Hawker Stall,Malay,5.0,Excellent (≥4.5★),4.2398429,103.4197197,Yes,No,No,No,Yes,No,No,Yes,No,4,Malay Review Sentiment,55.92,22.85,6.59
+Restoran Al-Baik,,Kampung Gong Limau,Restaurant,Other,4.0,Very Good (≥4.0★),4.239223,103.4218757,No,No,No,No,Yes,No,Yes,Yes,No,3,Location & Ambiance,59.73,27.36,8.44
+Kedai Makan Ani Ton,,"No 2, Jalan Mutiara",Malaysian Restaurant,Malay,5.0,Excellent (≥4.5★),4.23067,103.3691229,Yes,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,89.53,3.0,2.16
+Mcdonalds Caltex Chukai Dt,,Kampung Gong Pauh,Fast Food Restaurant,Fast Food,5.0,Excellent (≥4.5★),4.2294978,103.4200175,No,No,No,No,Yes,No,Yes,Yes,No,1,Overall Dining Experience,68.33,20.28,6.79
+Banana Leaf Restaurant - Nasi Daun Pisang,,Kampung Jakar,Restaurant,Other,5.0,Excellent (≥4.5★),4.2233214,103.426744399999,No,Yes,No,No,Yes,No,No,Yes,No,6,Seafood & Local Snacks,71.97,19.65,4.72
+Warung Bira Bukit,,Kemaman,Restaurant,Other,4.0,Very Good (≥4.0★),4.2383991,103.4110898,No,No,No,No,Yes,No,No,No,No,4,Malay Review Sentiment,73.04,18.34,2.82
+Cik Kioh Kuih Muih Kmn Trg Malaysia.,,Kampung Cik Ibrahim Daud,Restaurant,Other,5.0,Excellent (≥4.5★),4.2306026,103.3691424,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,70.56,20.68,2.52
+Abc Station,,Kampung Dusun Nyior,Ice Cream Shop,Cafe,5.0,Excellent (≥4.5★),4.2286185,103.428593299999,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,78.21,14.1,2.44
+The Best Nasi Dagang Tuan Norlida Viral Sedap,,Kampung Geliga Kecil,Restaurant,Other,5.0,Excellent (≥4.5★),4.2228706,103.4381755,No,No,No,No,No,No,No,No,No,1,Overall Dining Experience,52.46,26.52,12.77
+Domino'S Pizza,,Unknown,Pizza Restaurant,Western,4.0,Very Good (≥4.0★),4.224847,103.41999,No,No,No,No,Yes,No,No,Yes,No,1,Overall Dining Experience,76.08,19.04,2.18
+Malaya Food Station,,Kampung Bukit Kuang,Coffee Shop,Cafe,3.0,Good (≥3.0★),4.2601472,103.4330567,No,No,No,Yes,Yes,No,No,Yes,No,4,Malay Review Sentiment,61.79,31.24,3.53
+R&R Perasing Arah K.Terengganu,,E Coast Expy,Toll Road Rest Stop,Other,3.0,Good (≥3.0★),4.0179142,103.3130462,No,No,No,Yes,Yes,Yes,No,No,No,1,Overall Dining Experience,57.6,28.43,10.09
+Pokdin Yong Tau Foo / Steamboat & Grill,,Kemaman,Restaurant,Other,5.0,Excellent (≥4.5★),4.2253596,103.4112767,No,No,No,Yes,No,No,No,No,No,4,Malay Review Sentiment,64.53,27.26,5.0
+Ombok Cherating Surf Cafe,,Jalan Kampung Cherating Lama,Restaurant,Other,4.0,Very Good (≥4.0★),4.1266453,103.394882799999,No,No,No,No,No,No,No,No,No,6,Seafood & Local Snacks,55.44,26.57,10.93
+Lily Tomyam,,Kuala Terengganu,Thai Restaurant,Thai,5.0,Excellent (≥4.5★),3.9970478,103.299029699999,No,No,No,No,No,No,No,No,No,6,Seafood & Local Snacks,62.86,11.29,8.1
+"Bitsy Bakery, Gong Limau, Kemaman (Best Cake And Dessert In Kemaman)",,"1, Jalan Mak Chili",Bakery,Cafe,5.0,Excellent (≥4.5★),4.24449679999999,103.4160132,No,No,No,Yes,Yes,No,Yes,No,No,1,Overall Dining Experience,68.98,18.8,8.21
+Warung Nasi Dagang Su Meh,,Kampung Bukit Mentok,Restaurant,Other,5.0,Excellent (≥4.5★),4.21224949999999,103.4002084,No,No,No,No,No,Yes,No,No,No,1,Overall Dining Experience,51.55,29.41,13.44
+Warung D'Taping Kemasik,,Kemaman,Restaurant,Other,4.0,Very Good (≥4.0★),4.4287718,103.4549346,No,No,No,No,No,No,Yes,No,No,1,Overall Dining Experience,66.41,19.03,10.4
+The Glaze By Hebak,,Kampung Meraga,Western Restaurant,Western,4.0,Very Good (≥4.0★),4.3741169,103.4561951,No,No,No,No,Yes,No,No,Yes,No,5,Western & Fusion Food,65.33,26.01,4.74
+Raisya Nasi Kukus Ayam Berempah,,Kampung Kubang Kurus,Malaysian Restaurant,Malay,5.0,Excellent (≥4.5★),4.2297654,103.427567099999,Yes,No,No,No,No,No,No,No,No,5,Western & Fusion Food,66.32,22.62,3.61
+Port Kopi Kaki Bukit Kg Geliga Pantai,,Kampung Geliga Kecil,Restaurant,Other,5.0,Excellent (≥4.5★),4.2186521,103.439648499999,No,No,No,Yes,No,No,Yes,No,No,4,Malay Review Sentiment,69.73,20.45,4.66
+Mariah Corner,,Bandar Ceneh Baharu,Family Restaurant,Family,4.0,Very Good (≥4.0★),4.1423545,103.237794799999,No,No,No,No,No,No,No,No,No,2,Traditional Malay Food,76.05,19.42,1.56
+"Hentian Mesra Corner, Kemasek",,Kemasek,Restaurant,Other,5.0,Excellent (≥4.5★),4.437779,103.4508635,No,No,No,Yes,No,No,No,No,No,2,Traditional Malay Food,48.97,35.2,8.25
+Warung Mamayah,,Kawasan Perindustrian Jakar Ii,Restaurant,Other,5.0,Excellent (≥4.5★),4.2151423,103.423090699999,No,No,No,No,No,No,Yes,No,No,4,Malay Review Sentiment,67.47,24.58,5.3
+Cahaya Mesra Seafood 4,,Kuala Terengganu,Restaurant,Other,3.0,Good (≥3.0★),4.3565461,103.4644227,No,No,No,Yes,No,No,No,No,No,6,Seafood & Local Snacks,62.79,26.93,7.62
+Lukman Satay,,Kemaman,Restaurant,Other,3.0,Good (≥3.0★),4.2455891,103.406876099999,No,No,No,No,No,No,No,No,No,2,Traditional Malay Food,63.02,20.33,5.3
+Al Safina Kijal Beach Resort & Restaurant,,Kemaman,Restaurant,Other,3.5,Good (≥3.0★),4.34746299999999,103.4777026,No,No,No,No,Yes,No,Yes,No,No,1,Overall Dining Experience,69.23,25.19,3.08
+Hookah Mankha,,Kuala Terengganu,Family Restaurant,Family,5.0,Excellent (≥4.5★),4.2039894,103.4176004,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Keropok Lekor Cap Kapal 2,,Kuala Terengganu,Restaurant,Other,4.0,Very Good (≥4.0★),4.18221599999999,103.4276544,No,No,No,No,No,No,No,No,No,1,Overall Dining Experience,59.01,19.07,11.49
+Club Med Cherating Rembulan Restaurant,,Bukit Cherating,Restaurant,Other,5.0,Excellent (≥4.5★),4.1309531,103.407004,No,No,No,No,Yes,Yes,Yes,No,No,1,Overall Dining Experience,59.18,32.3,5.82
+Afc Malaysia,,Kemaman,Fried Chicken Takeaway,Other,5.0,Excellent (≥4.5★),4.381178,103.4541137,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Restoran Duyong,,Pahang,Restaurant,Other,4.0,Very Good (≥4.0★),4.1274822,103.392540599999,No,No,No,No,No,No,Yes,No,No,1,Overall Dining Experience,56.21,27.84,13.47
+Kemaman Kopitiam Original,,"Sri Dagangan-2, Bussiness Centre",Cafe,Cafe,3.0,Good (≥3.0★),3.81700519999999,103.3310971,No,Yes,No,Yes,No,No,No,No,No,1,Overall Dining Experience,68.51,21.41,7.59
+Mijeng Corner,,6,Malaysian Restaurant,Malay,4.0,Very Good (≥4.0★),4.24956559999999,103.4096149,Yes,No,No,Yes,No,No,No,No,No,4,Malay Review Sentiment,79.23,12.15,2.65
+Air Jernih,,Kuala Terengganu,Cantonese Restaurant,Chinese,5.0,Excellent (≥4.5★),4.4081975,103.3955769,Yes,No,No,No,No,No,No,No,No,6,Seafood & Local Snacks,63.05,25.34,5.17
+Resorts World Kijal,,Kampung Meraga Beris,Resort Hotel,Other,5.0,Excellent (≥4.5★),4.38854239999999,103.4558564,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,No,1,Overall Dining Experience,56.64,30.94,7.73
+D&G Kijal Celup Tepung,,Kemaman,Restaurant,Other,5.0,Excellent (≥4.5★),4.33062309999999,103.489120899999,No,No,No,No,No,No,Yes,No,No,6,Seafood & Local Snacks,72.56,20.96,3.6
+Rr Jabor Tomyam Kelapa Seafood,,"Mukim, Hulu Jabor",Restaurant,Other,1.0,Below Average (<3.0★),3.9589368,103.327740699999,No,No,No,No,No,No,No,No,No,1,Overall Dining Experience,74.16,12.02,5.82
+Intan Seafood Restaurant,,Balok,Restaurant,Other,4.0,Very Good (≥4.0★),4.12347889999999,103.390453299999,No,No,No,No,Yes,No,Yes,No,No,6,Seafood & Local Snacks,64.53,23.37,8.56
+D Cherating Cafe,,Kampung Baharu Cherating,Restaurant,Other,5.0,Excellent (≥4.5★),4.1016121,103.3811767,No,No,No,Yes,Yes,No,No,No,No,1,Overall Dining Experience,68.82,23.55,4.98
+Restaurant Al-Safina,,Kemaman,Restaurant,Other,4.0,Very Good (≥4.0★),4.3476382,103.4779574,No,No,No,No,No,No,Yes,No,No,1,Overall Dining Experience,61.28,17.01,8.08
+Kemaman Mee Ikan,,Taman Galing,Chinese Noodle Restaurant,Chinese,5.0,Excellent (≥4.5★),3.8199056,103.331361,No,No,No,Yes,No,Yes,No,No,No,6,Seafood & Local Snacks,75.76,15.98,4.68
+Tokma Kitchen,,Kampung Baru,Restaurant,Other,4.0,Very Good (≥4.0★),4.4357722,103.451582,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,63.36,27.82,6.1
+Saltwater Kopitiam,,Kemaman,Restaurant,Other,5.0,Excellent (≥4.5★),4.50198369999999,103.4429071,No,No,No,Yes,No,No,No,No,Yes,1,Overall Dining Experience,64.0,22.7,7.15
+Yen Mokku Char Kuey Teow,,Kemaman,Malaysian Restaurant,Malay,5.0,Excellent (≥4.5★),4.4951935,103.4384554,Yes,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,74.65,7.27,5.21
+Shell Perasing R&R,,Lpt,Gas Station,Other,5.0,Excellent (≥4.5★),4.02071099999999,103.313986,No,No,No,No,No,Yes,Yes,No,No,1,Overall Dining Experience,69.1,21.16,7.52
+Cafila Cafe,,Bandar Seri,Restaurant,Other,2.0,Below Average (<3.0★),4.5012712,103.442550599999,No,No,Yes,Yes,No,No,No,No,No,5,Western & Fusion Food,57.79,27.53,8.26
+Keropok Lekor Kamal (Pok Die) Cherating,,Kampung Baharu Cherating,Hawker Stall,Malay,5.0,Excellent (≥4.5★),4.0949072,103.3822038,Yes,No,No,No,No,No,Yes,Yes,No,6,Seafood & Local Snacks,72.76,18.31,5.55
+Mcdonald'S Sri Kerteh Dt,,Kuala Terengganu,Fast Food Restaurant,Fast Food,5.0,Excellent (≥4.5★),4.506461,103.442883,No,No,No,No,No,No,Yes,No,No,1,Overall Dining Experience,73.17,18.18,5.32
+Maa Buka Pintu & Warong D'Kampong,,Kemaman,Restaurant,Other,5.0,Excellent (≥4.5★),4.50766119999999,103.4358888,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Kfc Kijal,,"10, Persiaran Melor",Chicken Restaurant,Fast Food,5.0,Excellent (≥4.5★),4.3862896,103.453234299999,No,No,No,No,No,No,No,Yes,No,1,Overall Dining Experience,77.56,15.81,3.92
+Keropok Lekor Pok Loh Kerteh,,Kemaman,Restaurant,Other,4.0,Very Good (≥4.0★),4.4869012,103.4407768,No,No,No,No,No,No,No,No,No,6,Seafood & Local Snacks,70.73,17.69,5.28
+D Laksa Mesra Mall,,"Lot Fc 01 , Ground Floor Mesra Mall Lot",Fast Food Restaurant,Fast Food,5.0,Excellent (≥4.5★),4.4401522,103.4482513,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,56.33,33.43,7.13
+Cherating Steakhouse Restaurant,,Kampung Alor Akar,Steak House,Western,1.0,Below Average (<3.0★),3.8337171,103.3493524,No,Yes,No,No,No,No,Yes,No,No,5,Western & Fusion Food,61.91,26.66,9.29
+Sara Thai Kitchen Balok,,Kampung Cengal Lempung,Thai Restaurant,Thai,4.0,Very Good (≥4.0★),3.9264272,103.3669513,No,No,No,No,Yes,No,No,Yes,No,6,Seafood & Local Snacks,60.85,31.28,4.98
+Cafe Joegolok Kerteh,,Kemaman,Restaurant,Other,5.0,Excellent (≥4.5★),4.5032061,103.4350987,No,No,No,Yes,Yes,No,No,No,No,1,Overall Dining Experience,53.0,29.55,12.78
+Kupi Uncle Cafe,,Kemaman,Coffee Shop,Cafe,5.0,Excellent (≥4.5★),4.5169033,103.4477503,No,No,No,No,No,No,No,No,No,3,Location & Ambiance,71.62,22.49,2.42
+Ez Noodle & Soup Corner,,Unknown,Malaysian Restaurant,Malay,5.0,Excellent (≥4.5★),4.4410611,103.448331,Yes,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Fbr Global Resources,,Kemaman,Consultant,Other,5.0,Excellent (≥4.5★),4.36926399999999,103.459774599999,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,85.08,4.35,3.05
+Wok & Grill Cafe,,Bandar Baru,Restaurant,Other,4.0,Very Good (≥4.0★),4.50395849999999,103.4428125,No,No,No,Yes,Yes,No,No,No,No,5,Western & Fusion Food,70.44,24.41,2.84
+Kedai Makan Sedap,,Kemaman,Restaurant,Other,5.0,Excellent (≥4.5★),4.36076649999999,103.4648287,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Itaewon House,,Persiaran Coast,Korean Restaurant,Korean,5.0,Excellent (≥4.5★),4.2473105,103.425309599999,No,No,No,No,No,No,No,No,No,5,Western & Fusion Food,61.22,23.02,13.74
+Anjung Makan,,Taman Jakar Jaya,Restaurant,Other,5.0,Excellent (≥4.5★),4.2210332,103.421986199999,No,No,No,No,Yes,No,Yes,No,No,1,Overall Dining Experience,49.06,30.42,12.02
+Disemai Restaurant,,Kemaman,Thai Restaurant,Thai,5.0,Excellent (≥4.5★),4.2631245,103.4318766,No,No,No,Yes,No,No,Yes,No,No,4,Malay Review Sentiment,69.79,20.47,3.54
+Singgah E-Rup Tom Yum,,Kampung Mak Cili Paya,Restaurant,Other,5.0,Excellent (≥4.5★),4.2470932,103.406438799999,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Ayahwan Ikan Bakar,,Kampung Kubang Kurus,Restaurant,Other,5.0,Excellent (≥4.5★),4.22755999999999,103.4206619,No,No,No,Yes,Yes,No,No,No,No,1,Overall Dining Experience,58.78,31.97,5.36
+Fika Stall,,Kampung Telaga Papan,Malaysian Restaurant,Malay,5.0,Excellent (≥4.5★),4.5138786,103.4457322,Yes,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Seaba Seafood,,Jln Beserah,Seafood Restaurant,Seafood,5.0,Excellent (≥4.5★),3.8909352,103.3664878,No,No,No,Yes,No,No,Yes,Yes,No,6,Seafood & Local Snacks,56.83,24.98,14.03
+Our House Restaurant,,Bandar Baru,Restaurant,Other,5.0,Excellent (≥4.5★),4.5037971,103.4440848,No,No,No,No,Yes,Yes,No,No,No,1,Overall Dining Experience,59.76,27.93,9.61
+Gerai Santap Nasi Dagang Istana,,Kampung Dato' Ibrahim Fikri,Malaysian Restaurant,Malay,5.0,Excellent (≥4.5★),4.2035802,103.4361656,Yes,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Jomo Eatery Kuala Nerus,,Taman Tembesu Perdana,Restaurant,Other,5.0,Excellent (≥4.5★),5.3523724,103.0991068,No,Yes,No,Yes,No,No,Yes,No,No,5,Western & Fusion Food,59.39,26.7,10.52
+Nasi Ayam Legasi Gong Badak,,Jalan Gong Badak,Chicken Restaurant,Fast Food,5.0,Excellent (≥4.5★),5.3692708,103.0873463,No,No,No,No,No,No,No,No,No,1,Overall Dining Experience,48.4,32.72,11.99
+"Warung Pok Choh (Pitstop 21300, Kuala Nerus)",,Kampung Telaga Batin,Restaurant,Other,4.0,Very Good (≥4.0★),5.38533749999999,103.1119265,No,No,No,Yes,No,No,No,No,No,2,Traditional Malay Food,48.66,31.75,13.5
+Selera Dd,,Unknown,Lunch Restaurant,Malay,5.0,Excellent (≥4.5★),5.3792387,103.0827996,Yes,No,No,Yes,No,No,No,No,No,1,Overall Dining Experience,82.09,4.72,4.01
+Tc Steak House,,Kampung Wakaf Tembesu,Barbecue Restaurant,BBQ,5.0,Excellent (≥4.5★),5.3597614,103.0927803,No,No,No,No,No,Yes,No,No,No,5,Western & Fusion Food,63.26,32.11,2.64
+The Nelang Cafe,,Jalan,Restaurant,Other,5.0,Excellent (≥4.5★),5.3808884,103.0811938,No,Yes,No,Yes,Yes,Yes,Yes,Yes,No,1,Overall Dining Experience,57.08,28.02,9.48
+Warung Cikgu,,Gong Badak,Western Restaurant,Western,1.0,Below Average (<3.0★),5.3938447,103.082822499999,No,No,No,No,Yes,No,No,Yes,No,1,Overall Dining Experience,66.1,21.96,6.35
+Bb Seafood Garden,,"Lot 16477, Jalan Gong Badak",Seafood Restaurant,Seafood,4.0,Very Good (≥4.0★),5.392608,103.081667099999,No,No,No,No,No,No,No,Yes,No,6,Seafood & Local Snacks,64.26,25.33,6.08
+Uptown Kontena,,Kg.Tok Jembal,Restaurant,Other,5.0,Excellent (≥4.5★),5.39828269999999,103.103204499999,No,No,No,Yes,Yes,Yes,Yes,No,No,1,Overall Dining Experience,54.94,27.64,14.34
+Nasi Arab Anwaar Al-Yaman,,Kampung Tok Jembal,Middle Eastern Restaurant,Middle Eastern,5.0,Excellent (≥4.5★),5.38861709999999,103.098588499999,Yes,Yes,No,No,No,No,No,Yes,No,1,Overall Dining Experience,75.82,17.27,3.51
+Warung Aina (1),,Kampung Wakaf Tembesu,Malaysian Restaurant,Malay,4.0,Very Good (≥4.0★),5.3698193,103.0868296,Yes,No,No,Yes,Yes,No,No,No,No,1,Overall Dining Experience,59.29,25.28,9.98
+Kedai Nasi Dagang Kubang Badak,,"7513, Jln",Restaurant,Other,5.0,Excellent (≥4.5★),5.4026897,103.0909446,No,No,No,Yes,No,No,Yes,No,No,1,Overall Dining Experience,58.77,26.6,6.79
+Drumoh Pata,,Kuala Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),5.41911519999999,103.0820292,No,No,No,Yes,Yes,Yes,Yes,Yes,No,3,Location & Ambiance,68.92,17.61,8.37
+Makang Makang,,Kampung Banggul Pauh,Restaurant,Other,5.0,Excellent (≥4.5★),5.3527391,103.1165997,No,Yes,No,No,No,No,Yes,Yes,No,1,Overall Dining Experience,56.83,26.71,13.1
+"Warung Dek, Batu Enam",,"104 A, Jalan Kelantan",Malaysian Restaurant,Malay,3.0,Good (≥3.0★),5.343172,103.0911635,Yes,No,No,No,No,No,No,No,No,3,Location & Ambiance,59.05,28.03,6.42
+Dapur Halwa (Roti Bakar & Kopi),,Kampung Padang Nenas,Restaurant,Other,5.0,Excellent (≥4.5★),5.4072619,103.068444399999,No,No,No,No,Yes,No,No,No,No,1,Overall Dining Experience,70.36,18.23,4.47
+Restoranharraz,,Kampung Banggul Tiang Kulat,Restaurant,Other,4.0,Very Good (≥4.0★),5.35643279999999,103.0966567,No,No,No,No,No,No,No,No,No,1,Overall Dining Experience,60.62,23.46,7.6
+Warung Bintang Baru,,Kuala Terengganu,Malaysian Restaurant,Malay,5.0,Excellent (≥4.5★),5.35265879999999,103.094293,Yes,No,No,No,No,No,No,No,No,1,Overall Dining Experience,74.78,15.63,2.91
+Kedai Makan Kak Nah,,Kampung Wakaf Tembesu,Restaurant,Other,5.0,Excellent (≥4.5★),5.37220729999999,103.085264299999,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,69.36,19.36,6.83
+Sofiyya Bistro,,Kampung Baru Seberang Takir,Restaurant,Other,1.0,Below Average (<3.0★),5.36078039999999,103.1274588,No,No,No,Yes,Yes,No,Yes,No,No,1,Overall Dining Experience,54.78,32.25,8.1
+Inn Roti Canai & Nasi,,Kampung Banggul Tiang Kulat,Restaurant,Other,5.0,Excellent (≥4.5★),5.3545513,103.095214599999,No,No,No,Yes,No,No,No,No,No,4,Malay Review Sentiment,73.23,17.58,5.66
+Restoran Montona,,Kuala Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),5.3654226,103.0893535,No,No,No,No,No,No,No,No,No,6,Seafood & Local Snacks,59.0,23.07,12.14
+Hr Mee Champa Gong Badak,,Kuala Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),5.3561784,103.094781,No,No,No,Yes,No,Yes,No,Yes,No,1,Overall Dining Experience,67.09,23.41,4.7
+Laman Selera Unisza,,Kuala Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),5.39740259999999,103.077876199999,No,No,No,No,No,No,No,No,No,1,Overall Dining Experience,63.9,22.37,6.35
+Patin Vs Baung Tempoyak Bajet Kuala Nerus,,Kuala Terengganu,Lunch Restaurant,Malay,5.0,Excellent (≥4.5★),5.3478498,103.118463999999,Yes,No,No,No,No,No,No,No,No,2,Traditional Malay Food,80.71,5.81,4.1
+Kedai Makan Selera Timur Kak Zah,,Kampung Banggul Tiang Kulat,Malaysian Restaurant,Malay,5.0,Excellent (≥4.5★),5.35469339999999,103.095102,Yes,No,No,No,No,No,No,No,No,2,Traditional Malay Food,81.88,5.36,3.84
+Pakmat Western,,8585,Restaurant,Other,5.0,Excellent (≥4.5★),5.33824329999999,103.0818072,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,74.84,10.79,4.41
+Bo'S Cafe Awok Iter,,Kampung Gong Badak,Restaurant,Other,4.0,Very Good (≥4.0★),5.35670229999999,103.0967483,No,Yes,No,No,Yes,No,Yes,No,No,1,Overall Dining Experience,70.74,19.85,4.96
+Keropok Lekor Padang Air,,Kampung Padang Air,Restaurant,Other,5.0,Excellent (≥4.5★),5.3502277,103.0753455,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,76.5,13.98,3.06
+Warung Al-Kauthar Nasi Dagang,,Kampung Wakaf Tembesu,Family Restaurant,Family,5.0,Excellent (≥4.5★),5.35497779999999,103.095073,No,No,No,Yes,No,No,No,No,No,2,Traditional Malay Food,72.27,20.0,2.97
+Lowstaq Station,,Kampung Wakaf Tembesu,Restaurant,Other,5.0,Excellent (≥4.5★),5.36049029999999,103.098382,No,No,No,No,No,No,No,No,No,5,Western & Fusion Food,48.31,27.44,14.5
+Restoran Dbaung,,Kuala Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),5.3397035,103.103346,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Warung Nasi Dagang Aroma Hz,,Kuala Terengganu,Asian Restaurant,Asian,5.0,Excellent (≥4.5★),5.38176649999999,103.0972759,No,No,No,Yes,No,Yes,No,No,No,1,Overall Dining Experience,56.37,25.67,13.18
+Nasi Kandar Nur Salam Trg,,Jalan Kelantan,Restaurant,Other,5.0,Excellent (≥4.5★),5.3506692,103.0745299,No,No,No,Yes,No,No,No,No,No,4,Malay Review Sentiment,69.17,19.41,3.73
+Payang Corner,,Kampung Batu Enam,Restaurant,Other,5.0,Excellent (≥4.5★),5.34537679999999,103.092284999999,No,No,No,No,Yes,No,No,Yes,No,5,Western & Fusion Food,59.94,26.44,9.55
+Rumah Makan Mek,,Kuala Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),5.40362739999999,103.0701648,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,85.6,7.25,2.06
+Kedai Makan Wan Sabil,,Kuala Terengganu,Restaurant,Other,4.0,Very Good (≥4.0★),5.34790419999999,103.134896599999,No,No,No,No,No,No,No,No,No,3,Location & Ambiance,62.44,23.9,7.98
+The Brasseries,,Kampung Banggul,Western Restaurant,Western,4.0,Very Good (≥4.0★),5.3350938,103.1348692,No,No,No,No,No,No,No,No,No,1,Overall Dining Experience,74.11,21.16,1.98
+Mr Adib Food House,,Kampung Tok Jembal,Malaysian Restaurant,Malay,5.0,Excellent (≥4.5★),5.3963361,103.0940656,Yes,No,No,No,Yes,No,No,Yes,No,1,Overall Dining Experience,68.13,19.55,7.59
+Kepok Ori Mat Adang,,Kampung Bukit Tok Beng,Fast Food Restaurant,Fast Food,4.0,Very Good (≥4.0★),5.3528027,103.1163746,No,No,No,No,No,No,Yes,No,No,4,Malay Review Sentiment,71.56,20.13,4.7
+Dera Chicken Chop Maggi Power,,Kuala Terengganu,Asian Restaurant,Asian,5.0,Excellent (≥4.5★),5.3440714,103.0960485,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,42.86,29.58,23.43
+Roti Canai Walid Adeera,,Kuala Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),5.3449323,103.1202769,No,No,No,No,Yes,No,No,No,No,4,Malay Review Sentiment,82.76,8.9,2.52
+Asak Smokehouse,,Jalan Kelantan,Restaurant,Other,4.0,Very Good (≥4.0★),5.30927969999999,103.0977492,No,No,No,Yes,No,No,Yes,No,No,5,Western & Fusion Food,79.71,13.89,4.35
+Chicken Dance ( Rimba Square),,Taman Desa Jaya,Fast Food Restaurant,Fast Food,5.0,Excellent (≥4.5★),5.349926,103.1008109,No,No,No,No,No,No,No,No,No,1,Overall Dining Experience,74.57,14.66,3.97
+Mcdonald'S Gong Badak Dt,,Jalan Gong Badak,Fast Food Restaurant,Fast Food,5.0,Excellent (≥4.5★),5.3982414,103.0850207,No,No,No,Yes,Yes,No,No,No,No,1,Overall Dining Experience,62.52,21.81,9.69
+Nurqaseh Chicken Chop,,Kampung Teluk Ketapang,Restaurant,Other,5.0,Excellent (≥4.5★),5.3632699,103.123336799999,No,No,No,No,Yes,No,No,No,No,1,Overall Dining Experience,83.02,10.56,2.55
+Warung Kak Siti,,Kuala Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),5.4178083,103.064449599999,No,No,No,No,No,No,No,No,No,3,Location & Ambiance,66.04,29.51,1.65
+129 Tok Jiring = Kedai Nasi Arab Taiba,,Kampung Tok Jiring,Restaurant,Other,5.0,Excellent (≥4.5★),5.3478498,103.0818338,No,No,No,No,No,No,No,No,No,1,Overall Dining Experience,78.99,12.9,3.43
+Pizza Hut Restaurant Dataran Austin,,Jln Austin 3,Pizza Restaurant,Western,5.0,Excellent (≥4.5★),5.3560493,103.095619599999,No,No,No,Yes,No,No,No,No,No,1,Overall Dining Experience,76.07,17.16,3.0
+Rizqin Cafe,,Kuala Terengganu,Coffee Shop,Cafe,5.0,Excellent (≥4.5★),5.3475928,103.0929311,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Nasi Kukus F1,,Kampung Seberang Bukit Tumbuh,Restaurant,Other,5.0,Excellent (≥4.5★),5.3456373,103.117716699999,No,No,No,Yes,No,No,No,Yes,No,5,Western & Fusion Food,55.54,29.92,8.41
+Pizza Medira,,Kampung Paya Datu,Pizza Restaurant,Western,5.0,Excellent (≥4.5★),5.33919789999999,103.0806157,No,No,No,Yes,Yes,No,No,No,No,5,Western & Fusion Food,65.23,27.95,4.07
+Nyiur Pantai Sauh,,Unknown,Cafe,Cafe,5.0,Excellent (≥4.5★),5.4571277,103.0399772,No,No,No,No,No,No,Yes,Yes,No,6,Seafood & Local Snacks,68.14,23.18,6.69
+Aa Kitchen,,Jln Tok Jembal,Breakfast Restaurant,Cafe,5.0,Excellent (≥4.5★),5.388722,103.0985255,No,No,No,No,No,No,No,No,No,2,Traditional Malay Food,62.32,35.57,0.73
+Restoran Ramai,,Kuala Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),5.33146779999999,103.1352986,No,No,No,No,No,No,No,No,No,1,Overall Dining Experience,54.58,30.27,9.63
+Kfc Dataran Austin,,Jalan Gong Badak,Restaurant,Other,5.0,Excellent (≥4.5★),5.3570287,103.096589099999,No,No,No,No,No,Yes,No,No,No,1,Overall Dining Experience,76.96,15.5,3.19
+Burger Ustaz,,Kuala Terengganu,Hamburger Restaurant,Western,5.0,Excellent (≥4.5★),5.3669242,103.121004,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,74.34,7.64,5.36
+Kin Aroy Bistro,,Kuala Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),5.3906225,103.081127099999,No,No,No,No,Yes,No,Yes,No,No,1,Overall Dining Experience,70.09,16.41,8.29
+Ict Kak Ani Celup Tepung,,Kampung Telaga Daing,Restaurant,Other,5.0,Excellent (≥4.5★),5.38542139999999,103.113228299999,No,No,No,Yes,Yes,No,Yes,No,No,6,Seafood & Local Snacks,58.67,31.43,6.86
+On The Way Kopitiam - K.Terengganu,,Kuala Terengganu,Coffee Shop,Cafe,5.0,Excellent (≥4.5★),5.3337911,103.132589299999,No,No,No,Yes,No,Yes,No,No,No,3,Location & Ambiance,52.52,33.81,9.96
+Kedai Masakan Panas On Off,,Kampung Tok Jembal,Family Restaurant,Family,5.0,Excellent (≥4.5★),5.3900535,103.0996376,No,No,No,No,No,No,No,No,No,2,Traditional Malay Food,75.44,7.27,5.21
+The Chicken Rice Shop Mydin Gong Badak,,Jalan Gong Pak Damat,Family Restaurant,Family,5.0,Excellent (≥4.5★),5.35545699999999,103.0956497,No,No,No,No,No,No,No,No,No,1,Overall Dining Experience,73.5,18.66,4.6
+Cafe (Yaain Cafe),,Pekan Batu Enam,Soup Restaurant,Malay,5.0,Excellent (≥4.5★),5.3467665,103.0917252,Yes,No,No,No,Yes,No,No,No,No,4,Malay Review Sentiment,70.0,20.04,4.92
+Restoran Bowoh Pokok,,Kampung Batu Enam,Restaurant,Other,4.0,Very Good (≥4.0★),5.3473825,103.091669599999,No,No,No,Yes,Yes,No,No,Yes,No,4,Malay Review Sentiment,74.92,14.9,3.07
+Ayam 7 Goreng,,"Lot B-G-37766, Jalan Rimba Square",Chicken Restaurant,Fast Food,4.0,Very Good (≥4.0★),5.35032269999999,103.1018165,No,No,No,No,No,No,Yes,No,No,1,Overall Dining Experience,63.54,28.77,4.52
+Kampung Cina Cafe,,Kampung Banggul,Chinese Restaurant,Chinese,5.0,Excellent (≥4.5★),5.333011,103.1327719,No,No,No,No,No,No,No,No,No,6,Seafood & Local Snacks,82.42,12.11,2.18
+Pizza Hut Delivery Gong Badak,,Jalan Gong Badak,Pizza Restaurant,Western,5.0,Excellent (≥4.5★),5.3965415,103.0842356,No,No,No,No,No,No,No,No,No,1,Overall Dining Experience,69.89,19.42,4.76
+Aa Cafe,,Kampung Tok Jembal,Asian Restaurant,Asian,4.0,Very Good (≥4.0★),5.38520379999999,103.1004657,No,No,No,No,Yes,No,Yes,No,No,4,Malay Review Sentiment,83.1,9.49,4.23
+Keropok Lekor Damai,,Kampung Buluh Gading,Restaurant,Other,4.0,Very Good (≥4.0★),5.3354061,103.0874802,No,No,No,Yes,No,No,No,No,No,4,Malay Review Sentiment,72.85,15.46,5.73
+Warung Labu Labi Roti Canai,,Kuala Terengganu,Malaysian Restaurant,Malay,5.0,Excellent (≥4.5★),5.381292,103.0959807,Yes,No,No,No,Yes,No,No,No,No,2,Traditional Malay Food,48.47,29.32,16.8
+Kedai Makan Selera Anak,,Kuala Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),5.3479025,103.087567999999,No,No,No,Yes,No,No,No,No,No,4,Malay Review Sentiment,58.52,20.59,6.3
+Restoran Sri Nerus,,Kuala Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),5.3481606,103.1027544,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Warung D'Nibong,,Kampung Tanjung,Family Restaurant,Family,5.0,Excellent (≥4.5★),5.43843759999999,103.051667,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,55.35,18.85,17.91
+Ayam Sixstones,,Kampung Batu Enam,Malaysian Restaurant,Malay,5.0,Excellent (≥4.5★),5.3476956,103.091562599999,Yes,No,No,No,No,No,No,No,No,2,Traditional Malay Food,57.53,30.91,6.05
+Nasi Berlauk Juedin,,Kampung Banggol Tok Jiring,Restaurant,Other,5.0,Excellent (≥4.5★),5.3510241,103.0833495,No,No,No,Yes,No,No,No,No,No,1,Overall Dining Experience,57.51,25.14,6.36
+Nasi Dagang Teluk Pasu Tepi Highway,,Kuala Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),5.3237555,103.0899779,No,No,No,Yes,No,No,No,No,No,2,Traditional Malay Food,65.01,29.55,1.82
+Dynar Lekor,,Kampung Buluh Gading,Restaurant,Other,5.0,Excellent (≥4.5★),5.3362392,103.0881919,No,No,No,Yes,No,No,Yes,No,No,6,Seafood & Local Snacks,59.11,30.7,6.64
+Meesup Stambung,,Jalan Kelantan,Restaurant,Other,5.0,Excellent (≥4.5★),5.3467297,103.0918889,No,No,No,No,Yes,No,No,No,No,4,Malay Review Sentiment,74.04,22.55,1.07
+Kedai Makan Mustafa,,Kuala Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),5.3461677,103.0923636,No,No,No,No,No,No,No,No,No,2,Traditional Malay Food,67.29,25.66,2.19
+Warung Desa Tomyam,,Kampung Banggul Tiang Kulat,Malaysian Restaurant,Malay,5.0,Excellent (≥4.5★),5.3494435,103.099262799999,Yes,No,No,No,No,No,Yes,No,No,4,Malay Review Sentiment,79.21,10.75,3.08
+Nasi Dagang Mmeknani Gong Badak,,Gong Badak,Takeout Restaurant,Fast Food,5.0,Excellent (≥4.5★),5.3910152,103.080833,No,No,No,No,No,No,No,No,No,2,Traditional Malay Food,74.71,14.37,6.5
+Kedai Keropok Lekor (Sulekor),,Jln Tok Jembal,Restaurant,Other,5.0,Excellent (≥4.5★),5.38866589999999,103.098560299999,No,No,No,No,No,No,Yes,No,No,4,Malay Review Sentiment,56.59,29.11,6.49
+Bless These Kitchen,,Kuala Terengganu,Fast Food Restaurant,Fast Food,5.0,Excellent (≥4.5★),5.3521778,103.0934115,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,55.06,31.6,3.85
+Keropok Lekor Rosa,,Kuala Terengganu,Malaysian Restaurant,Malay,5.0,Excellent (≥4.5★),5.3503471,103.0833066,Yes,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,63.32,23.97,5.77
+Restoran Selere Bonda,,Kuala Terengganu,Restaurant,Other,4.0,Very Good (≥4.0★),5.3760784,103.072185199999,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,76.51,20.17,1.09
+Mystreet Pizza Dapur Kayu,,Kampung Bukit Guntung,Pizza Restaurant,Western,5.0,Excellent (≥4.5★),5.3196455,103.0463977,No,No,No,No,No,No,No,No,No,1,Overall Dining Experience,70.91,19.92,2.8
+Kedai Mee Sup Tok Jembal,,Kuala Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),5.4034755,103.099300599999,No,No,No,No,No,No,Yes,No,No,5,Western & Fusion Food,52.85,30.71,13.58
+Mystreet Pizza,,Kampung Batu Enam,Pizza Restaurant,Western,5.0,Excellent (≥4.5★),5.3444591,103.091798599999,No,No,No,No,Yes,No,No,Yes,No,4,Malay Review Sentiment,62.8,25.42,5.07
+"N,A Ikang Bakor",,Kuala Terengganu,Family Restaurant,Family,5.0,Excellent (≥4.5★),5.3449693,103.1202007,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Sentosa Secret Cafe,,Jln Tok Jembal,Breakfast Restaurant,Cafe,2.0,Below Average (<3.0★),5.3873117,103.098880799999,No,No,No,Yes,Yes,No,Yes,No,No,4,Malay Review Sentiment,60.59,28.67,6.84
+Kedai Makan Warung Kita,,Kuala Terengganu,Malaysian Restaurant,Malay,5.0,Excellent (≥4.5★),5.3462917,103.0909502,Yes,No,No,No,No,No,No,No,No,2,Traditional Malay Food,54.25,39.69,2.11
+Keropok Lekor Kak Jah,,Kampung Batu Enam,Restaurant,Other,4.0,Very Good (≥4.0★),5.3443736,103.092028399999,No,No,No,No,No,No,No,No,No,2,Traditional Malay Food,76.96,16.55,2.32
+Warung Kak Dah Sarapan Pagi,,Kampung Losong Hj Mat Shafie,Breakfast Restaurant,Cafe,4.0,Very Good (≥4.0★),5.31330139999999,103.1133536,No,No,No,Yes,No,No,No,No,No,2,Traditional Malay Food,43.2,32.14,8.19
+Nasi Ayam Batu 6,,Kuala Terengganu,Malaysian Restaurant,Malay,5.0,Excellent (≥4.5★),5.3462191,103.092437499999,Yes,No,No,No,Yes,No,No,No,No,1,Overall Dining Experience,67.8,10.44,6.67
+Kafe Nyiur Sebatang,,Kampung Banggol Tok Jiring,Restaurant,Other,5.0,Excellent (≥4.5★),5.3543074,103.0854655,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Mak Teh Nasi Kerabu,,Jalan Tengku Ampuan Intan,Restaurant,Other,5.0,Excellent (≥4.5★),5.3574833,103.094135,No,No,No,No,No,No,No,Yes,No,2,Traditional Malay Food,53.96,25.95,11.65
+Asam Pedas Johor,,Kampung Binjai Bongkok,Restaurant,Other,5.0,Excellent (≥4.5★),5.35302359999999,103.0946728,No,No,No,No,Yes,No,No,No,No,2,Traditional Malay Food,68.37,22.65,4.32
+Nasi Dagang D' Tapang,,Kuala Terengganu,Breakfast Restaurant,Cafe,5.0,Excellent (≥4.5★),5.37640189999999,103.119247399999,No,No,No,No,Yes,No,Yes,Yes,No,2,Traditional Malay Food,58.69,21.21,13.89
+Kedai Nasi Ayam Yunan Mat Rafi,,Kampung Pak Tijah,Chicken Restaurant,Fast Food,3.0,Good (≥3.0★),5.3770921,103.084402599999,No,No,No,No,Yes,No,No,No,No,2,Traditional Malay Food,67.39,23.87,4.06
+Mee Celup Jeram Hulu,,Kampung Jeram Hulu,Restaurant,Other,3.0,Good (≥3.0★),5.3379669,103.0563693,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,75.72,17.71,2.67
+Kak Yah Sate Chalok 2,,Jalan Lapangan Terbang,Satay Restaurant,Malay,5.0,Excellent (≥4.5★),5.36613709999999,103.0888763,Yes,No,No,No,No,Yes,No,No,No,5,Western & Fusion Food,71.91,15.62,7.26
+Nasi Kunyit Rendang Ayam,,Jalan Tengku Mohamad,Malaysian Restaurant,Malay,5.0,Excellent (≥4.5★),5.362422,103.099706799999,Yes,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Roti Tempayan Pok Syed,,Kuala Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),5.36304399999999,103.0909372,No,No,No,Yes,Yes,No,No,No,No,1,Overall Dining Experience,79.84,8.37,3.51
+Ayub Cikko,,Kampung Batu Enam,Thai Restaurant,Thai,5.0,Excellent (≥4.5★),5.34774679999999,103.089512599999,No,No,No,No,No,No,No,No,No,2,Traditional Malay Food,85.65,4.25,3.04
+Warung Pok Din & Angah,,Kuala Terengganu,Malaysian Restaurant,Malay,5.0,Excellent (≥4.5★),5.346372,103.0912503,Yes,Yes,No,No,No,No,No,No,No,2,Traditional Malay Food,58.2,32.31,3.49
+At Home Cafe,,Kampung Banggul Tiang Kulat,Restaurant,Other,5.0,Excellent (≥4.5★),5.35412769999999,103.096269299999,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Arang Steamboat,,Jalan Tengku Ampuan Bariah,Restaurant,Other,2.0,Below Average (<3.0★),5.3460315,103.1171966,No,No,No,No,No,No,No,No,No,1,Overall Dining Experience,75.9,9.92,4.43
+Warung Che Wan Nasi Dagang,,Kuala Terengganu,Malaysian Restaurant,Malay,5.0,Excellent (≥4.5★),5.3516848,103.073380399999,Yes,No,No,No,No,No,No,No,No,2,Traditional Malay Food,58.57,31.56,4.36
+"Roti Canai,Kampung Batu 6",,"104 A, Jalan Kelantan",Asian Restaurant,Asian,5.0,Excellent (≥4.5★),5.3432572,103.091264099999,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Kedai Roti Canai Adik Beradik 2,,Kampung Bukit Tok Beng,Asian Restaurant,Asian,5.0,Excellent (≥4.5★),5.35314179999999,103.1168292,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,68.42,15.29,7.67
+Warung Kopi Mat Siam Dan Malam,,Kuala Terengganu,Malaysian Restaurant,Malay,5.0,Excellent (≥4.5★),5.3457408,103.0923296,Yes,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,67.04,19.19,6.61
+Restoran Bamboo Village,,Kuala Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),5.3479512,103.085614999999,No,No,No,Yes,No,No,No,No,No,4,Malay Review Sentiment,73.96,15.92,5.94
+"Table 10 Western Food, Kedai Gunting & Cyber Cafe",,Kampung Sekati,Restaurant,Other,4.0,Very Good (≥4.0★),5.3121448,103.086189699999,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,77.66,11.24,4.78
+Santai Tomyam,,Kuala Terengganu,Family Restaurant,Family,5.0,Excellent (≥4.5★),5.3513592,103.0928952,No,No,No,No,No,No,No,No,No,1,Overall Dining Experience,76.34,18.18,1.58
+Kelab Tujuh Puluh,,Kuala Terengganu,Asian Restaurant,Asian,5.0,Excellent (≥4.5★),5.35258499999999,103.1041367,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Azmi Sate Jam Besar,,Kampung Banggul Tiang Kulat,Satay Restaurant,Malay,5.0,Excellent (≥4.5★),5.35617749999999,103.0914974,Yes,No,No,No,Yes,No,No,No,No,5,Western & Fusion Food,54.14,22.34,12.97
+Pak Awang Satay,,Kampungpengakalan Arang,Restaurant,Other,5.0,Excellent (≥4.5★),5.3410549,103.0979017,No,No,No,No,No,No,No,No,No,2,Traditional Malay Food,69.57,24.66,1.98
+Cendol Kaw (Surau Batu 6),,Kuala Terengganu,Hawker Stall,Malay,5.0,Excellent (≥4.5★),5.3484779,103.0927724,Yes,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,64.32,24.7,3.66
+Ayam Gepuk Pak Gembus Gong Badak,,Jalan Gong Badak,Malaysian Restaurant,Malay,3.0,Good (≥3.0★),5.3566177,103.095683999999,Yes,No,No,No,No,No,No,No,No,1,Overall Dining Experience,71.31,21.38,5.01
+Warung Kak Yah Pengkalan Arang,,Kuala Terengganu,Malaysian Restaurant,Malay,5.0,Excellent (≥4.5★),5.34278599999999,103.096858099999,Yes,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,84.52,4.44,3.18
+Mi Goreng Kubor,,Kampung Pengkalan Arang,Restaurant,Other,5.0,Excellent (≥4.5★),5.3391969,103.103914699999,No,No,No,No,No,No,No,No,No,2,Traditional Malay Food,61.75,23.89,8.78
+Zuan Nasi Kerabu 2,,Kampung Banggul Tuan Muda,Restaurant,Other,1.0,Below Average (<3.0★),5.324688,103.0826574,No,No,No,No,No,No,No,No,No,2,Traditional Malay Food,67.89,24.57,2.49
+T-Homemade Cafe,,Kuala Terengganu,Chinese Restaurant,Chinese,3.0,Good (≥3.0★),5.3320162,103.1326167,No,No,No,No,No,No,No,No,No,6,Seafood & Local Snacks,62.46,26.07,10.22
+Kedai Cik Ngah No. 2,,Kampung Batu Enam,Breakfast Restaurant,Cafe,4.0,Very Good (≥4.0★),5.34628579999999,103.091245199999,No,No,No,No,No,No,No,No,No,1,Overall Dining Experience,81.95,7.31,3.38
+Ayam Gepuk Steseng,,Gong Badak,Restaurant,Other,5.0,Excellent (≥4.5★),5.37154439999999,103.0984948,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,69.29,22.36,4.06
+Warung Awang York Roti Canai,,Kuala Terengganu,Malaysian Restaurant,Malay,5.0,Excellent (≥4.5★),5.3477714,103.0894502,Yes,No,No,No,No,No,Yes,No,No,2,Traditional Malay Food,56.32,33.4,5.68
+Burger Batu6,,Kuala Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),5.3463674,103.092120999999,No,No,No,Yes,No,No,No,No,No,4,Malay Review Sentiment,82.74,4.94,3.56
+Nok Burger,,Kuala Terengganu,Hamburger Restaurant,Western,5.0,Excellent (≥4.5★),5.3494566,103.1275495,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Nasi Dagang Kak Wan Aroma Ceria 2,,Kuala Terengganu,Family Restaurant,Family,5.0,Excellent (≥4.5★),5.3586601,103.0987816,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Cendol Pasar Batu 6,,Kampung Batu Enam,Hawker Stall,Malay,5.0,Excellent (≥4.5★),5.3457154,103.0919782,Yes,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,74.5,22.79,0.94
+Warung Nasi Lemak Rm2.50,,Jalan Kota Bharu,Hawker Stall,Malay,4.0,Very Good (≥4.0★),5.3451808,103.0922439,Yes,No,No,Yes,No,No,No,No,No,2,Traditional Malay Food,44.07,36.05,15.62
+Dn Western Food,,Kampung Telaga Daing,Restaurant,Other,5.0,Excellent (≥4.5★),5.3652818,103.124791399999,No,No,No,No,No,No,Yes,No,No,1,Overall Dining Experience,69.46,19.93,4.74
+Restoran Lauk Ulu,,Kampung Batu Enam,Restaurant,Other,5.0,Excellent (≥4.5★),5.3460531,103.0920361,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Surprise Delivery,,Kampung Banggul Nyiur,Bakery,Cafe,5.0,Excellent (≥4.5★),5.350169,103.0584949,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Soup Stall,,Jalan Ketapang 6,Soup Shop,Malay,3.0,Good (≥3.0★),5.3475674,103.0887116,Yes,No,No,No,Yes,No,No,Yes,No,4,Malay Review Sentiment,61.32,28.42,5.56
+Warung Pok Yah Pasar Batu Enam,,Kuala Terengganu,Malaysian Restaurant,Malay,3.0,Good (≥3.0★),5.34623509999999,103.0912401,Yes,No,No,No,No,No,No,No,No,2,Traditional Malay Food,59.12,30.68,3.24
+Mee Celop Ori Klate,,Kuala Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),5.35049399999999,103.124952299999,No,No,No,No,No,No,No,No,No,2,Traditional Malay Food,61.87,11.28,8.09
+Nasi Dagang Mok Kiter (Kak Pah Nasi Dagang),,Unknown,Restaurant,Other,4.0,Very Good (≥4.0★),5.3499174,103.10186,No,No,No,Yes,No,No,No,No,No,5,Western & Fusion Food,62.77,25.68,8.36
+Kedai Makan Tengahari,,Kuala Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),5.4119757,103.0366379,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Noor Tomyam 2 & Nasi Arab,,Kuala Terengganu,Restaurant,Other,4.0,Very Good (≥4.0★),5.39490839999999,103.0953438,No,No,No,No,Yes,No,No,No,No,2,Traditional Malay Food,68.07,21.4,5.68
+Oden Diana Tepi Jalan,,Kampung Batu Enam,Oden Restaurant,Other,5.0,Excellent (≥4.5★),5.3473161,103.0919404,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Gudang Makanan,,Kampung Batu Enam,Restaurant,Other,3.0,Good (≥3.0★),5.3456759,103.0923239,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Muaz And Family Tomyam,,Kuala Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),5.34794439999999,103.0864395,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,92.74,2.08,1.49
+Kedai Makan Selli Mi Rebus & Roti Canai,,Kampung Pak Katak,Restaurant,Other,3.0,Good (≥3.0★),5.3453149,103.095728299999,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,72.03,14.76,6.92
+Ayam Gepuk Ridhwan,,Kampung Bukit Tok Beng,Chicken Restaurant,Fast Food,2.0,Below Average (<3.0★),5.3620927,103.1169305,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,63.86,29.68,4.52
+Wan Mohd Noor Wan Endut,,Unknown,Restaurant,Other,5.0,Excellent (≥4.5★),5.35590099999999,103.060294,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Nasi Ayam Kak Mah,,Kampung Batu Enam,Malaysian Restaurant,Malay,1.0,Below Average (<3.0★),5.347467,103.088888599999,Yes,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,70.54,19.27,3.52
+Ak Steamboat,,Kuala Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),5.333304,103.1363374,No,No,No,No,Yes,No,Yes,No,No,4,Malay Review Sentiment,71.78,15.45,7.61
+Warung ''Pok Katok'',,Kuala Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),5.34564819999999,103.0953734,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,54.2,32.14,10.18
+Nasi Dagang Kak B Terbaikkk,,Kampung Nesan Empat,Restaurant,Other,5.0,Excellent (≥4.5★),5.3364793,103.1416732,No,No,No,Yes,No,No,No,No,No,1,Overall Dining Experience,61.44,22.5,10.57
+Bb Shell Food,,Kampung Mengadang Akar,Restaurant,Other,2.0,Below Average (<3.0★),5.3144136,103.1466566,No,No,No,Yes,No,No,No,No,No,1,Overall Dining Experience,72.68,17.82,4.04
+Gerai Mee Sup Pak Din (Mekcek),,Kuala Terengganu,Hawker Stall,Malay,3.0,Good (≥3.0★),5.34584929999999,103.0920057,Yes,No,No,No,No,No,No,No,No,2,Traditional Malay Food,86.55,6.69,2.13
+Aisyah Ikan Bakar Tok Jiring,,Kampung Tok Jiring,Restaurant,Other,5.0,Excellent (≥4.5★),5.34766699999999,103.085867799999,No,No,No,No,Yes,No,No,No,No,2,Traditional Malay Food,65.35,27.15,4.58
+Subway Paya Bunga Square,,Jalan Masjid Abidin,Fast Food Restaurant,Fast Food,1.0,Below Average (<3.0★),5.33130399999999,103.1369247,No,No,No,No,No,Yes,Yes,No,No,1,Overall Dining Experience,63.98,24.13,6.38
+Burger Bt,,Kampung Batu Enam,Restaurant,Other,5.0,Excellent (≥4.5★),5.34518579999999,103.092237799999,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,70.76,14.01,4.46
+Azr Signature,,Kuala Terengganu,Brunch Restaurant,Cafe,1.0,Below Average (<3.0★),5.35470569999999,103.095672299999,No,No,No,No,No,No,Yes,No,No,4,Malay Review Sentiment,77.1,21.02,0.66
+D'Baruh Warung Pok Weil,,Kuala Terengganu,Malaysian Restaurant,Malay,5.0,Excellent (≥4.5★),5.3525868,103.0868443,Yes,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Malindo Ayam Penyet,,Kuala Terengganu,Indonesian Restaurant,Indonesian,5.0,Excellent (≥4.5★),5.35723949999999,103.094335399999,Yes,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+The Taaras Beach & Spa Resort,,Kuala Terengganu,Resort Hotel,Other,5.0,Excellent (≥4.5★),5.7846899,103.014366099999,No,No,No,No,Yes,Yes,Yes,Yes,No,3,Location & Ambiance,66.01,22.63,6.52
+Warung Maznah,,Kampung Batu Enam,Restaurant,Other,5.0,Excellent (≥4.5★),5.3435282,103.0916467,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Warung Nor & Fendi Roti Canai & Mee Sup,,Kuala Terengganu,Malaysian Restaurant,Malay,3.0,Good (≥3.0★),5.34637099999999,103.0937361,Yes,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,79.92,5.76,4.12
+647 / Kedai Masakan Panas Paya 5 Amas,,Kuala Terengganu,Restaurant,Other,2.0,Below Average (<3.0★),5.3456607,103.094883,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Mok Kite Tomyam Seafood,,Kuala Terengganu,Restaurant,Other,2.0,Below Average (<3.0★),5.34359109999999,103.091429499999,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,52.57,31.9,5.36
+Terengganu State Museum,,Kuala Terengganu,Local History Museum,Other,5.0,Excellent (≥4.5★),5.31873029999999,103.102824399999,No,No,No,Yes,Yes,Yes,Yes,Yes,No,6,Seafood & Local Snacks,55.28,23.44,14.36
+Dieyah Citarasa Tomyam,,Kuala Terengganu,Restaurant,Other,4.0,Very Good (≥4.0★),5.3437771,103.091723,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,88.05,3.5,2.5
+Kak Pah Nasi Dagang 3 (Caw Pantai Miami),,Kuala Terengganu,Breakfast Restaurant,Cafe,5.0,Excellent (≥4.5★),5.3655892,103.124921399999,No,No,No,No,Yes,No,Yes,Yes,No,1,Overall Dining Experience,58.38,30.98,4.55
+Nasi Dagang & Nasi Lemak F1,,Kampung Wakaf Tembesu,Restaurant,Other,3.0,Good (≥3.0★),5.37133569999999,103.0854517,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,91.98,2.3,1.64
+Warung Roti Canai Dan Murtabak,,Kampung Batu Enam,Breakfast Restaurant,Cafe,3.0,Good (≥3.0★),5.34655429999999,103.0913791,No,No,No,No,No,No,No,No,No,3,Location & Ambiance,48.29,46.92,1.76
+A,,Kuala Terengganu,Restaurant,Other,5.0,Excellent (≥4.5★),5.3459851,103.0908611,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Makanan Sedap Kuala Terengganu,,Kampung Rhu Renggeh,Food And Beverage Exporter,Other,5.0,Excellent (≥4.5★),5.2559748,103.181603299999,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Surau Tuan Haji Yahya Bin Abdullah,,Kuala Terengganu,Mosque,Other,4.0,Very Good (≥4.0★),5.3981713,103.0930719,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,84.2,4.54,3.24
+B6 Nutrifix (Kelab Nutrisi Batu 6),,Malaysia,Health Food Restaurant,Other,5.0,Excellent (≥4.5★),5.34464579999999,103.094706899999,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Pisang & Ubi Goreng,,Kampung Batu Enam,Hawker Stall,Malay,5.0,Excellent (≥4.5★),5.34747729999999,103.090594799999,Yes,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+"The Warong, Gerai Nombor 1",,Kuala Terengganu,Asian Restaurant,Asian,5.0,Excellent (≥4.5★),5.3975061,103.0778165,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Cod Makanan,,Kampung Merbau Patah,Delivery Restaurant,Fast Food,5.0,Excellent (≥4.5★),5.293321,103.1170672,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,0,No Reviews,,,
+Ayam Madu Kinabalu,,Kuala Terengganu,Chicken Wings Restaurant,Fast Food,5.0,Excellent (≥4.5★),5.3425012,103.091084299999,No,No,No,No,No,No,No,No,No,4,Malay Review Sentiment,65.19,17.32,5.44
+Shell Out,,Kuala Terengganu,Seafood Restaurant,Seafood,4.0,Very Good (≥4.0★),5.3103131,103.1393626,No,Yes,No,No,No,No,No,No,No,4,Malay Review Sentiment,73.38,17.88,3.32
+Delima Ikan Bakar Wanna,,Kampung Banggul Tiang Kulat,Ikan Bakar Restaurant,Malay,5.0,Excellent (≥4.5★),5.3530419,103.0946656,Yes,No,No,No,No,No,No,No,No,2,Traditional Malay Food,58.96,28.62,4.06
+Polkadot Steamboat & Grill,,Kuala Terengganu,Restaurant,Other,3.0,Good (≥3.0★),5.355459,103.095010199999,No,Yes,No,Yes,No,No,No,No,No,4,Malay Review Sentiment,65.76,19.27,8.04
