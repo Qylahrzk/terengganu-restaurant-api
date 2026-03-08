@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+*.egg-info/
+dist/
+build/
+
+# Environment / secrets
+.env
+*.env
+config.py
+
+# Data files (too large for GitHub)
+*.csv
+*.json
+lda_outputs/
+eda_outputs/
+evaluation_outputs/
+export_outputs/
+kbf_outputs/
+
+# LDA model files
+*.pkl
+*.model
+*.index
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+.env

@@ -1,9 +1,0 @@
-Query_ID,Description,Precision@10,Recall@10,F1_Score,nDCG@10,Total_Relevant
-Q1,Family Seafood Outing — Kuala Terengganu,0.7,1.0,0.8235,0.8983,7
-Q2,Romantic Dinner — Besut,0.7,1.0,0.8235,0.889,7
-Q3,Traditional Malay Food — Dungun,0.8,1.0,0.8889,0.9392,8
-Q4,Western Food — Kemaman,0.7,1.0,0.8235,0.7868,7
-Q5,Budget Cafe — Hulu Terengganu,0.7,1.0,0.8235,0.7776,7
-Q6,Vegetarian Friendly — Kuala Terengganu,0.7,1.0,0.8235,0.7204,7
-Q7,Scenic Outdoor Dining — Marang,0.7,1.0,0.8235,0.911,7
-Q8,Fast Food Family — Besut,0.7,1.0,0.8235,0.8777,7
