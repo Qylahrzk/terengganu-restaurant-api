@@ -1,0 +1,11 @@
+Metric,Value,Section
+LDA Coherence Score (c_v),0.5968,Part A — Intrinsic
+Mean Hybrid Score,72.16,Part A — Intrinsic
+Mean KBF-Only Score,75.42,Part A — Intrinsic
+Mean LDA-Only Score,63.2,Part A — Intrinsic
+Mean Diversity Score,0.2333,Part A — Intrinsic
+Mean Filter Satisfaction,0.5792,Part A — Intrinsic
+Mean Precision@10,0.7125,Part B — User Study
+Mean Recall@10,1.0,Part B — User Study
+Mean F1 Score,0.8317,Part B — User Study
+Mean nDCG@10,0.85,Part B — User Study
