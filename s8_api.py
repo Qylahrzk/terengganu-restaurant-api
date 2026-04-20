@@ -226,12 +226,24 @@ def chat_find_restaurants(restaurants, message, halal_hint=None):
         'thai':        ['thai', 'tomyam', 'tom yam', 'pad thai'],
         'indian':      ['indian', 'roti canai', 'naan', 'curry', 'briyani', 'biryani'],
     }
+    
     for cuisine, keywords in cuisine_map.items():
         if any(kw in msg for kw in keywords):
-            cuisine_match = [
-                r for r in result
-                if cuisine in r.get('cuisine_type', '').lower()
-            ]
+            cuisine_match = []
+            for r in result:
+                db_cuisine = r.get('cuisine_type', '')
+                
+                # Check if Supabase returned a list (array) or a normal string
+                if isinstance(db_cuisine, list):
+                    # Combine the list into one lowercase string (e.g., "cafe western")
+                    safe_cuisine_str = " ".join([str(c) for c in db_cuisine]).lower()
+                else:
+                    # It's a standard string, just lowercase it
+                    safe_cuisine_str = str(db_cuisine).lower()
+                
+                if cuisine in safe_cuisine_str:
+                    cuisine_match.append(r)
+                    
             if len(cuisine_match) >= 3:
                 result = cuisine_match
             break
