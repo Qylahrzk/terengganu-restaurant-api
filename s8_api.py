@@ -48,7 +48,7 @@ except ImportError:
 # ── CONFIGURATION ─────────────────────────────────────────────────────────────
 SUPABASE_URL = os.environ.get('SUPABASE_URL', 'https://turaafqegjhsijpaooli.supabase.co')
 SUPABASE_KEY = os.environ.get('SUPABASE_KEY', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InR1cmFhZnFlZ2poc2lqcGFvb2xpIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzE5MDM5OTQsImV4cCI6MjA4NzQ3OTk5NH0.jUSbHp7kjVoxcOVQDUKoWGG6h38CbLIqqu2YdtzSPs8')
-GEMINI_KEY   = os.environ.get('GEMINI_API_KEY', 'AIzaSyBhPFY6P2WccIA0WwfBd-EpQZCQPIFyKe0')
+GEMINI_KEY   = os.environ.get('GEMINI_API_KEY')
 
 KBF_WEIGHT = 0.30
 LDA_WEIGHT = 0.70
@@ -77,7 +77,7 @@ _gemini_model = None
 if _GENAI_AVAILABLE and GEMINI_KEY:
     try:
         genai.configure(api_key=GEMINI_KEY)
-        _gemini_model = genai.GenerativeModel('gemini-1.5-flash')
+        _gemini_model = genai.GenerativeModel('gemini-2.5-flash')
         print("[chat] Gemini 1.5 Flash model ready")
     except Exception as e:
         print(f"[chat] Gemini init failed: {e}")
