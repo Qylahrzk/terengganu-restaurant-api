@@ -13,7 +13,7 @@ NEW IN v3.3:
 This strategy was proven in your previous code—bringing it back.
 
 ENV VARS (REQUIRED):
-  SUPABASE_URL, SUPABASE_KEY, GEMINI_API_KEY, GROQ_API_KEY
+  SUPABASE_URL, SUPABASE_KEY, GEMINI_API_KEY, GROQ_API_KEY, MISTRAL_API_KEY (OPTIONAL)
 """
 
 from flask import Flask, request, jsonify
