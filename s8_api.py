@@ -121,8 +121,8 @@ GROQ_KEY     = os.environ.get('GROQ_API_KEY')
 MISTRAL_KEY  = os.environ.get('MISTRAL_API_KEY')
 SERPAPI_KEY  = os.environ.get('SERPAPI_KEY')
 
-KBF_WEIGHT = 0.40
-LDA_WEIGHT = 0.60
+KBF_WEIGHT = 0.50
+LDA_WEIGHT = 0.50
 TOP_N      = 10
 
 TOPIC_LABEL_TO_ID = {

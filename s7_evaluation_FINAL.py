@@ -49,8 +49,8 @@ INPUT_CSV  = 'kbf_outputs/kbf_restaurants.csv'
 OUTPUT_DIR = 'evaluation_outputs'
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
-KBF_WEIGHT = 0.40   # empirically validated
-LDA_WEIGHT = 0.60
+KBF_WEIGHT = 0.50   # empirically validated
+LDA_WEIGHT = 0.50
 TOP_N      = 10
 
 LDA_COHERENCE_SCORE = 0.5132   # update from s4_coherence.py if different

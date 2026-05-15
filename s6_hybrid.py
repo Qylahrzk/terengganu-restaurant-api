@@ -19,8 +19,8 @@ OUT_DIR  = 'recommendation_outputs'
 IN_FILE  = 'master_990_kbf.csv'
 os.makedirs(OUT_DIR, exist_ok=True)
 
-KBF_WEIGHT = 0.40
-LDA_WEIGHT = 0.60
+KBF_WEIGHT = 0.50
+LDA_WEIGHT = 0.50
 TOP_N      = 10
 
 # ─────────────────────────────────────────────────────────────────────────────
