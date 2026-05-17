@@ -1,16 +1,19 @@
 """
-STEP 8 - Flask API (Terengganu Restaurant Recommender) v3.3
-Multi-LLM + Per-Request Gemini Fallback Edition
+STEP 8 - Flask API (Terengganu Restaurant Recommender) v3.4
+Multi-LLM + Per-Request Gemini Fallback Edition + Scope Detection
 
-NEW IN v3.3:
-  1. Gemini now uses per-request fallback across 6 models
-  2. Each Gemini model has separate quota (~1M tokens/day)
-  3. gemini-2.0-flash-lite for quick fallback (separate quota!)
-  4. gemini-flash-latest for Google's auto-routing
-  5. Graceful 429/404 handling for quota exhaustion
-  6. Total available quota: 5-6M tokens/day for Gemini alone
+NEW IN v3.4:
+  1. Scope detection for off-topic questions (prevents hallucination)
+  2. Two specialized system prompts (on-topic vs off-topic)
+  3. Graceful redirect for out-of-scope queries
+  4. Maintains all v3.3 features (Gemini per-request fallback, multi-LLM, etc.)
 
-This strategy was proven in your previous code—bringing it back.
+WHAT CHANGED FROM v3.3:
+  - Added is_restaurant_related() function for keyword-based scope detection
+  - Added two system prompts (RESTAURANT_SYSTEM_PROMPT, OFF_TOPIC_SYSTEM_PROMPT)
+  - Modified build_prompt() to use scope-aware prompts
+  - Modified /chat endpoint to detect scope and handle gracefully
+  - No changes to: /health, /restaurants, /recommend endpoints
 
 ENV VARS (REQUIRED):
   SUPABASE_URL, SUPABASE_KEY, GEMINI_API_KEY, GROQ_API_KEY, MISTRAL_API_KEY (OPTIONAL)
@@ -137,6 +140,55 @@ TOPIC_LABEL_TO_ID = {
 app = Flask(__name__)
 CORS(app)
 supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
+
+# ==========================================================================
+# NEW IN v3.4: SCOPE DETECTION FOR PREVENTING HALLUCINATION
+# ==========================================================================
+
+# Keywords that indicate ON-TOPIC restaurant queries
+_RESTAURANT_KEYWORDS = {
+    'restaurant', 'food', 'eat', 'dining', 'cuisine', 'dish', 'meal', 'lunch', 'dinner', 'breakfast',
+    'snack', 'cafe', 'coffee', 'noodle', 'rice', 'pizza', 'burger', 'seafood', 'halal',
+    'vegetarian', 'vegan', 'roti', 'nasi', 'makan', 'minum', 'air', 'minuman', 'hidangan',
+    'tempat makan', 'restoran', 'kafe', 'warung', 'stall', 'kedai', 'toko makanan',
+    'parking', 'ambiance', 'atmosphere', 'vibe', 'cozy', 'family-friendly', 'romantic',
+    'budget', 'cheap', 'expensive', 'price', 'rating', 'review', 'recommendation',
+    'terengganu', 'kota terengganu', 'kuala terengganu', 'besut', 'dungun', 'marang',
+    'kemaman', 'kuala nerus', 'setiu', 'hulu terengganu'
+}
+
+# Keywords that indicate OUT-OF-SCOPE questions
+_OUT_OF_SCOPE_KEYWORDS = {
+    'prime minister', 'government', 'politics', 'election', 'weather', 'news', 'sports',
+    'movie', 'film', 'music', 'celebrity', 'actor', 'singer', 'covid', 'pandemic',
+    'math', 'history', 'science', 'biology', 'chemistry', 'physics', 'coding', 'programming',
+    'travel guide', 'hotel', 'flight', 'booking', 'car rental', 'transport',
+    'doctor', 'medicine', 'health', 'disease', 'hospital', 'pharmacy', 'python', 'code'
+}
+
+def is_restaurant_related(text):
+    """
+    Detect if user question is about restaurants/food.
+    Returns: (is_on_topic: bool, confidence: float, detected_keywords: list)
+    """
+    text_lower = text.lower()
+    
+    # Check for explicit OFF-TOPIC keywords (higher priority)
+    detected_off_topic = [kw for kw in _OUT_OF_SCOPE_KEYWORDS if kw in text_lower]
+    if detected_off_topic:
+        return False, 0.95, detected_off_topic
+    
+    # Check for explicit ON-TOPIC keywords
+    detected_keywords = [kw for kw in _RESTAURANT_KEYWORDS if kw in text_lower]
+    if detected_keywords:
+        return True, min(0.95, len(detected_keywords) * 0.3), detected_keywords
+    
+    # If no keywords detected and very short question, likely off-topic
+    if len(text.split()) < 5 and not detected_keywords:
+        return False, 0.7, []
+    
+    # Default: assume on-topic if no clear signal (err on side of trying to help)
+    return True, 0.5, []
 
 # ==========================================================================
 # GEMINI PER-REQUEST FALLBACK (Your Proven Strategy)
@@ -645,13 +697,78 @@ def chat_format_restaurant_context(restaurants: list, data: dict = None,
 
 
 # ==========================================================================
-# PROMPT BUILDER
+# NEW IN v3.4: UPDATED PROMPT BUILDER WITH SCOPE-AWARE PROMPTS
 # ==========================================================================
+
+# System prompt for ON-TOPIC restaurant questions
+RESTAURANT_SYSTEM_PROMPT = """You are GanuBot, a warm and knowledgeable AI food guide for Terengganu, Malaysia.
+You help users find the perfect restaurant or food experience in Terengganu.
+
+CRITICAL RULES — NEVER BREAK THESE:
+1. You MUST always recommend at least 2 restaurants by name. Never say you have no recommendations.
+2. If fewer than 3 restaurants match ALL criteria, relax the least-important criterion and still name the 2-3 closest matches. Explain the trade-off briefly.
+3. Always mention the restaurant name, district/municipality, and star rating.
+4. Mention the LDA Topic (shown as 'LDA Topic' in the database below) when describing a restaurant's vibe — e.g. 'It has a Popular Local Favorites vibe'.
+5. Be warm, friendly, and concise (3-5 sentences total).
+6. End with one practical tip (best dish, best time to visit, etc).
+7. Never use markdown formatting: no **bold**, no *italic*, no ## headings.
+8. Reply in plain text only.
+9. Reply in the same language the user used (English or Bahasa Malaysia).
+10. Never apologise for having no results — always pivot to the closest match.
+
+EXAMPLE OF GOOD RESPONSE:
+"For a romantic evening with scenic views, I'd suggest Restoran Tepi Laut in Kuala Terengganu (4.3/5) — it has a Popular Local Favorites vibe and sits right by the water. Another great pick is Warung Pantai Batu Buruk (4.1/5) in Kuala Terengganu, known for its breezy outdoor seating. Note: neither is tagged as specifically romantic, but both have scenic views and a relaxed atmosphere perfect for a date. Tip: visit after 7pm for the best sunset view."""
+
+# System prompt for OFF-TOPIC questions (NEW IN v3.4)
+OFF_TOPIC_SYSTEM_PROMPT = """You are GanuBot, a restaurant recommendation assistant for Terengganu.
+
+The user just asked you a question that's OUTSIDE YOUR SCOPE. Your job is to:
+
+1. Politely acknowledge their question
+2. Explain that you're specifically designed for restaurant discovery in Terengganu
+3. Redirect them back to food/dining topics
+4. Suggest 3-5 example restaurant questions they could ask instead
+
+CRITICAL CONSTRAINTS:
+- DO NOT try to answer the off-topic question (even partially!)
+- DO NOT make up restaurant recommendations to seem helpful
+- DO NOT ignore the out-of-scope question
+- BE WARM: "I appreciate the question, but I'm specifically built for restaurants..."
+- ALWAYS END with example questions they could ask
+
+EXAMPLE RESPONSE:
+"I appreciate your question, but that's outside my specialty! I'm specifically built to help you discover amazing restaurants in Terengganu. 
+
+How about asking me something like:
+- 'What are the best seafood restaurants in Kuala Terengganu?'
+- 'Where can I find halal restaurants with parking?'
+- 'I want a cozy cafe for a romantic dinner'
+- 'Any good family-friendly spots in Besut?'
+- 'Best traditional Malay food in Terengganu?'
+
+Let's find you something delicious!" """
 
 def build_prompt(message: str, restaurant_context: str,
                  online_context: str = '', active_prefs: list = None,
-                 relaxed: list = None) -> str:
+                 relaxed: list = None, is_on_topic: bool = True) -> tuple[str, str]:
+    """
+    Build prompt with scope-aware system prompt.
+    
+    CHANGED IN v3.4: Returns tuple (system_prompt, user_prompt) instead of full prompt
+    """
+    
+    # Choose system prompt based on scope
+    if is_on_topic:
+        system_prompt = RESTAURANT_SYSTEM_PROMPT
+    else:
+        system_prompt = OFF_TOPIC_SYSTEM_PROMPT
 
+    # For off-topic, use simple user prompt (don't include restaurant context)
+    if not is_on_topic:
+        user_prompt = f"User asks: {message}\n\nPolitely redirect them to restaurant topics with example questions."
+        return system_prompt, user_prompt
+
+    # For on-topic, use original detailed prompt
     prefs_note = ''
     if active_prefs:
         prefs_note = f"USER PREFERENCES ALREADY FILTERED: {', '.join(active_prefs)}\n"
@@ -670,25 +787,7 @@ REAL-TIME WEB SEARCH RESULTS (use for current info like hours, events, prices):
 {online_context}
 """
 
-    return f"""You are GanuBot, a warm and knowledgeable AI food guide for Terengganu, Malaysia.
-You help users find the perfect restaurant or food experience in Terengganu.
-
-CRITICAL RULES — NEVER BREAK THESE:
-1. You MUST always recommend at least 2 restaurants by name. Never say you have no recommendations.
-2. If fewer than 3 restaurants match ALL criteria, relax the least-important criterion and still name the 2-3 closest matches. Explain the trade-off briefly.
-3. Always mention the restaurant name, district/municipality, and star rating.
-4. Mention the LDA Topic (shown as 'LDA Topic' in the database below) when describing a restaurant's vibe — e.g. 'It has a Popular Local Favorites vibe'.
-5. Be warm, friendly, and concise (3-5 sentences total).
-6. End with one practical tip (best dish, best time to visit, etc).
-7. Never use markdown formatting: no **bold**, no *italic*, no ## headings.
-8. Reply in plain text only.
-9. Reply in the same language the user used (English or Bahasa Malaysia).
-10. Never apologise for having no results — always pivot to the closest match.
-
-EXAMPLE OF GOOD RESPONSE:
-"For a romantic evening with scenic views, I'd suggest Restoran Tepi Laut in Kuala Terengganu (4.3/5) — it has a Popular Local Favorites vibe and sits right by the water. Another great pick is Warung Pantai Batu Buruk (4.1/5) in Kuala Terengganu, known for its breezy outdoor seating. Note: neither is tagged as specifically romantic, but both have scenic views and a relaxed atmosphere perfect for a date. Tip: visit after 7pm for the best sunset view."
-
-{prefs_note}{relaxed_note}
+    user_prompt = f"""{prefs_note}{relaxed_note}
 SUPABASE DATABASE — RESTAURANTS MATCHING THIS QUERY (with LDA topic labels):
 {restaurant_context}
 {online_section}
@@ -696,12 +795,14 @@ USER ASKS: {message}
 
 YOUR REPLY (plain text, no markdown, must name at least 2 restaurants):"""
 
+    return system_prompt, user_prompt
+
 
 # ==========================================================================
 # LLM CALL — auto-failover across Groq → Gemini → Mistral
 # ==========================================================================
 
-def call_llm(prompt: str, primary_model: str) -> tuple[str, str]:
+def call_llm(system_prompt: str, user_prompt: str, primary_model: str) -> tuple[str, str]:
     """Call LLM with automatic failover."""
     if primary_model == 'groq':
         order = ['groq', 'gemini', 'mistral']
@@ -717,7 +818,10 @@ def call_llm(prompt: str, primary_model: str) -> tuple[str, str]:
             if model_key == 'groq' and _groq_client:
                 resp  = _groq_client.chat.completions.create(
                     model='llama-3.3-70b-versatile',
-                    messages=[{'role': 'user', 'content': prompt}],
+                    messages=[
+                        {'role': 'system', 'content': system_prompt},
+                        {'role': 'user', 'content': user_prompt}
+                    ],
                     max_tokens=700, temperature=0.7,
                 )
                 reply = strip_markdown(resp.choices[0].message.content.strip())
@@ -725,14 +829,19 @@ def call_llm(prompt: str, primary_model: str) -> tuple[str, str]:
                 return reply, 'Groq Llama-3.3'
 
             elif model_key == 'gemini' and _GEMINI_AVAILABLE:
-                reply = _call_gemini_with_fallback(prompt)  # ← Uses per-request fallback
+                # Combine system and user prompts for Gemini
+                full_prompt = f"{system_prompt}\n\n{user_prompt}"
+                reply = _call_gemini_with_fallback(full_prompt)
                 logger.info(f"[LLM] Gemini responded ({len(reply)} chars) via {_gemini_working_model}")
                 return reply, f'Gemini ({_gemini_working_model})'
 
             elif model_key == 'mistral' and _mistral_client:
                 resp  = _mistral_client.chat.complete(
                     model='mistral-large-latest',
-                    messages=[{'role': 'user', 'content': prompt}],
+                    messages=[
+                        {'role': 'system', 'content': system_prompt},
+                        {'role': 'user', 'content': user_prompt}
+                    ],
                 )
                 reply = strip_markdown(resp.choices[0].message.content.strip())
                 logger.info(f"[LLM] Mistral responded ({len(reply)} chars)")
@@ -826,7 +935,7 @@ def self_ping():
 def health():
     return jsonify({
         'status'   : 'ok',
-        'version'  : '3.3',
+        'version'  : '3.4',
         'message'  : 'Makan Mana API running',
         'weighting': f'{int(KBF_WEIGHT * 100)}% KBF + {int(LDA_WEIGHT * 100)}% LDA',
         'cache'    : f'{len(_restaurant_cache)} restaurants cached',
@@ -841,6 +950,7 @@ def health():
         },
         'gemini_models_available': len(_GEMINI_MODEL_FALLBACKS),
         'total_gemini_quota_estimate': f"{len(_GEMINI_MODEL_FALLBACKS) * 1}M tokens/day",
+        'scope_detection': 'enabled (v3.4)',
     }), 200
 
 
@@ -1031,7 +1141,7 @@ def recommend():
 
 @app.route('/chat', methods=['POST'])
 def chat():
-    """Multi-LLM RAG chat with Gemini per-request fallback across 6 models."""
+    """Multi-LLM RAG chat with Gemini per-request fallback + scope detection."""
     try:
         data    = request.get_json(force=True)
         message = (data.get('message') or '').strip()
@@ -1045,7 +1155,12 @@ def chat():
                 'restaurants'    : [], 'model_used': 'None',
                 'search_used'    : False, 'intent': 'error',
                 'relaxed_criteria': [], 'has_partial_match': False,
+                'is_on_topic': None, 'scope_confidence': 0.0, 'detected_keywords': [],
             }), 200
+
+        # NEW IN v3.4: DETECT SCOPE (prevents hallucination)
+        is_on_topic, scope_confidence, detected_keywords = is_restaurant_related(message)
+        logger.info(f"[chat] Scope: on_topic={is_on_topic}, confidence={scope_confidence:.2f}, keywords={detected_keywords}")
 
         # 1. Detect intent
         intent = detect_intent(message)
@@ -1055,66 +1170,74 @@ def chat():
         user_model_req   = data.get('model', '')
         primary_model, _ = select_model(message, user_model_req)
 
-        # 3. Load + filter restaurants
-        restaurants                    = load_restaurants()
-        relevant, relaxed_criteria     = chat_find_restaurants(restaurants, message, data)
-        has_partial_match              = len(relaxed_criteria) > 0
-        db_context                     = chat_format_restaurant_context(
-                                             relevant, data, relaxed_criteria)
+        # 3. Load + filter restaurants (only for on-topic queries)
+        restaurants = load_restaurants()
+        relevant = []
+        relaxed_criteria = []
+        db_context = ""
+        has_partial_match = False
+        
+        if is_on_topic:
+            relevant, relaxed_criteria     = chat_find_restaurants(restaurants, message, data)
+            has_partial_match              = len(relaxed_criteria) > 0
+            db_context                     = chat_format_restaurant_context(
+                                                 relevant, data, relaxed_criteria)
 
-        # 4. Online search if needed
+        # 4. Online search if needed (only for on-topic queries)
         online_context = ''
         search_query   = ''
         search_used    = False
-        if intent in ('augment', 'online'):
+        if is_on_topic and intent in ('augment', 'online'):
             search_query   = build_search_query(message)
             online_context = web_search(search_query)
             search_used    = bool(online_context)
 
-        # 5. Active preferences
-        pref_labels = {
-            'halal': 'Halal', 'vegetarian': 'Vegetarian', 'vegan': 'Vegan',
-            'parking': 'Parking', 'wifi': 'WiFi', 'ac': 'Air-Cond',
-            'outdoor': 'Outdoor', 'accessible': 'Accessible',
-            'family_friendly': 'Family-friendly', 'group_friendly': 'Group-friendly',
-            'casual': 'Casual', 'romantic': 'Romantic', 'scenic_view': 'Scenic view',
-            'worth_it': 'Worth it', 'fast_service': 'Fast service',
-        }
-        active_prefs = [label for key, label in pref_labels.items()
-                        if data.get(key) is True]
+        # 5. Active preferences (only for on-topic queries)
+        active_prefs = []
+        if is_on_topic:
+            pref_labels = {
+                'halal': 'Halal', 'vegetarian': 'Vegetarian', 'vegan': 'Vegan',
+                'parking': 'Parking', 'wifi': 'WiFi', 'ac': 'Air-Cond',
+                'outdoor': 'Outdoor', 'accessible': 'Accessible',
+                'family_friendly': 'Family-friendly', 'group_friendly': 'Group-friendly',
+                'casual': 'Casual', 'romantic': 'Romantic', 'scenic_view': 'Scenic view',
+                'worth_it': 'Worth it', 'fast_service': 'Fast service',
+            }
+            active_prefs = [label for key, label in pref_labels.items()
+                            if data.get(key) is True]
 
-        # 6. Build prompt
-        prompt = build_prompt(
+        # 6. Build prompt (NEW: with scope awareness)
+        system_prompt, user_prompt = build_prompt(
             message, db_context, online_context,
-            active_prefs, relaxed_criteria
+            active_prefs, relaxed_criteria, is_on_topic
         )
 
         # 7. Call LLM
-        reply, model_used = call_llm(prompt, primary_model)
+        reply, model_used = call_llm(system_prompt, user_prompt, primary_model)
 
-        # 8. Build restaurant preview
+        # 8. Build restaurant preview (only for on-topic queries)
         restaurant_preview = []
-        for r in relevant:
-            matched = build_matched_filters(r, data)
-            restaurant_preview.append({
-                'name'           : r.get('name', ''),
-                'rating'         : r.get('rating', 0),
-                'cuisine_type'   : r.get('cuisine_type', ''),
-                'municipality'   : r.get('municipality', ''),
-                'address'        : r.get('address', ''),
-                'is_halal'       : r.get('is_halal', False),
-                'topic_label'    : r.get('topic_label', ''),
-                'latitude'       : r.get('latitude'),
-                'longitude'      : r.get('longitude'),
-                'price_level'    : r.get('price_level'),
-                'matched_filters': matched,
-                'is_romantic'    : r.get('is_romantic', False),
-                'has_scenic_view': r.get('has_scenic_view', False),
-                'is_partial_match': has_partial_match,
-            })
+        if is_on_topic:
+            for r in relevant:
+                matched = build_matched_filters(r, data)
+                restaurant_preview.append({
+                    'name'           : r.get('name', ''),
+                    'rating'         : r.get('rating', 0),
+                    'cuisine_type'   : r.get('cuisine_type', ''),
+                    'municipality'   : r.get('municipality', ''),
+                    'address'        : r.get('address', ''),
+                    'is_halal'       : r.get('is_halal', False),
+                    'topic_label'    : r.get('topic_label', ''),
+                    'latitude'       : r.get('latitude'),
+                    'longitude'      : r.get('longitude'),
+                    'price_level'    : r.get('price_level'),
+                    'matched_filters': matched,
+                    'is_romantic'    : r.get('is_romantic', False),
+                    'has_scenic_view': r.get('has_scenic_view', False),
+                    'is_partial_match': has_partial_match,
+                })
 
-        logger.info(f"[chat] model={model_used} | "
-                   f"restaurants={len(relevant)} | search={search_used}")
+        logger.info(f"[chat] model={model_used} | on_topic={is_on_topic} | restaurants={len(relevant)} | search={search_used}")
 
         return jsonify({
             'reply'           : reply,
@@ -1125,6 +1248,9 @@ def chat():
             'intent'          : intent,
             'relaxed_criteria': relaxed_criteria,
             'has_partial_match': has_partial_match,
+            'is_on_topic'     : is_on_topic,
+            'scope_confidence': scope_confidence,
+            'detected_keywords': list(detected_keywords),
         }), 200
 
     except Exception as e:
@@ -1134,6 +1260,7 @@ def chat():
             'restaurants'     : [], 'model_used': 'None',
             'search_used'     : False, 'intent': 'error',
             'relaxed_criteria': [], 'has_partial_match': False,
+            'is_on_topic'     : None, 'scope_confidence': 0.0, 'detected_keywords': [],
         }), 500
 
 
@@ -1144,11 +1271,12 @@ def chat():
 if __name__ == '__main__':
     threading.Thread(target=self_ping, daemon=True).start()
     logger.info("=" * 70)
-    logger.info("  MAKAN MANA API v3.3 — Production-Ready with Gemini Quota Optimization")
+    logger.info("  MAKAN MANA API v3.4 — With Scope Detection (Prevents Hallucination)")
     logger.info(f"  Gemini : {'active' if _GEMINI_AVAILABLE else 'inactive'} " +
                 f"({len(_GEMINI_MODEL_FALLBACKS)} models, ~{len(_GEMINI_MODEL_FALLBACKS)}M tokens/day total)")
     logger.info(f"  Groq   : {'active' if _groq_client else 'inactive'}")
     logger.info(f"  Mistral: {'active' if _mistral_client else 'inactive'}")
     logger.info(f"  DDG    : {'active' if _DDG_AVAILABLE else 'inactive'}")
+    logger.info(f"  Scope Detection: ENABLED (prevents off-topic hallucination)")
     logger.info("=" * 70)
     app.run(debug=False, host='0.0.0.0', port=5000)
