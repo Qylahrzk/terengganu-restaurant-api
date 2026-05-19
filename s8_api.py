@@ -1,20 +1,26 @@
 """
-STEP 8 - Flask API (Terengganu Restaurant Recommender) v3.5
-BUGFIX: Chatbot now recommends ONLY from filtered results, not hallucinated restaurants
+STEP 8 - Flask API (Terengganu Restaurant Recommender) v3.5 FIXED
+CRITICAL FIX: Chat endpoint now extracts preferences FROM THE MESSAGE, not from request data
 
-NEW IN v3.5:
-  1. Chat endpoint uses /recommend logic to get ranked restaurants first
-  2. LLM receives ACTUAL ranked restaurants, not just context
-  3. LLM recommends from TOP_N (sorted by hybrid score)
-  4. No more hallucinated/non-existent restaurant suggestions
-  5. Restaurant preview matches what LLM actually recommends
+THE BUG:
+  - v3.5 reused old preference data across different questions
+  - User asks "best seafood in Kuala Terengganu" → gets seafood list
+  - User asks "halal restaurants" → STILL gets the same seafood list
+  - Problem: preferences dict carried forward, only message changed
 
-WHAT CHANGED FROM v3.4:
-  - Modified /chat endpoint to call compute_hybrid_score logic
-  - LLM now gets TOP_N ranked restaurants + scores
-  - LLM prompt explicitly tells it to recommend from the list
-  - Restaurant preview populated with TOP_N, not chat_find_restaurants
-  - Removed chat_find_restaurants from chat flow (only for fallback now)
+THE FIX:
+  1. Message parser extracts DYNAMIC preferences from current user question
+  2. Each question parsed independently for: cuisine, dietary, location, vibe
+  3. Previous question's preferences DO NOT carry over
+  4. Ranking recalculates from scratch for each new message
+  5. Restaurant list changes based on actual question intent
+
+NEW IN v3.5 FIXED:
+  1. parse_message_for_preferences() extracts cuisine, location, vibe from text
+  2. /chat endpoint builds preferences from MESSAGE, not request body
+  3. Each message → fresh preference parsing → fresh ranking
+  4. No more stale data between questions
+  5. Chatbot recommends DIFFERENT restaurants for DIFFERENT questions
 
 ENV VARS (REQUIRED):
   SUPABASE_URL, SUPABASE_KEY, GEMINI_API_KEY, GROQ_API_KEY
@@ -181,6 +187,106 @@ def is_restaurant_related(text):
         return False, 0.7, []
     
     return True, 0.5, []
+
+# ==========================================================================
+# NEW: MESSAGE PREFERENCE PARSER (CRITICAL FIX)
+# ==========================================================================
+
+CUISINE_KEYWORDS = {
+    'malay':     ['malay', 'nasi', 'mee', 'kuih', 'lemak', 'goreng', 'kampung', 'traditional'],
+    'seafood':   ['seafood', 'fish', 'ikan', 'prawn', 'udang', 'sotong', 'ketam', 'crab', 'laut', 'laut'],
+    'western':   ['western', 'burger', 'pasta', 'steak', 'pizza', 'sandwich', 'international'],
+    'cafe':      ['cafe', 'coffee', 'latte', 'kopitiam', 'kopi', 'brunch', 'cappuccino', 'espresso'],
+    'chinese':   ['chinese', 'dim sum', 'wonton', 'char kway', 'hakka', 'cantonese'],
+    'japanese':  ['japanese', 'sushi', 'ramen', 'sashimi', 'udon', 'tempura', 'tonkatsu'],
+    'bbq':       ['bbq', 'grill', 'bakar', 'satay', 'satai', 'roasted', 'grilled'],
+    'dessert':   ['dessert', 'ice cream', 'ais', 'cake', 'pastry', 'sweet', 'gelato'],
+    'fast food': ['fast food', 'mcdonalds', 'kfc', 'burger king', 'mamak', 'quick'],
+    'thai':      ['thai', 'tomyam', 'tom yam', 'pad thai', 'thai cuisine'],
+    'indian':    ['indian', 'roti canai', 'naan', 'curry', 'briyani', 'tandoori'],
+}
+
+DIETARY_KEYWORDS = {
+    'halal':       ['halal', 'islamic', 'muslim friendly'],
+    'vegetarian': ['vegetarian', 'veggie', 'veg '],
+    'vegan':      ['vegan', 'no animal'],
+}
+
+VIBE_KEYWORDS = {
+    'family_friendly':  ['family', 'kids', 'children', 'child-friendly'],
+    'romantic':         ['romantic', 'date', 'anniversary', 'couple', 'intimate'],
+    'casual':           ['casual', 'relax', 'relaxing', 'chill'],
+    'group_friendly':   ['group', 'party', 'gathering', 'friends', 'besar'],
+    'scenic_view':      ['scenic', 'view', 'sea view', 'river view', 'pemandangan'],
+    'outdoor':          ['outdoor', 'open air', 'alfresco', 'luar'],
+}
+
+LOCATION_KEYWORDS = {
+    'Kuala Terengganu': ['kuala terengganu', 'kt', 'kota terengganu'],
+    'Besut':            ['besut'],
+    'Dungun':           ['dungun'],
+    'Marang':           ['marang'],
+    'Kemaman':          ['kemaman'],
+    'Kuala Nerus':      ['kuala nerus', 'nerus'],
+    'Setiu':            ['setiu'],
+    'Hulu Terengganu':  ['hulu terengganu'],
+}
+
+PRICE_KEYWORDS = {
+    'budget':   ['budget', 'cheap', 'murah', 'affordable', 'rm10', 'rm15', 'rm20'],
+    'upscale':  ['upscale', 'fine dining', 'premium', 'mewah', 'expensive', 'mahal'],
+}
+
+def parse_message_for_preferences(message: str) -> dict:
+    """
+    CRITICAL FIX: Extract preferences DIRECTLY from the message text.
+    Each question is parsed independently — no stale data.
+    Returns a fresh preferences dict for THIS question only.
+    """
+    msg = message.lower()
+    preferences = {}
+    
+    # Extract cuisine
+    for cuisine, keywords in CUISINE_KEYWORDS.items():
+        if any(kw in msg for kw in keywords):
+            preferences['cuisine'] = cuisine
+            logger.debug(f"[parse] Detected cuisine: {cuisine}")
+            break
+    
+    # Extract dietary preferences
+    for diet, keywords in DIETARY_KEYWORDS.items():
+        if any(kw in msg for kw in keywords):
+            preferences[diet] = True
+            logger.debug(f"[parse] Detected {diet}: True")
+    
+    # Extract vibe/atmosphere
+    for vibe, keywords in VIBE_KEYWORDS.items():
+        if any(kw in msg for kw in keywords):
+            preferences[vibe] = True
+            logger.debug(f"[parse] Detected {vibe}: True")
+    
+    # Extract location
+    for location, keywords in LOCATION_KEYWORDS.items():
+        if any(kw in msg for kw in keywords):
+            preferences['district'] = location
+            logger.debug(f"[parse] Detected location: {location}")
+            break
+    
+    # Extract price preference
+    for price, keywords in PRICE_KEYWORDS.items():
+        if any(kw in msg for kw in keywords):
+            if price == 'budget':
+                preferences['min_rating'] = 3.0
+            # For upscale, we let the price_level filter handle it
+            logger.debug(f"[parse] Detected price: {price}")
+    
+    # Extract rating preference ("best", "top rated")
+    if any(w in msg for w in ['best', 'top', 'highest rated', 'terbaik', 'excellent']):
+        preferences['min_rating'] = 4.0
+        logger.debug("[parse] Detected high rating requirement: 4.0+")
+    
+    logger.info(f"[parse] Message preferences: {preferences}")
+    return preferences
 
 # ==========================================================================
 # GEMINI PER-REQUEST FALLBACK (v3.4, unchanged)
@@ -474,202 +580,76 @@ def build_search_query(message: str) -> str:
 
 
 # ==========================================================================
-# RESTAURANT RETRIEVAL
+# SCORING (unchanged)
 # ==========================================================================
 
-_RELAXATION_ORDER = [
-    'wifi', 'ac', 'accessible', 'vegan', 'outdoor',
-    'scenic_view', 'romantic', 'casual', 'group_friendly',
-    'fast_service', 'worth_it', 'parking', 'family_friendly',
-    'vegetarian', 'halal',
-]
-
-
-def _apply_flag_filters(restaurants: list, data: dict) -> list:
-    """Apply boolean preference flags as filters."""
-    result = list(restaurants)
+def compute_kbf_score(restaurant, preferences):
+    score, max_points = 0.0, 0
     checks = [
-        ('halal',           'is_halal'),
-        ('vegetarian',      'is_vegetarian'),
-        ('vegan',           'is_vegan'),
-        ('parking',         'has_parking'),
-        ('wifi',            'has_wifi'),
-        ('ac',              'has_ac'),
-        ('outdoor',         'has_outdoor'),
-        ('accessible',      'is_accessible'),
-        ('family_friendly', 'is_family_friendly'),
-        ('group_friendly',  'is_group_friendly'),
-        ('casual',          'is_casual'),
-        ('romantic',        'is_romantic'),
-        ('scenic_view',     'has_scenic_view'),
-        ('worth_it',        'is_worth_it'),
-        ('fast_service',    'is_fast_service'),
+        ('district',        lambda r: r.get('municipality', '').lower() == preferences.get('district', '').lower()),
+        ('cuisine',         lambda r: preferences.get('cuisine', '').lower() in _safe_cuisine(r)),
+        ('min_rating',      lambda r: float(r.get('rating', 0)) >= float(preferences.get('min_rating', 0))),
+        ('halal',           lambda r: r.get('is_halal') is True),
+        ('vegetarian',      lambda r: r.get('is_vegetarian') is True),
+        ('vegan',           lambda r: r.get('is_vegan') is True),
+        ('parking',         lambda r: r.get('has_parking') is True),
+        ('wifi',            lambda r: r.get('has_wifi') is True),
+        ('ac',              lambda r: r.get('has_ac') is True),
+        ('outdoor',         lambda r: r.get('has_outdoor') is True),
+        ('accessible',      lambda r: r.get('is_accessible') is True),
+        ('family_friendly', lambda r: r.get('is_family_friendly') is True),
+        ('group_friendly',  lambda r: r.get('is_group_friendly') is True),
+        ('casual',          lambda r: r.get('is_casual') is True),
+        ('romantic',        lambda r: r.get('is_romantic') is True),
+        ('scenic_view',     lambda r: r.get('has_scenic_view') is True),
+        ('worth_it',        lambda r: r.get('is_worth_it') is True),
+        ('fast_service',    lambda r: r.get('is_fast_service') is True),
     ]
-    for req_key, db_col in checks:
-        if data.get(req_key) is True:
-            filtered = [r for r in result if r.get(db_col) is True]
-            if filtered:
-                result = filtered
-    return result
+    for key, fn in checks:
+        if preferences.get(key):
+            max_points += 1
+            try:
+                if fn(restaurant): score += 1.0
+            except:
+                pass
+    return score / max_points if max_points > 0 else float(restaurant.get('rating', 3.0)) / 5.0
 
 
-def chat_find_restaurants(restaurants: list, message: str,
-                           data: dict = None) -> tuple[list, list]:
-    """
-    Retrieve relevant restaurants with progressive relaxation.
-    ALWAYS returns at least 3 results.
-
-    Returns: (restaurants_list, relaxed_criteria_list)
-    """
-    if data is None:
-        data = {}
-    msg = message.lower()
-
-    cuisine_map = {
-        'malay':     ['malay', 'nasi', 'mee', 'kuih', 'lemak', 'goreng', 'kampung'],
-        'seafood':   ['seafood', 'fish', 'ikan', 'prawn', 'udang', 'sotong', 'ketam', 'crab'],
-        'western':   ['western', 'burger', 'pasta', 'steak', 'pizza', 'sandwich'],
-        'cafe':      ['cafe', 'coffee', 'latte', 'kopitiam', 'kopi', 'brunch'],
-        'chinese':   ['chinese', 'dim sum', 'wonton', 'char kway'],
-        'japanese':  ['japanese', 'sushi', 'ramen', 'sashimi', 'udon', 'tempura'],
-        'bbq':       ['bbq', 'grill', 'bakar', 'satay'],
-        'dessert':   ['dessert', 'ice cream', 'ais', 'cake', 'sweet'],
-        'fast food': ['fast food', 'mcdonalds', 'kfc', 'burger king', 'mamak'],
-        'thai':      ['thai', 'tomyam', 'tom yam', 'pad thai'],
-        'indian':    ['indian', 'roti canai', 'naan', 'curry', 'briyani'],
-    }
-    cuisine_filtered = list(restaurants)
-    for cuisine, keywords in cuisine_map.items():
-        if any(kw in msg for kw in keywords):
-            match = [r for r in restaurants if cuisine in _safe_cuisine(r)]
-            if match:
-                cuisine_filtered = match
-            break
-
-    attr_map = {
-        'halal':    ('is_halal',           ['halal']),
-        'veg':      ('is_vegetarian',      ['vegetarian', 'veggie']),
-        'vegan':    ('is_vegan',           ['vegan']),
-        'parking':  ('has_parking',        ['parking']),
-        'wifi':     ('has_wifi',           ['wifi', 'wi-fi', 'internet']),
-        'family':   ('is_family_friendly', ['family', 'kids', 'children']),
-        'romantic': ('is_romantic',        ['romantic', 'date', 'anniversary', 'couple']),
-        'outdoor':  ('has_outdoor',        ['outdoor', 'open air', 'alfresco']),
-        'scenic':   ('has_scenic_view',    ['scenic', 'view', 'sea view', 'river']),
-        'group':    ('is_group_friendly',  ['group', 'party', 'gathering', 'event']),
-        'casual':   ('is_casual',          ['casual', 'relax']),
-        'ac':       ('has_ac',             ['air cond', 'aircond', 'air-cond']),
-    }
-    attr_filtered = list(cuisine_filtered)
-    for _, (col, keywords) in attr_map.items():
-        if any(kw in msg for kw in keywords):
-            match = [r for r in attr_filtered if r.get(col) is True]
-            if match:
-                attr_filtered = match
-
-    flag_filtered = _apply_flag_filters(attr_filtered, data)
-
-    price_filtered = list(flag_filtered)
-    price_relaxed  = False
-    if any(w in msg for w in ['budget', 'cheap', 'murah', 'affordable', 'rm15', 'rm20', 'rm30', 'rm50']):
-        m = [r for r in price_filtered if r.get('price_level') in [1, None]]
-        if len(m) >= 2:
-            price_filtered = m
-        else:
-            price_relaxed = True
-    elif any(w in msg for w in ['upscale', 'fine dining', 'premium', 'mewah']):
-        m = [r for r in price_filtered if (r.get('price_level') or 0) >= 3]
-        if m:
-            price_filtered = m
-
-    if any(w in msg for w in ['best', 'top', 'highest rated', 'terbaik']):
-        m = [r for r in price_filtered if float(r.get('rating', 0)) >= 4.0]
-        if m:
-            price_filtered = m
-
-    result = price_filtered
-    relaxed_criteria = ['price'] if price_relaxed else []
-
-    if len(result) < 3:
-        working_data = dict(data)
-        for flag in _RELAXATION_ORDER:
-            if len(result) >= 3:
-                break
-            if working_data.get(flag) is True:
-                working_data.pop(flag)
-                relaxed_criteria.append(flag.replace('_', ' '))
-                candidate = _apply_flag_filters(attr_filtered, working_data)
-                if len(candidate) >= 2:
-                    result = candidate
-
-    if len(result) < 3:
-        fallback = sorted(cuisine_filtered,
-                          key=lambda r: float(r.get('rating', 0)), reverse=True)
-        if len(fallback) >= 3:
-            result = fallback
-            relaxed_criteria.append('most filters (showing closest matches)')
-        else:
-            result = sorted(restaurants,
-                            key=lambda r: float(r.get('rating', 0)), reverse=True)
-            relaxed_criteria.append('all filters (top-rated fallback)')
-
-    result.sort(key=lambda r: float(r.get('rating', 0)), reverse=True)
-    return result[:8], relaxed_criteria
+def compute_lda_score(restaurant, preferred_topic_id):
+    if preferred_topic_id is None:
+        return float(restaurant.get('topic_1_pct', 50)) / 100.0
+    score = 1.0 if int(restaurant.get('dominant_topic', 0)) == preferred_topic_id else 0.0
+    pct   = float(restaurant.get('topic_1_pct', 0))
+    return min(score * (pct / 100.0 + 0.5), 1.0)
 
 
-def chat_format_restaurant_context(restaurants: list, data: dict = None,
-                                    relaxed: list = None) -> str:
-    """Format restaurants as compact text for LLM prompt."""
-    if not restaurants:
-        return "No restaurants found. Use your general knowledge of Terengganu food."
-
-    if data is None:
-        data = {}
-    if relaxed is None:
-        relaxed = []
-
-    relaxed_note = ''
-    if relaxed:
-        relaxed_note = (
-            f"\nNOTE: To find results, the system relaxed these criteria: "
-            f"{', '.join(relaxed)}. Mention this trade-off in your reply.\n"
-        )
-
-    lines = [relaxed_note] if relaxed_note else []
-    for r in restaurants:
-        attrs = []
-        if r.get('is_halal'):           attrs.append('Halal')
-        if r.get('is_vegetarian'):      attrs.append('Vegetarian')
-        if r.get('has_parking'):        attrs.append('Parking')
-        if r.get('has_wifi'):           attrs.append('WiFi')
-        if r.get('has_ac'):             attrs.append('Air-Cond')
-        if r.get('is_family_friendly'): attrs.append('Family-friendly')
-        if r.get('is_romantic'):        attrs.append('Romantic')
-        if r.get('has_scenic_view'):    attrs.append('Scenic view')
-        if r.get('has_outdoor'):        attrs.append('Outdoor')
-        if r.get('is_group_friendly'):  attrs.append('Group-friendly')
-        if r.get('is_casual'):          attrs.append('Casual')
-        if r.get('is_worth_it'):        attrs.append('Worth it')
-        if r.get('is_fast_service'):    attrs.append('Fast service')
-        price = _price_label(r.get('price_level'))
-        if price:
-            attrs.append(price)
-
-        topic = r.get('topic_label', '')
-        line = (
-            f"- {r.get('name', '?')} | {_safe_cuisine(r).title()} | "
-            f"Rating: {float(r.get('rating', 0)):.1f}/5 | "
-            f"{r.get('municipality', '')} | "
-            f"Attrs: {', '.join(attrs) or 'None'} | "
-            f"LDA Topic: {topic or 'Unknown'} | "
-            f"Address: {r.get('address', 'N/A')}"
-        )
-        lines.append(line)
-    return '\n'.join(lines)
+def compute_hybrid_score(kbf, lda, rating, dist_km=None, max_dist=1):
+    hybrid       = (KBF_WEIGHT * kbf) + (LDA_WEIGHT * lda)
+    rating_boost = (float(rating) / 5.0) * 0.05
+    dist_boost   = 0.0
+    if dist_km is not None and max_dist > 0:
+        dist_boost = (1.0 - min(dist_km / max_dist, 1.0)) * 0.05
+    return round((hybrid + rating_boost + dist_boost) * 100, 2)
 
 
 # ==========================================================================
-# NEW IN v3.5: FORMAT RANKED RESTAURANTS FOR LLM PROMPT
+# SELF-PING
+# ==========================================================================
+
+def self_ping():
+    import urllib.request
+    while True:
+        time.sleep(600)
+        try:
+            url = os.environ.get('RENDER_EXTERNAL_URL', 'http://localhost:5000')
+            urllib.request.urlopen(f"{url}/health", timeout=10)
+            logger.debug("[self-ping] OK")
+        except Exception as e:
+            logger.warning(f"[self-ping] Failed: {e}")
+
+
+# ==========================================================================
+# FORMAT RANKED RESTAURANTS FOR LLM PROMPT
 # ==========================================================================
 
 def format_ranked_restaurants_for_llm(ranked_restaurants: list) -> str:
@@ -779,7 +759,6 @@ def build_prompt(message: str, ranked_restaurants: str,
                  is_on_topic: bool = True) -> tuple[str, str]:
     """
     Build prompt with ranked restaurants that LLM must choose from.
-    NEW IN v3.5: Gives LLM the actual ranked list, not just context.
     """
     
     if is_on_topic:
@@ -794,75 +773,6 @@ YOUR REPLY (plain text, no markdown, must recommend only from the ranked list ab
         user_prompt = f"User asks: {message}\n\nPolitely redirect them to restaurant topics with example questions."
     
     return system_prompt, user_prompt
-
-
-# ==========================================================================
-# SCORING (unchanged)
-# ==========================================================================
-
-def compute_kbf_score(restaurant, preferences):
-    score, max_points = 0.0, 0
-    checks = [
-        ('district',        lambda r: r.get('municipality', '').lower() == preferences.get('district', '').lower()),
-        ('cuisine',         lambda r: preferences.get('cuisine', '').lower() in _safe_cuisine(r)),
-        ('min_rating',      lambda r: float(r.get('rating', 0)) >= float(preferences.get('min_rating', 0))),
-        ('halal',           lambda r: r.get('is_halal') is True),
-        ('vegetarian',      lambda r: r.get('is_vegetarian') is True),
-        ('vegan',           lambda r: r.get('is_vegan') is True),
-        ('parking',         lambda r: r.get('has_parking') is True),
-        ('wifi',            lambda r: r.get('has_wifi') is True),
-        ('ac',              lambda r: r.get('has_ac') is True),
-        ('outdoor',         lambda r: r.get('has_outdoor') is True),
-        ('accessible',      lambda r: r.get('is_accessible') is True),
-        ('family_friendly', lambda r: r.get('is_family_friendly') is True),
-        ('group_friendly',  lambda r: r.get('is_group_friendly') is True),
-        ('casual',          lambda r: r.get('is_casual') is True),
-        ('romantic',        lambda r: r.get('is_romantic') is True),
-        ('scenic_view',     lambda r: r.get('has_scenic_view') is True),
-        ('worth_it',        lambda r: r.get('is_worth_it') is True),
-        ('fast_service',    lambda r: r.get('is_fast_service') is True),
-    ]
-    for key, fn in checks:
-        if preferences.get(key):
-            max_points += 1
-            try:
-                if fn(restaurant): score += 1.0
-            except:
-                pass
-    return score / max_points if max_points > 0 else float(restaurant.get('rating', 3.0)) / 5.0
-
-
-def compute_lda_score(restaurant, preferred_topic_id):
-    if preferred_topic_id is None:
-        return float(restaurant.get('topic_1_pct', 50)) / 100.0
-    score = 1.0 if int(restaurant.get('dominant_topic', 0)) == preferred_topic_id else 0.0
-    pct   = float(restaurant.get('topic_1_pct', 0))
-    return min(score * (pct / 100.0 + 0.5), 1.0)
-
-
-def compute_hybrid_score(kbf, lda, rating, dist_km=None, max_dist=1):
-    hybrid       = (KBF_WEIGHT * kbf) + (LDA_WEIGHT * lda)
-    rating_boost = (float(rating) / 5.0) * 0.05
-    dist_boost   = 0.0
-    if dist_km is not None and max_dist > 0:
-        dist_boost = (1.0 - min(dist_km / max_dist, 1.0)) * 0.05
-    return round((hybrid + rating_boost + dist_boost) * 100, 2)
-
-
-# ==========================================================================
-# SELF-PING
-# ==========================================================================
-
-def self_ping():
-    import urllib.request
-    while True:
-        time.sleep(600)
-        try:
-            url = os.environ.get('RENDER_EXTERNAL_URL', 'http://localhost:5000')
-            urllib.request.urlopen(f"{url}/health", timeout=10)
-            logger.debug("[self-ping] OK")
-        except Exception as e:
-            logger.warning(f"[self-ping] Failed: {e}")
 
 
 # ==========================================================================
@@ -933,13 +843,14 @@ def health():
     """Health check endpoint with system metrics."""
     return jsonify({
         'status': 'ok',
-        'version': '4.0',
-        'message': 'Makan Mana API running - Production fixes',
+        'version': '3.5 FIXED',
+        'message': 'Makan Mana API running - Dynamic message parsing enabled',
         'features': {
             'output_validation': 'enabled',
             'progressive_relaxation': 'enabled',
             'distance_filtering': 'proper',
             'web_search': 'complete',
+            'message_parsing': 'FIXED - each question is parsed independently',
         },
         'weighting': f'{int(KBF_WEIGHT * 100)}% KBF + {int(LDA_WEIGHT * 100)}% LDA',
         'cache': {
@@ -1157,7 +1068,10 @@ def recommend():
 
 @app.route('/chat', methods=['POST'])
 def chat():
-    """NEW IN v3.5: Chat uses ranked restaurants from /recommend logic."""
+    """
+    FIXED IN v3.5: Chat endpoint now extracts preferences from the MESSAGE itself.
+    Each question is parsed independently — no stale preference data.
+    """
     try:
         data    = request.get_json(force=True)
         message = (data.get('message') or '').strip()
@@ -1191,14 +1105,22 @@ def chat():
         restaurant_preview = []
         
         if is_on_topic:
-            # NEW IN v3.5: Use /recommend logic to get ranked restaurants
-            preferences = dict(data)
+            # CRITICAL FIX: Extract preferences from THIS MESSAGE, not request body
+            preferences = parse_message_for_preferences(message)
+            
+            # Add any explicit preferences from request if provided
+            for key in ['latitude', 'longitude', 'distance_km', 'preferred_topic']:
+                if key in data and key not in preferences:
+                    preferences[key] = data[key]
+            
+            logger.info(f"[chat] Extracted preferences from message: {preferences}")
             
             if preferences.get('district'):
                 f = [r for r in restaurants
                      if r.get('municipality', '').lower() == preferences['district'].lower()]
                 if len(f) >= 3:
                     restaurants = f
+                    logger.debug(f"[chat] Filtered by district: {len(restaurants)} restaurants")
 
             user_lat = preferences.get('latitude')
             user_lon = preferences.get('longitude')
@@ -1239,6 +1161,7 @@ def chat():
                 if preferences.get(key):
                     try:
                         filtered = [r for r in filtered if fn(r)]
+                        logger.debug(f"[chat] After filtering by {key}: {len(filtered)} restaurants")
                     except:
                         pass
 
@@ -1316,7 +1239,7 @@ def chat():
             
             # Build restaurant preview (use ranked restaurants)
             for r in ranked_restaurants:
-                matched = build_matched_filters(r, data)
+                matched = build_matched_filters(r, preferences)
                 restaurant_preview.append({
                     'name'           : r.get('name', ''),
                     'rating'         : r.get('rating', 0),
@@ -1335,6 +1258,8 @@ def chat():
                     'distance_label' : r.get('distance_label') or 'Nearby',
                     'is_partial_match': len(filters_relaxed) > 0,
                 })
+            
+            logger.info(f"[chat] Ranked {len(ranked_restaurants)} restaurants for this message")
         else:
             ranked_context = ""
 
@@ -1392,10 +1317,10 @@ if __name__ == '__main__':
     
     threading.Thread(target=self_ping, daemon=True).start()
     logger.info("=" * 70)
-    logger.info("  MAKAN MANA API v4.0 — Chatbot Only Recommends Ranked Restaurants")
+    logger.info("  MAKAN MANA API v3.5 FIXED — Dynamic Message Parsing")
     logger.info(f"  Gemini : {'active' if _GEMINI_AVAILABLE else 'inactive'}")
     logger.info(f"  Groq   : {'active' if _groq_client else 'inactive'}")
-    logger.info(f"  FIX    : Chat endpoint now uses /recommend ranking logic")
-    logger.info(f"  RESULT : No more hallucinated/non-existent restaurant suggestions")
+    logger.info(f"  FIX    : /chat endpoint extracts preferences from MESSAGE")
+    logger.info(f"  RESULT : Different questions now get different recommendations")
     logger.info("=" * 70)
     app.run(debug=False, host='0.0.0.0', port=5000)
