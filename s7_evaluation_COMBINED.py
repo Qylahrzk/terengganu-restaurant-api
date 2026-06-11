@@ -990,7 +990,7 @@ The magic phrase that tells reviewers you're rigorous:
 ═══════════════════════════════════════════════════════════════════════════════
 """
 
-    with open(f'{OUTPUT_DIR}/CHAPTER_4_GUIDANCE.txt', 'w') as f:
+    with open(f'{OUTPUT_DIR}/CHAPTER_4_GUIDANCE.txt', 'w', encoding='utf-8') as f:
         f.write(guidance)
 
     print(guidance)
@@ -1034,6 +1034,9 @@ def main():
                               prec_std, rec_std, f1_std, ndcg_std,
                               prec_con, rec_con, f1_con, ndcg_con)
     save_chapter_guidance(df_b_std, df_b_con)
+
+    from s7_evaluation_KBF_ENHANCED import run_all_kbf_enhanced_evaluation
+    ablation_df, constraint_df = run_all_kbf_enhanced_evaluation(df)
 
     print(f"\n{'='*70}")
     print(f"  ✅  ALL DONE — outputs in: {OUTPUT_DIR}/")
