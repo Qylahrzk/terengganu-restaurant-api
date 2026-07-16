@@ -79,7 +79,7 @@ try:
     _DDG_AVAILABLE = True
 except ImportError:
     try:
-        from duckduckgo_search import DDGS
+        from duckduckgo_search import DDGS  # type: ignore
         _DDG_AVAILABLE = True
     except ImportError:
         _DDG_AVAILABLE = False
@@ -158,9 +158,10 @@ _RESTAURANT_KEYWORDS = {
     'vegetarian', 'vegan', 'roti', 'nasi', 'makan', 'minum', 'air', 'minuman', 'hidangan',
     'tempat makan', 'restoran', 'kafe', 'warung', 'stall', 'kedai', 'toko makanan',
     'parking', 'ambiance', 'atmosphere', 'vibe', 'cozy', 'family-friendly', 'romantic',
-    'budget', 'cheap', 'expensive', 'price', 'rating', 'review', 'recommendation',
+    'budget', 'cheap', 'expensive', 'price', 'rating', 'review', 'recommendation', 'recommend',
     'terengganu', 'kota terengganu', 'kuala terengganu', 'besut', 'dungun', 'marang',
-    'kemaman', 'kuala nerus', 'setiu', 'hulu terengganu'
+    'kemaman', 'kuala nerus', 'setiu', 'hulu terengganu',
+    'hungry', 'lapar', 'craving', 'tasty', 'delicious', 'sedap'
 }
 
 _OUT_OF_SCOPE_KEYWORDS = {
@@ -439,6 +440,40 @@ def _price_label(level):
     return {1: 'Budget', 2: 'Moderate', 3: 'Upscale', 4: 'Fine Dining'}.get(level, '')
 
 
+def detect_language(text):
+    """Detect if text is primarily Malay or English."""
+    text_lower = text.lower()
+    
+    malay_keywords = {'makanan', 'makan', 'minum', 'restoran', 'warung', 'kedai', 'kedah', 
+                      'terengganu', 'halal', 'saya', 'saya nak', 'saya cari', 'apa', 'mana',
+                      'berapa', 'macam', 'bagus', 'sedap', 'murah', 'mahal'}
+    
+    malay_count = sum(1 for kw in malay_keywords if kw in text_lower)
+    
+    if malay_count >= 2:
+        return 'malay'
+    
+    # Check for common English restaurant keywords
+    if any(kw in text_lower for kw in ['restaurant', 'seafood', 'best', 'where', 'find', 'any', 'cafe']):
+        return 'english'
+    
+    return 'english'  # Default to English
+
+
+def format_conversation_history(history: list) -> str:
+    """Format conversation history for LLM context."""
+    if not history:
+        return ""
+    
+    lines = ["CONVERSATION HISTORY:"]
+    for msg in history[-3:]:  # Keep last 3 messages for context
+        role = msg.get('role', 'user').upper()
+        content = msg.get('content', '')
+        lines.append(f"{role}: {content[:200]}")
+    lines.append("")
+    return '\n'.join(lines)
+
+
 # ==========================================================================
 # EXPLAINABILITY HELPER
 # ==========================================================================
@@ -653,125 +688,125 @@ def self_ping():
 # ==========================================================================
 
 def format_ranked_restaurants_for_llm(ranked_restaurants: list) -> str:
-    """
-    Format top-N ranked restaurants for LLM to recommend from.
-    Each restaurant includes its score so LLM understands why it's ranked.
-    """
+    """Format restaurants with EXACT names - prevent hallucination."""
     if not ranked_restaurants:
         return "No matching restaurants found."
     
-    lines = ["RANKED RESTAURANTS (already filtered by your preferences):"]
+    lines = []
+    lines.append("=" * 70)
+    lines.append("AVAILABLE RESTAURANTS (Choose ONLY from this exact list)")
+    lines.append("=" * 70)
     lines.append("")
     
-    for i, r in enumerate(ranked_restaurants, 1):
+    restaurant_names = []
+    for idx, r in enumerate(ranked_restaurants, 1):
+        exact_name = r.get('name', '?')
+        restaurant_names.append(exact_name)
+        
         attrs = []
-        if r.get('is_halal'):           attrs.append('Halal')
-        if r.get('is_vegetarian'):      attrs.append('Vegetarian')
-        if r.get('has_parking'):        attrs.append('Parking')
-        if r.get('has_wifi'):           attrs.append('WiFi')
-        if r.get('has_ac'):             attrs.append('Air-Cond')
-        if r.get('is_family_friendly'): attrs.append('Family-friendly')
-        if r.get('is_romantic'):        attrs.append('Romantic')
-        if r.get('has_scenic_view'):    attrs.append('Scenic view')
-        if r.get('has_outdoor'):        attrs.append('Outdoor')
-        if r.get('is_group_friendly'):  attrs.append('Group-friendly')
-        if r.get('is_casual'):          attrs.append('Casual')
-        if r.get('is_worth_it'):        attrs.append('Worth it')
-        if r.get('is_fast_service'):    attrs.append('Fast service')
-        price = _price_label(r.get('price_level'))
-        if price:
-            attrs.append(price)
+        if r.get('is_halal'): attrs.append('Halal')
+        if r.get('has_parking'): attrs.append('Parking')
+        if r.get('has_wifi'): attrs.append('WiFi')
+        if r.get('is_romantic'): attrs.append('Romantic')
+        if r.get('has_scenic_view'): attrs.append('Scenic View')
         
-        topic = r.get('topic_label', '')
-        score = r.get('hybrid_score', 0)
+        topic = r.get('topic_label', 'N/A')
+        rating = float(r.get('rating', 0))
+        location = r.get('municipality', 'N/A')
         
-        line = (
-            f"{i}. {r.get('name', '?')} (Score: {score:.0f}) "
-            f"| {r.get('municipality', '')} "
-            f"| Rating: {float(r.get('rating', 0)):.1f}/5 "
-            f"| {_safe_cuisine(r).title()} "
-            f"| {', '.join(attrs) or 'No special features'} "
-            f"| LDA: {topic or 'Unknown'}"
-        )
+        line = f"{idx}. {exact_name} | {rating:.1f}★ | {location} | {', '.join(attrs) or 'Standard'} | {topic}"
         lines.append(line)
     
     lines.append("")
-    lines.append("IMPORTANT: You MUST recommend from this list above.")
-    lines.append("Do NOT recommend restaurants not on this list.")
-    lines.append("Do NOT make up restaurant names.")
+    lines.append("=" * 70)
+    lines.append("CRITICAL RULES:")
+    lines.append("1. You MUST recommend ONLY restaurants from the list above")
+    lines.append("2. Use the EXACT restaurant names as shown")
+    lines.append("3. Do NOT make up or modify restaurant names")
+    lines.append("4. Do NOT recommend restaurants not in this list")
+    lines.append("5. If asked for 'other suggestion', recommend from this list only")
+    lines.append("=" * 70)
+    lines.append("")
+    lines.append(f"EXACT RESTAURANT NAMES TO USE: {', '.join(restaurant_names)}")
+    lines.append("")
     
     return '\n'.join(lines)
 
 
 # ==========================================================================
-# PROMPT BUILDER (v3.5: UPDATED)
+# PROMPT BUILDERS (v3.6: MULTILINGUAL)
 # ==========================================================================
 
-RESTAURANT_SYSTEM_PROMPT = """You are GanuBot, a warm and knowledgeable AI food guide for Terengganu, Malaysia.
+def build_system_prompt(language: str, is_on_topic: bool = True) -> str:
+    """Build system prompt in user's language."""
+    if not is_on_topic:
+        if language == 'malay':
+            return """Anda adalah MakanBot, pemandu makanan AI yang hangat untuk Terengganu, Malaysia.
+Pengguna bertanya soalan di luar topik Discovery Restoran Terengganu.
+
+PERATURAN PENTING:
+1. Sila balas dengan sopan dalam Bahasa Melayu bahawa soalan ini di luar topik discovery restoran.
+2. Cadangkan 3-5 soalan contoh tentang discovery makanan/restoran di Terengganu yang boleh ditanya.
+3. Jangan menjawab soalan asal yang di luar topik tersebut.
+4. Tanpa format markdown - teks biasa sahaja."""
+        else:
+            return """You are MakanBot, a warm AI food guide for Terengganu, Malaysia.
+The user just asked a question that is OUTSIDE YOUR SCOPE.
+
+CRITICAL RULES:
+1. Politely explain in English that you are specifically designed for restaurant discovery in Terengganu.
+2. Redirect them back to food/dining topics.
+3. Suggest 3-5 example restaurant discovery questions they could ask instead.
+4. Do NOT answer the off-topic question.
+5. No markdown formatting - plain text only."""
+
+    if language == 'malay':
+        return """Anda adalah MakanBot, pemandu makanan AI yang hangat untuk Terengganu, Malaysia.
+Anda membantu pengguna menemukan pengalaman restoran yang sempurna.
+
+PERATURAN PENTING:
+1. Anda HANYA boleh merekomendasikan restoran dari senarai yang disediakan
+2. Gunakan nama restoran yang TEPAT seperti yang ditunjukkan
+3. Jangan membuat atau mengubah nama restoran
+4. Jangan merekomendasikan restoran yang tidak dalam senarai
+5. Jawab dalam Bahasa Melayu jika pengguna bertanya dalam Bahasa Melayu
+6. Untuk pertanyaan lanjutan seperti 'cadangan lain', rekomendasikan dari senarai ini sahaja
+7. Bersifat hangat, mesra, dan ringkas (3-5 ayat)
+8. Tanpa format markdown - teks biasa sahaja"""
+    
+    else:  # English
+        return """You are MakanBot, a warm AI food guide for Terengganu, Malaysia.
 You help users find the perfect restaurant or food experience in Terengganu.
 
-CRITICAL RULES — NEVER BREAK THESE:
-1. You MUST ONLY recommend restaurants from the RANKED RESTAURANTS list provided.
-2. Do NOT recommend restaurants not on the list.
-3. Do NOT make up restaurant names or details.
-4. You MUST always recommend at least 2 restaurants by name. Never say you have no recommendations.
-5. If fewer than 3 restaurants match ALL criteria, relax the least-important criterion and still name the 2-3 closest matches. Explain the trade-off briefly.
-6. Always mention the restaurant name, district/municipality, and star rating.
-7. Mention the LDA Topic (shown as 'LDA:' in the list) when describing a restaurant's vibe.
-8. Be warm, friendly, and concise (3-5 sentences total).
-9. End with one practical tip (best dish, best time to visit, etc).
-10. Never use markdown formatting: no **bold**, no *italic*, no ## headings.
-11. Reply in plain text only.
-12. Reply in the same language the user used (English or Bahasa Malaysia).
+CRITICAL RULES:
+1. You MUST ONLY recommend restaurants from the provided list
+2. Use the EXACT restaurant names as shown
+3. Do NOT make up or modify restaurant names
+4. Do NOT recommend restaurants not in the list
+5. For follow-up questions like 'other suggestion', recommend from this list only
+6. Always mention restaurant name, location, and rating
+7. Be warm, friendly, and concise (3-5 sentences)
+8. No markdown formatting - plain text only"""
 
-EXAMPLE OF GOOD RESPONSE:
-"For a romantic evening with scenic views, I'd suggest Restoran Tepi Laut in Kuala Terengganu (4.3/5) — it has a Popular Local Favorites vibe and sits right by the water. Another great pick is Warung Pantai Batu Buruk (4.1/5) in Kuala Terengganu, known for its breezy outdoor seating. Both offer scenic views and a relaxed atmosphere perfect for a date. Tip: visit after 7pm for the best sunset view."""
-
-OFF_TOPIC_SYSTEM_PROMPT = """You are GanuBot, a restaurant recommendation assistant for Terengganu.
-
-The user just asked you a question that's OUTSIDE YOUR SCOPE. Your job is to:
-
-1. Politely acknowledge their question
-2. Explain that you're specifically designed for restaurant discovery in Terengganu
-3. Redirect them back to food/dining topics
-4. Suggest 3-5 example restaurant questions they could ask instead
-
-CRITICAL CONSTRAINTS:
-- DO NOT try to answer the off-topic question (even partially!)
-- DO NOT make up restaurant recommendations to seem helpful
-- DO NOT ignore the out-of-scope question
-- BE WARM: "I appreciate the question, but I'm specifically built for restaurants..."
-- ALWAYS END with example questions they could ask
-
-EXAMPLE RESPONSE:
-"I appreciate your question, but that's outside my specialty! I'm specifically built to help you discover amazing restaurants in Terengganu. 
-
-How about asking me something like:
-- 'What are the best seafood restaurants in Kuala Terengganu?'
-- 'Where can I find halal restaurants with parking?'
-- 'I want a cozy cafe for a romantic dinner'
-- 'Any good family-friendly spots in Besut?'
-- 'Best traditional Malay food in Terengganu?'
-
-Let's find you something delicious!" """
 
 def build_prompt(message: str, ranked_restaurants: str,
-                 is_on_topic: bool = True) -> tuple[str, str]:
+                 is_on_topic: bool = True, language: str = 'english') -> tuple[str, str]:
     """
     Build prompt with ranked restaurants that LLM must choose from.
     """
+    system_prompt = build_system_prompt(language, is_on_topic)
     
     if is_on_topic:
-        system_prompt = RESTAURANT_SYSTEM_PROMPT
-        user_prompt = f"""{ranked_restaurants}
-
-USER ASKS: {message}
-
-YOUR REPLY (plain text, no markdown, must recommend only from the ranked list above):"""
+        if language == 'malay':
+            user_prompt = f"{ranked_restaurants}\n\nPengguna tanya: {message}\n\nJawab dalam Bahasa Melayu (teks biasa sahaja, nama restoran yang tepat sahaja):"
+        else:
+            user_prompt = f"{ranked_restaurants}\n\nUser asks: {message}\n\nRespond in English (plain text only, exact restaurant names only):"
     else:
-        system_prompt = OFF_TOPIC_SYSTEM_PROMPT
-        user_prompt = f"User asks: {message}\n\nPolitely redirect them to restaurant topics with example questions."
-    
+        if language == 'malay':
+            user_prompt = f"Pengguna tanya: {message}\n\nPegawai: Balas dengan sopan bahawa soalan ini di luar topik. Cadangkan soalan berkaitan restoran."
+        else:
+            user_prompt = f"User asks: {message}\n\nAssistant: Politely explain this is out of scope. Suggest restaurant-related questions."
+            
     return system_prompt, user_prompt
 
 
@@ -779,8 +814,10 @@ YOUR REPLY (plain text, no markdown, must recommend only from the ranked list ab
 # LLM CALL
 # ==========================================================================
 
-def call_llm(system_prompt: str, user_prompt: str, primary_model: str) -> tuple[str, str]:
-    """Call LLM with automatic failover."""
+def call_llm(system_prompt: str, user_prompt: str, primary_model: str, conversation_context: str = "") -> tuple[str, str]:
+    """Call LLM with automatic failover and conversation context."""
+    full_user_prompt = f"{conversation_context}\n\n{user_prompt}" if conversation_context else user_prompt
+
     if primary_model == 'groq':
         order = ['groq', 'gemini', 'mistral']
     elif primary_model == 'gemini':
@@ -797,7 +834,7 @@ def call_llm(system_prompt: str, user_prompt: str, primary_model: str) -> tuple[
                     model='llama-3.3-70b-versatile',
                     messages=[
                         {'role': 'system', 'content': system_prompt},
-                        {'role': 'user', 'content': user_prompt}
+                        {'role': 'user', 'content': full_user_prompt}
                     ],
                     max_tokens=700, temperature=0.7,
                 )
@@ -806,7 +843,7 @@ def call_llm(system_prompt: str, user_prompt: str, primary_model: str) -> tuple[
                 return reply, 'Groq Llama-3.3'
 
             elif model_key == 'gemini' and _GEMINI_AVAILABLE:
-                full_prompt = f"{system_prompt}\n\n{user_prompt}"
+                full_prompt = f"{system_prompt}\n\n{full_user_prompt}"
                 reply = _call_gemini_with_fallback(full_prompt)
                 logger.info(f"[LLM] Gemini responded ({len(reply)} chars) via {_gemini_working_model}")
                 return reply, f'Gemini ({_gemini_working_model})'
@@ -816,7 +853,7 @@ def call_llm(system_prompt: str, user_prompt: str, primary_model: str) -> tuple[
                     model='mistral-large-latest',
                     messages=[
                         {'role': 'system', 'content': system_prompt},
-                        {'role': 'user', 'content': user_prompt}
+                        {'role': 'user', 'content': full_user_prompt}
                     ],
                 )
                 reply = strip_markdown(resp.choices[0].message.content.strip())
@@ -843,8 +880,8 @@ def health():
     """Health check endpoint with system metrics."""
     return jsonify({
         'status': 'ok',
-        'version': '3.5 FIXED',
-        'message': 'Makan Mana API running - Dynamic message parsing enabled',
+        'version': '4.0',
+        'message': 'Makan Mana API running - Chatbot v3.6 FINAL integrated',
         'features': {
             'output_validation': 'enabled',
             'progressive_relaxation': 'enabled',
@@ -1069,14 +1106,17 @@ def recommend():
 @app.route('/chat', methods=['POST'])
 def chat():
     """
-    FIXED IN v3.5: Chat endpoint now extracts preferences from the MESSAGE itself.
-    Each question is parsed independently — no stale preference data.
+    v3.6: Fixed chatbot with conversation history, strict restaurant enforcement, and multilingual support.
     """
     try:
         data    = request.get_json(force=True)
         message = (data.get('message') or '').strip()
+        conversation_history = data.get('conversation_history') or []
         if not message:
             return jsonify({'error': 'message field is required'}), 400
+
+        # Detect language
+        language = detect_language(message)
 
         if not any([_GEMINI_AVAILABLE, _groq_client, _mistral_client]):
             logger.error("[/chat] No LLM services available")
@@ -1087,6 +1127,7 @@ def chat():
                 'relaxed_criteria': [], 'has_partial_match': False,
                 'is_on_topic': None, 'scope_confidence': 0.0, 'detected_keywords': [],
                 'validation': {'had_hallucinations': False, 'hallucination_rate': 0.0},
+                'language'       : language,
             }), 200
 
         # Scope detection
@@ -1265,10 +1306,13 @@ def chat():
 
         # Build prompt and call LLM
         system_prompt, user_prompt = build_prompt(
-            message, ranked_context, is_on_topic
+            message, ranked_context, is_on_topic, language
         )
 
-        reply, model_used = call_llm(system_prompt, user_prompt, primary_model)
+        # Include conversation history context
+        conv_context = format_conversation_history(conversation_history)
+
+        reply, model_used = call_llm(system_prompt, user_prompt, primary_model, conv_context)
 
         logger.info(f"[chat] model={model_used} | on_topic={is_on_topic} | restaurants={len(ranked_restaurants)}")
 
@@ -1288,6 +1332,7 @@ def chat():
                 'had_hallucinations': False,
                 'hallucination_rate': 0.0,
             },
+            'language'        : language,
         }), 200
 
     except Exception as e:
@@ -1302,6 +1347,7 @@ def chat():
                 'had_hallucinations': False,
                 'hallucination_rate': 0.0,
             },
+            'language'        : 'english',
         }), 500
 
 
@@ -1317,10 +1363,12 @@ if __name__ == '__main__':
     
     threading.Thread(target=self_ping, daemon=True).start()
     logger.info("=" * 70)
-    logger.info("  MAKAN MANA API v3.5 FIXED — Dynamic Message Parsing")
+    logger.info("  MAKAN MANA API v4.0 — Chatbot v3.6 FINAL Integrated")
     logger.info(f"  Gemini : {'active' if _GEMINI_AVAILABLE else 'inactive'}")
     logger.info(f"  Groq   : {'active' if _groq_client else 'inactive'}")
-    logger.info(f"  FIX    : /chat endpoint extracts preferences from MESSAGE")
-    logger.info(f"  RESULT : Different questions now get different recommendations")
+    logger.info(f"  Mistral: {'active' if _mistral_client else 'inactive'}")
+    logger.info("  ✓ Conversation history support")
+    logger.info("  ✓ Strict restaurant enforcement")
+    logger.info("  ✓ Multilingual (English + Malay)")
     logger.info("=" * 70)
     app.run(debug=False, host='0.0.0.0', port=5000)
