@@ -57,6 +57,7 @@ try:
     import google.generativeai as genai
     _GEMINI_AVAILABLE = True
 except ImportError:
+    genai = None
     _GEMINI_AVAILABLE = False
     logger.warning("[LLM] google-generativeai not installed")
 
@@ -64,15 +65,9 @@ try:
     from groq import Groq
     _GROQ_AVAILABLE = True
 except ImportError:
+    Groq = None
     _GROQ_AVAILABLE = False
     logger.warning("[LLM] groq not installed")
-
-try:
-    from mistralai import Mistral
-    _MISTRAL_AVAILABLE = True
-except ImportError:
-    _MISTRAL_AVAILABLE = False
-    logger.warning("[LLM] mistralai not installed")
 
 try:
     from ddgs import DDGS
@@ -82,12 +77,14 @@ except ImportError:
         from duckduckgo_search import DDGS  # type: ignore
         _DDG_AVAILABLE = True
     except ImportError:
+        DDGS = None
         _DDG_AVAILABLE = False
 
 try:
     from serpapi import GoogleSearch as SerpApiSearch
     _SERPAPI_AVAILABLE = True
 except ImportError:
+    SerpApiSearch = None
     _SERPAPI_AVAILABLE = False
 
 # ==========================================================================
@@ -124,8 +121,8 @@ def validate_environment():
 
 validate_environment()
 
-SUPABASE_URL = os.environ.get('SUPABASE_URL')
-SUPABASE_KEY = os.environ.get('SUPABASE_KEY')
+SUPABASE_URL = os.environ.get('SUPABASE_URL', '')
+SUPABASE_KEY = os.environ.get('SUPABASE_KEY', '')
 GEMINI_KEY   = os.environ.get('GEMINI_API_KEY')
 GROQ_KEY     = os.environ.get('GROQ_API_KEY')
 MISTRAL_KEY  = os.environ.get('MISTRAL_API_KEY')
@@ -145,7 +142,7 @@ TOPIC_LABEL_TO_ID = {
 }
 
 app = Flask(__name__)
-CORS(app)
+CORS(app)  # type: ignore[arg-type]
 supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
 
 # ==========================================================================
@@ -308,6 +305,9 @@ def _call_gemini_with_fallback(prompt: str) -> str:
     """Try Gemini models in order."""
     global _gemini_working_model
 
+    if not _GEMINI_AVAILABLE or genai is None:
+        raise RuntimeError("Gemini client is not initialized or not available.")
+
     models_to_try = (
         [_gemini_working_model] + [m for m in _GEMINI_MODEL_FALLBACKS if m != _gemini_working_model]
         if _gemini_working_model
@@ -317,7 +317,7 @@ def _call_gemini_with_fallback(prompt: str) -> str:
     last_error = None
     for model_name in models_to_try:
         try:
-            model = genai.GenerativeModel(model_name)
+            model = genai.GenerativeModel(model_name)  # type: ignore
             response = model.generate_content(prompt)
             
             if _gemini_working_model != model_name:
@@ -346,7 +346,7 @@ def _call_gemini_with_fallback(prompt: str) -> str:
 _groq_client    = None
 _mistral_client = None
 
-if _GROQ_AVAILABLE and GROQ_KEY:
+if _GROQ_AVAILABLE and Groq is not None and GROQ_KEY:
     try:
         _groq_client = Groq(api_key=GROQ_KEY)
         logger.info("[LLM] Groq ready: llama-3.3-70b-versatile")
@@ -355,18 +355,9 @@ if _GROQ_AVAILABLE and GROQ_KEY:
 else:
     logger.warning("[LLM] Groq disabled (no GROQ_API_KEY or groq not installed)")
 
-if _MISTRAL_AVAILABLE and MISTRAL_KEY:
+if _GEMINI_AVAILABLE and genai is not None and GEMINI_KEY:
     try:
-        _mistral_client = Mistral(api_key=MISTRAL_KEY)
-        logger.info("[LLM] Mistral ready: mistral-large-latest")
-    except Exception as e:
-        logger.error(f"[LLM] Mistral init failed: {e}")
-else:
-    logger.warning("[LLM] Mistral disabled (no MISTRAL_API_KEY or mistralai not installed)")
-
-if _GEMINI_AVAILABLE and GEMINI_KEY:
-    try:
-        genai.configure(api_key=GEMINI_KEY)
+        genai.configure(api_key=GEMINI_KEY)  # type: ignore
         logger.info(f"[LLM] Gemini available: will use per-request fallback across {len(_GEMINI_MODEL_FALLBACKS)} models")
     except Exception as e:
         logger.error(f"[LLM] Gemini config failed: {e}")
@@ -546,7 +537,7 @@ def detect_intent(message: str):
     return 'supabase'
 
 
-def select_model(message: str, user_requested: str = None):
+def select_model(message: str, user_requested: str | None = None):
     """Select the best LLM for this query. Returns (model_key, display_name)."""
     if user_requested:
         req = user_requested.lower()
@@ -554,18 +545,14 @@ def select_model(message: str, user_requested: str = None):
             return 'gemini', 'Gemini (multi-model)'
         if ('groq' in req or 'llama' in req) and _groq_client:
             return 'groq', 'Groq Llama-3.3'
-        if 'mistral' in req and _mistral_client:
-            return 'mistral', 'Mistral Large'
 
     msg = message.lower()
     if any(kw in msg for kw in _COMPLEX_QUERY_KEYWORDS):
         if _GEMINI_AVAILABLE:   return 'gemini',  'Gemini (multi-model)'
         if _groq_client:        return 'groq',    'Groq Llama-3.3'
-        if _mistral_client:     return 'mistral', 'Mistral Large'
 
     if _groq_client:    return 'groq',    'Groq Llama-3.3'
     if _GEMINI_AVAILABLE:   return 'gemini',  'Gemini (multi-model)'
-    if _mistral_client: return 'mistral', 'Mistral Large'
     
     return None, None
 
@@ -576,7 +563,7 @@ def select_model(message: str, user_requested: str = None):
 
 def web_search(query: str, max_results: int = 4) -> str:
     terengganu_query = f"{query} Terengganu Malaysia"
-    if _DDG_AVAILABLE:
+    if _DDG_AVAILABLE and DDGS is not None:
         try:
             with DDGS() as ddg:
                 results = list(ddg.text(
@@ -591,7 +578,7 @@ def web_search(query: str, max_results: int = 4) -> str:
         except Exception as e:
             logger.warning(f"[search] DuckDuckGo error: {e}")
 
-    if _SERPAPI_AVAILABLE and SERPAPI_KEY:
+    if _SERPAPI_AVAILABLE and SerpApiSearch is not None and SERPAPI_KEY:
         try:
             params  = {'q': terengganu_query, 'api_key': SERPAPI_KEY,
                        'num': max_results, 'gl': 'my', 'hl': 'en'}
@@ -687,21 +674,25 @@ def self_ping():
 # FORMAT RANKED RESTAURANTS FOR LLM PROMPT
 # ==========================================================================
 
-def format_ranked_restaurants_for_llm(ranked_restaurants: list) -> str:
-    """Format restaurants with EXACT names - prevent hallucination."""
+def format_ranked_restaurants_for_llm(ranked_restaurants: list) -> tuple[str, list]:
+    """
+    v3.7 FIX: Format restaurants with EXACT database names only.
+    Return both formatted string AND list of exact names for validation.
+    """
     if not ranked_restaurants:
-        return "No matching restaurants found."
+        return "No matching restaurants found.", []
     
     lines = []
-    lines.append("=" * 70)
-    lines.append("AVAILABLE RESTAURANTS (Choose ONLY from this exact list)")
-    lines.append("=" * 70)
+    exact_names = []
+    
+    lines.append("=" * 80)
+    lines.append("RESTAURANT LIST - USE EXACT NAMES FROM THIS LIST ONLY")
+    lines.append("=" * 80)
     lines.append("")
     
-    restaurant_names = []
     for idx, r in enumerate(ranked_restaurants, 1):
         exact_name = r.get('name', '?')
-        restaurant_names.append(exact_name)
+        exact_names.append(exact_name)
         
         attrs = []
         if r.get('is_halal'): attrs.append('Halal')
@@ -718,19 +709,28 @@ def format_ranked_restaurants_for_llm(ranked_restaurants: list) -> str:
         lines.append(line)
     
     lines.append("")
-    lines.append("=" * 70)
-    lines.append("CRITICAL RULES:")
-    lines.append("1. You MUST recommend ONLY restaurants from the list above")
-    lines.append("2. Use the EXACT restaurant names as shown")
-    lines.append("3. Do NOT make up or modify restaurant names")
-    lines.append("4. Do NOT recommend restaurants not in this list")
-    lines.append("5. If asked for 'other suggestion', recommend from this list only")
-    lines.append("=" * 70)
+    lines.append("=" * 80)
+    lines.append("CRITICAL INSTRUCTIONS FOR v3.7:")
+    lines.append("1. You MUST recommend from restaurants 1-" + str(len(ranked_restaurants)) + " ONLY")
+    lines.append("2. Copy restaurant names EXACTLY as shown (spelling, spacing, punctuation)")
+    lines.append("3. Do NOT modify, abbreviate, or rearrange restaurant names")
+    lines.append("4. If you cannot recommend from this list, say 'Unfortunately, none matched'")
+    lines.append("5. NEVER make up restaurants or use similar-sounding names")
+    lines.append("=" * 80)
     lines.append("")
-    lines.append(f"EXACT RESTAURANT NAMES TO USE: {', '.join(restaurant_names)}")
+    lines.append(f"EXACT NAMES TO USE (copy-paste these): {', '.join(exact_names)}")
     lines.append("")
     
-    return '\n'.join(lines)
+    return '\n'.join(lines), exact_names
+
+
+def validate_recommendation(llm_reply: str, valid_names: list) -> bool:
+    """Check if LLM's recommendations use valid restaurant names."""
+    reply_lower = llm_reply.lower()
+    for name in valid_names:
+        if name.lower() in reply_lower:
+            return True
+    return False
 
 
 # ==========================================================================
@@ -814,18 +814,16 @@ def build_prompt(message: str, ranked_restaurants: str,
 # LLM CALL
 # ==========================================================================
 
-def call_llm(system_prompt: str, user_prompt: str, primary_model: str, conversation_context: str = "") -> tuple[str, str]:
+def call_llm(system_prompt: str, user_prompt: str, primary_model: str | None, conversation_context: str = "") -> tuple[str, str]:
     """Call LLM with automatic failover and conversation context."""
     full_user_prompt = f"{conversation_context}\n\n{user_prompt}" if conversation_context else user_prompt
 
     if primary_model == 'groq':
-        order = ['groq', 'gemini', 'mistral']
+        order = ['groq', 'gemini']
     elif primary_model == 'gemini':
-        order = ['gemini', 'groq', 'mistral']
-    elif primary_model == 'mistral':
-        order = ['mistral', 'gemini', 'groq']
+        order = ['gemini', 'groq']
     else:
-        order = ['groq', 'gemini', 'mistral']
+        order = ['groq', 'gemini']
 
     for model_key in order:
         try:
@@ -838,7 +836,7 @@ def call_llm(system_prompt: str, user_prompt: str, primary_model: str, conversat
                     ],
                     max_tokens=700, temperature=0.7,
                 )
-                reply = strip_markdown(resp.choices[0].message.content.strip())
+                reply = strip_markdown((resp.choices[0].message.content or "").strip())
                 logger.info(f"[LLM] Groq responded ({len(reply)} chars)")
                 return reply, 'Groq Llama-3.3'
 
@@ -856,7 +854,7 @@ def call_llm(system_prompt: str, user_prompt: str, primary_model: str, conversat
                         {'role': 'user', 'content': full_user_prompt}
                     ],
                 )
-                reply = strip_markdown(resp.choices[0].message.content.strip())
+                reply = strip_markdown((resp.choices[0].message.content or "").strip())
                 logger.info(f"[LLM] Mistral responded ({len(reply)} chars)")
                 return reply, 'Mistral Large'
 
@@ -881,13 +879,14 @@ def health():
     return jsonify({
         'status': 'ok',
         'version': '4.0',
-        'message': 'Makan Mana API running - Chatbot v3.6 FINAL integrated',
+        'message': 'Makan Mana API running - Chatbot v3.7 HOTFIX integrated',
         'features': {
             'output_validation': 'enabled',
             'progressive_relaxation': 'enabled',
             'distance_filtering': 'proper',
             'web_search': 'complete',
             'message_parsing': 'FIXED - each question is parsed independently',
+            'hallucination_prevention': 'active - exact names only',
         },
         'weighting': f'{int(KBF_WEIGHT * 100)}% KBF + {int(LDA_WEIGHT * 100)}% LDA',
         'cache': {
@@ -1276,7 +1275,7 @@ def chat():
                         r['hybrid_score'] = round((r['hybrid_score'] / mx) * 100, 2)
             
             # Format for LLM
-            ranked_context = format_ranked_restaurants_for_llm(ranked_restaurants)
+            ranked_context, exact_names = format_ranked_restaurants_for_llm(ranked_restaurants)
             
             # Build restaurant preview (use ranked restaurants)
             for r in ranked_restaurants:
@@ -1303,6 +1302,7 @@ def chat():
             logger.info(f"[chat] Ranked {len(ranked_restaurants)} restaurants for this message")
         else:
             ranked_context = ""
+            exact_names = []
 
         # Build prompt and call LLM
         system_prompt, user_prompt = build_prompt(
@@ -1314,7 +1314,21 @@ def chat():
 
         reply, model_used = call_llm(system_prompt, user_prompt, primary_model, conv_context)
 
-        logger.info(f"[chat] model={model_used} | on_topic={is_on_topic} | restaurants={len(ranked_restaurants)}")
+        # v3.7 FIX: Hallucination check & fallback
+        had_hallucinations = False
+        hallucination_rate = 0.0
+        if is_on_topic and exact_names:
+            if not validate_recommendation(reply, exact_names):
+                logger.warning(f"[v3.7] Possible hallucination detected in reply: {reply[:100]}")
+                had_hallucinations = True
+                hallucination_rate = 1.0
+                alternatives = " | ".join(exact_names)
+                if language == 'malay':
+                    reply = f"Maaf, dikesan ralat penjanaan nama restoran. Sila rujuk senarai restoran yang sah ini sahaja: {alternatives}"
+                else:
+                    reply = f"Apologies, restaurant name generation hallucination detected. Please refer to this list of valid options instead: {alternatives}"
+
+        logger.info(f"[chat] model={model_used} | on_topic={is_on_topic} | restaurants={len(ranked_restaurants)} | hallucination={had_hallucinations}")
 
         return jsonify({
             'reply'           : reply,
@@ -1329,8 +1343,8 @@ def chat():
             'scope_confidence': scope_confidence,
             'detected_keywords': list(detected_keywords),
             'validation'      : {
-                'had_hallucinations': False,
-                'hallucination_rate': 0.0,
+                'had_hallucinations': had_hallucinations,
+                'hallucination_rate': hallucination_rate,
             },
             'language'        : language,
         }), 200
@@ -1363,12 +1377,13 @@ if __name__ == '__main__':
     
     threading.Thread(target=self_ping, daemon=True).start()
     logger.info("=" * 70)
-    logger.info("  MAKAN MANA API v4.0 — Chatbot v3.6 FINAL Integrated")
+    logger.info("  MAKAN MANA API v4.0 — Chatbot v3.7 HOTFIX Integrated")
     logger.info(f"  Gemini : {'active' if _GEMINI_AVAILABLE else 'inactive'}")
     logger.info(f"  Groq   : {'active' if _groq_client else 'inactive'}")
     logger.info(f"  Mistral: {'active' if _mistral_client else 'inactive'}")
     logger.info("  ✓ Conversation history support")
-    logger.info("  ✓ Strict restaurant enforcement")
+    logger.info("  ✓ Strict restaurant enforcement (Exact database names)")
+    logger.info("  ✓ Hallucination prevention and validation checks")
     logger.info("  ✓ Multilingual (English + Malay)")
     logger.info("=" * 70)
     app.run(debug=False, host='0.0.0.0', port=5000)
