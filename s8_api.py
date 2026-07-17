@@ -170,18 +170,28 @@ _OUT_OF_SCOPE_KEYWORDS = {
     'doctor', 'medicine', 'health', 'disease', 'hospital', 'pharmacy', 'python', 'code'
 }
 
-def is_restaurant_related(text):
-    """Detect if user question is about restaurants/food."""
+def is_restaurant_related(text, conversation_history=None):
+    """Detect if user question is about restaurants/food with follow-up awareness."""
     text_lower = text.lower()
     
+    # 1. Check for hard off-topic blocks first
     detected_off_topic = [kw for kw in _OUT_OF_SCOPE_KEYWORDS if kw in text_lower]
     if detected_off_topic:
         return False, 0.95, detected_off_topic
     
+    # 2. Check for explicit food keywords
     detected_keywords = [kw for kw in _RESTAURANT_KEYWORDS if kw in text_lower]
     if detected_keywords:
         return True, min(0.95, len(detected_keywords) * 0.3), detected_keywords
     
+    # 3. FIX: Check if this is a follow-up request before enforcing the short-message penalty
+    if conversation_history and len(conversation_history) > 0:
+        followup_signals = ['more', 'other', 'another', 'different', 'else', 'instead', 'options', 'lagi', 'lain', 'ada lagi']
+        if any(sig in text_lower for sig in followup_signals):
+            logger.info("[SCOPE] Context short-message follow-up query bypass activated.")
+            return True, 0.8, ['follow_up_intent']
+
+    # 4. Standard short message penalty for completely fresh chats
     if len(text.split()) < 5 and not detected_keywords:
         return False, 0.7, []
     
@@ -1356,7 +1366,7 @@ def chat():
             }), 200
 
         # Scope detection (use normalized message)
-        is_on_topic, scope_confidence, detected_keywords = is_restaurant_related(normalized_msg)
+        is_on_topic, scope_confidence, detected_keywords = is_restaurant_related(normalized_msg, conversation_history)
         logger.info(f"[chat] Scope: on_topic={is_on_topic}, confidence={scope_confidence:.2f}")
 
         intent = detect_intent(normalized_msg)
