@@ -924,42 +924,31 @@ def extract_preferences_from_previous_bot_response(bot_reply: str) -> dict:
 
 
 def normalize_malay_text(text: str) -> str:
-    """
-    v4.1: Normalize Malay text for better LLM processing.
-    
-    Handles:
-    - Unicode diacritics (é, â, etc.)
-    - Common Malay abbreviations
-    - Text normalization for tokenization
-    """
-    # Step 1: Unicode normalization (decompose diacritics)
+    """Enhanced version mapping Terengganu regional colloquial keywords."""
     normalized = unicodedata.normalize('NFD', text)
-    
-    # Step 2: Remove combining marks (diacritical marks)
-    normalized = ''.join(
-        c for c in normalized 
-        if unicodedata.category(c) != 'Mn'  # Mn = Mark, Nonspacing
-    )
-    
-    # Step 3: Clean up whitespace
+    normalized = ''.join(c for c in normalized if unicodedata.category(c) != 'Mn')
     normalized = ' '.join(normalized.split())
     
-    # Step 4: Expand Malay abbreviations
     replacements = {
-        "nak ": "ingin ",
-        "nak,": "ingin,",
-        " saya nak ": " saya ingin ",
-        "mcm": "macam",
-        "tu": "itu",
-        "tk": "tidak",
-        "xde": "tidak ada",
-        "lg": "lagi",
+        r"\bnak\b|\bnok\b": "ingin",
+        r"\bmcm\b": "macam",
+        r"\btu\b": "itu",
+        r"\btk\b|\bx\b": "tidak",
+        r"\bxde\b": "tidak ada",
+        r"\blg\b": "lagi",
+        r"\btanyoo\b": "tanya",
+        r"\bhok\b": "yang",
+        r"\bbst\b": "best",
+        r"\bpante\b|\bpata\b": "pantai",
+        r"\brme\b|\brame\b": "ramai",
+        r"\bkelargo\b": "keluarga",
+        r"\bcomel\b|\bmolek\b": "bagus",
+        r"\bbajet\b": "budget"
     }
-    
     for abbr, full in replacements.items():
-        normalized = re.sub(r'\b' + re.escape(abbr) + r'\b', full, normalized, flags=re.IGNORECASE)
+        normalized = re.sub(abbr, full, normalized, flags=re.IGNORECASE)
     
-    logger.info(f"[v4.1] Malay normalization: '{text[:40]}' → '{normalized[:40]}'")
+    logger.info(f"[v4.2] Malay normalization: '{text[:40]}' → '{normalized[:40]}'")
     return normalized.strip()
 
 
@@ -1064,7 +1053,7 @@ def call_llm(system_prompt: str, user_prompt: str, primary_model: str | None, co
                         {'role': 'system', 'content': system_prompt},
                         {'role': 'user', 'content': full_user_prompt}
                     ],
-                    max_tokens=700, temperature=0.7,
+                    max_tokens=700, temperature=0.2,
                 )
                 reply = strip_markdown((resp.choices[0].message.content or "").strip())
                 logger.info(f"[LLM] Groq responded ({len(reply)} chars)")
@@ -1382,30 +1371,21 @@ def chat():
         restaurant_preview = []
         
         if is_on_topic:
-            # v4.1: Detect follow-up intent and merge previous preferences
-            is_followup = detect_followup_intent(normalized_msg)
-            if is_followup and conversation_history and len(conversation_history) >= 2:
-                # Extract what bot recommended before
-                last_bot_message = None
-                for msg in reversed(conversation_history):
-                    if msg.get('role') == 'assistant':
-                        last_bot_message = msg.get('content', '')
-                        break
-                
-                if last_bot_message:
-                    # Get previous filters from bot's previous response
-                    previous_prefs = extract_preferences_from_previous_bot_response(last_bot_message)
+            # Parse preferences: start with the current normalized query
+            preferences = parse_message_for_preferences(normalized_msg)
+            
+            # Go backward in history and accumulate past filters if they don't conflict (current turn has priority)
+            for turn in reversed(conversation_history):
+                if turn.get('role') == 'user':
+                    past_msg = turn.get('content', '')
+                    past_lang = detect_language(past_msg)
+                    past_normalized = normalize_malay_text(past_msg) if past_lang == 'malay' else past_msg
+                    past_prefs = parse_message_for_preferences(past_normalized)
                     
-                    # Parse current message
-                    current_prefs = parse_message_for_preferences(normalized_msg)
-                    
-                    # Merge: current overrides previous
-                    preferences = {**previous_prefs, **current_prefs}
-                    logger.info(f"[v4.1] Merged preferences (follow-up): {preferences}")
-                else:
-                    preferences = parse_message_for_preferences(normalized_msg)
-            else:
-                preferences = parse_message_for_preferences(normalized_msg)
+                    for key, val in past_prefs.items():
+                        if key not in preferences:
+                            preferences[key] = val
+                            logger.info(f"[v4.2] Merging past preference from history: {key}={val}")
             
             # Add any explicit preferences from request if provided
             for key in ['latitude', 'longitude', 'distance_km', 'preferred_topic']:
