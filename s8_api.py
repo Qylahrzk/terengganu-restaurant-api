@@ -31,6 +31,7 @@ from flask_cors import CORS
 from supabase import create_client, Client
 from math import radians, sin, cos, sqrt, atan2
 import os
+import unicodedata
 import re
 import threading
 import time
@@ -431,24 +432,60 @@ def _price_label(level):
     return {1: 'Budget', 2: 'Moderate', 3: 'Upscale', 4: 'Fine Dining'}.get(level, '')
 
 
-def detect_language(text):
-    """Detect if text is primarily Malay or English."""
+def detect_language(text: str) -> str:
+    """
+    v4.1: Enhanced language detection using word frequency analysis.
+    
+    Checks 20+ keywords with context-aware logic.
+    Returns: 'malay' or 'english'
+    """
     text_lower = text.lower()
     
-    malay_keywords = {'makanan', 'makan', 'minum', 'restoran', 'warung', 'kedai', 'kedah', 
-                      'terengganu', 'halal', 'saya', 'saya nak', 'saya cari', 'apa', 'mana',
-                      'berapa', 'macam', 'bagus', 'sedap', 'murah', 'mahal'}
+    # STRONG Malay indicators
+    strong_malay = {
+        'makanan', 'makan', 'minum', 'restoran', 'warung', 'kedai',
+        'saya', 'kami', 'untuk', 'yang', 'atau', 'dengan', 'adalah',
+        'halal', 'sedap', 'murah', 'mahal', 'bagus', 'baik',
+        'ingin', 'mahu', 'cari', 'apa', 'mana', 'berapa', 'siapa',
+        'tempat', 'lokasi', 'dekat', 'jauh', 'besar', 'kecil',
+        'pukul', 'jam', 'hari', 'minggu', 'bulan', 'tahun',
+        'terengganu', 'kuala terengganu', 'besut', 'dungun',
+        'lagi', 'lain', 'yang lain', 'cadangkan', 'cuba', 'lawati',
+        'bagus untuk', 'sesuai untuk', 'ada lagi', 'ada lain',
+    }
     
-    malay_count = sum(1 for kw in malay_keywords if kw in text_lower)
+    # STRONG English indicators
+    strong_english = {
+        'restaurant', 'food', 'place', 'location', 'near', 'far',
+        'best', 'good', 'great', 'awesome', 'excellent', 'fantastic',
+        'cheap', 'expensive', 'affordable', 'budget',
+        'where', 'what', 'which', 'how', 'when', 'why',
+        'recommend', 'suggest', 'find', 'search', 'looking for',
+        'open', 'close', 'opening', 'hours', 'parking', 'wifi',
+        'i would', 'i want', 'i need', 'can you', 'could you',
+        'seafood', 'cafe', 'dining',
+    }
     
-    if malay_count >= 2:
+    malay_count = sum(1 for word in strong_malay if word in text_lower)
+    english_count = sum(1 for word in strong_english if word in text_lower)
+    
+    logger.info(f"[v4.1] Language scores: Malay={malay_count}, English={english_count}")
+    
+    if malay_count > english_count:
+        logger.info("[v4.1] Language: Malay (higher score)")
         return 'malay'
     
-    # Check for common English restaurant keywords
-    if any(kw in text_lower for kw in ['restaurant', 'seafood', 'best', 'where', 'find', 'any', 'cafe']):
+    if english_count > malay_count:
+        logger.info("[v4.1] Language: English (higher score)")
         return 'english'
     
-    return 'english'  # Default to English
+    # Tie-breaker: Malay particles
+    if any(p in text_lower for p in ['kah', 'lah', 'lor', 'meh']):
+        logger.info("[v4.1] Language: Malay (particles)")
+        return 'malay'
+    
+    logger.info("[v4.1] Language: defaulting to English")
+    return 'english'
 
 
 def format_conversation_history(history: list) -> str:
@@ -724,13 +761,206 @@ def format_ranked_restaurants_for_llm(ranked_restaurants: list) -> tuple[str, li
     return '\n'.join(lines), exact_names
 
 
-def validate_recommendation(llm_reply: str, valid_names: list) -> bool:
-    """Check if LLM's recommendations use valid restaurant names."""
-    reply_lower = llm_reply.lower()
-    for name in valid_names:
-        if name.lower() in reply_lower:
+def extract_and_validate_recommendations(llm_reply: str, valid_names: list) -> tuple[str, bool]:
+    """
+    v4.1: Extract and validate restaurant recommendations.
+    
+    Prevents hallucinations by:
+    1. Splitting response into sentences
+    2. Validating each sentence against restaurant whitelist
+    3. Removing sentences mentioning non-existent restaurants
+    """
+    if not llm_reply or not valid_names:
+        return llm_reply, False
+    
+    # Create case-insensitive lookup
+    valid_lookup = {name.lower(): name for name in valid_names}
+    
+    logger.info(f"[v4.1] Validating against {len(valid_names)} restaurants")
+    
+    # Split into sentences
+    sentences = re.split(r'(?<=[.!?])\s+', llm_reply)
+    if not sentences:
+        sentences = [llm_reply]
+    
+    cleaned_sentences = []
+    found_valid = False
+    removed_count = 0
+    
+    # Keywords that indicate a restaurant recommendation
+    recommendation_keywords = [
+        'recommend', 'suggest', 'try', 'visit', 'go to',
+        'great choice', 'perfect for', 'ideal for', 'best for',
+        'i recommend', 'i suggest', 'you should try',
+        'saya cadangkan', 'cuba', 'lawati', 'bagus untuk',
+    ]
+    
+    for sentence in sentences:
+        sentence_lower = sentence.lower()
+        sentence_stripped = sentence.strip()
+        
+        if not sentence_stripped:
+            continue
+        
+        # Check if sentence mentions any valid restaurant
+        mentioned_valid_names = [
+            valid_lookup[name.lower()] 
+            for name in valid_names 
+            if name.lower() in sentence_lower
+        ]
+        
+        if mentioned_valid_names:
+            # Valid restaurant mentioned → SAFE TO KEEP
+            cleaned_sentences.append(sentence_stripped)
+            found_valid = True
+            logger.debug(f"[v4.1] ✓ Valid: {mentioned_valid_names[0]} found")
+        else:
+            # Check if it LOOKS like a recommendation
+            is_recommendation_sentence = any(
+                kw in sentence_lower for kw in recommendation_keywords
+            )
+            
+            if is_recommendation_sentence:
+                # Looks like recommendation but no valid restaurant
+                # → HALLUCINATION ATTEMPT → REMOVE
+                logger.warning(f"[v4.1] ✗ Hallucination blocked: '{sentence_stripped[:60]}...'")
+                removed_count += 1
+                continue
+            else:
+                # Descriptive text without restaurant name → SAFE TO KEEP
+                cleaned_sentences.append(sentence_stripped)
+                logger.debug(f"[v4.1] ℹ Descriptive text kept")
+    
+    cleaned_reply = ' '.join(cleaned_sentences).strip()
+    
+    logger.info(f"[v4.1] Validation complete: valid={found_valid}, removed={removed_count}")
+    
+    return cleaned_reply if cleaned_reply else llm_reply, found_valid
+
+
+def detect_followup_intent(message: str) -> bool:
+    """
+    v4.1: Detect if user is asking for "more suggestions" (follow-up).
+    
+    Returns True if message contains follow-up keywords like:
+    - English: more, other, another, different, else
+    - Malay: lagi, lain, yang lain, ada lagi ke
+    """
+    followup_keywords = [
+        # English
+        'more', 'other', 'another', 'different', 'else', 'instead',
+        'alternatives', 'options', 'different option', 'what else',
+        'any other', 'suggest again', 'again', 'try another',
+        'how about', 'what about', 'try different',
+        # Malay
+        'lagi', 'lain', 'yang lain', 'beza', 'berbeza', 'lain pula',
+        'ganti', 'alternatif', 'pilihan lain', 'saya nak lagi',
+        'apa tentang', 'macam mana pula', 'ada lagi', 'ada lagi ke',
+        'yang lain pula', 'lagi apa', 'apa lg',
+    ]
+    
+    message_lower = message.lower().strip()
+    
+    # Short messages (≤3 words) should match if they contain follow-up keywords
+    if len(message_lower.split()) <= 3:
+        if any(kw in message_lower for kw in followup_keywords):
+            logger.info(f"[v4.1] Follow-up detected: '{message}'")
             return True
+    
+    # Longer messages need at least one follow-up keyword
+    followup_count = sum(1 for kw in followup_keywords if kw in message_lower)
+    if followup_count >= 1 and len(message_lower.split()) <= 10:
+        logger.info(f"[v4.1] Follow-up detected (multi-word): '{message}'")
+        return True
+    
     return False
+
+
+def extract_preferences_from_previous_bot_response(bot_reply: str) -> dict:
+    """
+    v4.1: Extract filters used in bot's previous response.
+    
+    If bot said "halal seafood romantic restaurants with scenic view"
+    → Extract: {halal: true, cuisine: seafood, romantic: true, scenic_view: true}
+    
+    Used to preserve context for follow-up questions.
+    """
+    reply_lower = bot_reply.lower()
+    prefs = {}
+    
+    # Dietary
+    if 'halal' in reply_lower:
+        prefs['halal'] = True
+    if 'vegetarian' in reply_lower:
+        prefs['vegetarian'] = True
+    if 'vegan' in reply_lower:
+        prefs['vegan'] = True
+    
+    # Cuisines
+    cuisines = ['seafood', 'malay', 'western', 'chinese', 'japanese', 'thai', 'cafe', 'bbq']
+    for cuisine in cuisines:
+        if cuisine in reply_lower:
+            prefs['cuisine'] = cuisine
+            break
+    
+    # Vibes
+    if any(w in reply_lower for w in ['romantic', 'romance', 'date']):
+        prefs['romantic'] = True
+    if any(w in reply_lower for w in ['casual', 'relax', 'relaxing']):
+        prefs['casual'] = True
+    if any(w in reply_lower for w in ['family', 'kids', 'child']):
+        prefs['family_friendly'] = True
+    if any(w in reply_lower for w in ['scenic', 'view', 'sight']):
+        prefs['scenic_view'] = True
+    
+    # Facilities
+    if 'parking' in reply_lower:
+        prefs['parking'] = True
+    if 'wifi' in reply_lower:
+        prefs['wifi'] = True
+    
+    logger.info(f"[v4.1] Extracted preferences from bot reply: {prefs}")
+    return prefs
+
+
+def normalize_malay_text(text: str) -> str:
+    """
+    v4.1: Normalize Malay text for better LLM processing.
+    
+    Handles:
+    - Unicode diacritics (é, â, etc.)
+    - Common Malay abbreviations
+    - Text normalization for tokenization
+    """
+    # Step 1: Unicode normalization (decompose diacritics)
+    normalized = unicodedata.normalize('NFD', text)
+    
+    # Step 2: Remove combining marks (diacritical marks)
+    normalized = ''.join(
+        c for c in normalized 
+        if unicodedata.category(c) != 'Mn'  # Mn = Mark, Nonspacing
+    )
+    
+    # Step 3: Clean up whitespace
+    normalized = ' '.join(normalized.split())
+    
+    # Step 4: Expand Malay abbreviations
+    replacements = {
+        "nak ": "ingin ",
+        "nak,": "ingin,",
+        " saya nak ": " saya ingin ",
+        "mcm": "macam",
+        "tu": "itu",
+        "tk": "tidak",
+        "xde": "tidak ada",
+        "lg": "lagi",
+    }
+    
+    for abbr, full in replacements.items():
+        normalized = re.sub(r'\b' + re.escape(abbr) + r'\b', full, normalized, flags=re.IGNORECASE)
+    
+    logger.info(f"[v4.1] Malay normalization: '{text[:40]}' → '{normalized[:40]}'")
+    return normalized.strip()
 
 
 # ==========================================================================
@@ -1117,6 +1347,13 @@ def chat():
         # Detect language
         language = detect_language(message)
 
+        # v4.1: Normalize Malay text
+        if language == 'malay':
+            normalized_msg = normalize_malay_text(message)
+            logger.info(f"[v4.1] Malay input normalized")
+        else:
+            normalized_msg = message
+
         if not any([_GEMINI_AVAILABLE, _groq_client, _mistral_client]):
             logger.error("[/chat] No LLM services available")
             return jsonify({
@@ -1129,15 +1366,15 @@ def chat():
                 'language'       : language,
             }), 200
 
-        # Scope detection
-        is_on_topic, scope_confidence, detected_keywords = is_restaurant_related(message)
+        # Scope detection (use normalized message)
+        is_on_topic, scope_confidence, detected_keywords = is_restaurant_related(normalized_msg)
         logger.info(f"[chat] Scope: on_topic={is_on_topic}, confidence={scope_confidence:.2f}")
 
-        intent = detect_intent(message)
+        intent = detect_intent(normalized_msg)
         logger.info(f"[chat] intent={intent} | message='{message[:60]}'")
 
         user_model_req   = data.get('model', '')
-        primary_model, _ = select_model(message, user_model_req)
+        primary_model, _ = select_model(normalized_msg, user_model_req)
 
         restaurants = load_restaurants()
         ranked_restaurants = []
@@ -1145,8 +1382,30 @@ def chat():
         restaurant_preview = []
         
         if is_on_topic:
-            # CRITICAL FIX: Extract preferences from THIS MESSAGE, not request body
-            preferences = parse_message_for_preferences(message)
+            # v4.1: Detect follow-up intent and merge previous preferences
+            is_followup = detect_followup_intent(normalized_msg)
+            if is_followup and conversation_history and len(conversation_history) >= 2:
+                # Extract what bot recommended before
+                last_bot_message = None
+                for msg in reversed(conversation_history):
+                    if msg.get('role') == 'assistant':
+                        last_bot_message = msg.get('content', '')
+                        break
+                
+                if last_bot_message:
+                    # Get previous filters from bot's previous response
+                    previous_prefs = extract_preferences_from_previous_bot_response(last_bot_message)
+                    
+                    # Parse current message
+                    current_prefs = parse_message_for_preferences(normalized_msg)
+                    
+                    # Merge: current overrides previous
+                    preferences = {**previous_prefs, **current_prefs}
+                    logger.info(f"[v4.1] Merged preferences (follow-up): {preferences}")
+                else:
+                    preferences = parse_message_for_preferences(normalized_msg)
+            else:
+                preferences = parse_message_for_preferences(normalized_msg)
             
             # Add any explicit preferences from request if provided
             for key in ['latitude', 'longitude', 'distance_km', 'preferred_topic']:
@@ -1304,9 +1563,9 @@ def chat():
             ranked_context = ""
             exact_names = []
 
-        # Build prompt and call LLM
+        # Build prompt and call LLM (use normalized_msg)
         system_prompt, user_prompt = build_prompt(
-            message, ranked_context, is_on_topic, language
+            normalized_msg, ranked_context, is_on_topic, language
         )
 
         # Include conversation history context
@@ -1314,12 +1573,13 @@ def chat():
 
         reply, model_used = call_llm(system_prompt, user_prompt, primary_model, conv_context)
 
-        # v3.7 FIX: Hallucination check & fallback
+        # v4.1: Strict Hallucination Prevention
         had_hallucinations = False
         hallucination_rate = 0.0
         if is_on_topic and exact_names:
-            if not validate_recommendation(reply, exact_names):
-                logger.warning(f"[v3.7] Possible hallucination detected in reply: {reply[:100]}")
+            reply, is_valid_rec = extract_and_validate_recommendations(reply, exact_names)
+            if not is_valid_rec:
+                logger.warning(f"[v4.1] Hallucination detected in reply: {reply[:100]}")
                 had_hallucinations = True
                 hallucination_rate = 1.0
                 alternatives = " | ".join(exact_names)
