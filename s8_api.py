@@ -151,15 +151,44 @@ supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
 # ==========================================================================
 
 _RESTAURANT_KEYWORDS = {
+    # --- General Food & Dining Vocabularies (English & Standard Malay) ---
     'restaurant', 'food', 'eat', 'dining', 'cuisine', 'dish', 'meal', 'lunch', 'dinner', 'breakfast',
     'snack', 'cafe', 'coffee', 'noodle', 'rice', 'pizza', 'burger', 'seafood', 'halal',
     'vegetarian', 'vegan', 'roti', 'nasi', 'makan', 'minum', 'air', 'minuman', 'hidangan',
     'tempat makan', 'restoran', 'kafe', 'warung', 'stall', 'kedai', 'toko makanan',
     'parking', 'ambiance', 'atmosphere', 'vibe', 'cozy', 'family-friendly', 'romantic',
     'budget', 'cheap', 'expensive', 'price', 'rating', 'review', 'recommendation', 'recommend',
+    'hungry', 'lapar', 'craving', 'tasty', 'delicious', 'sedap', 'kenyang', 'order', 'menu',
+    'food court', 'medan selera', 'kopitiam', 'bistro', 'cafe hopping', 'mkn', 'mnm',
     'terengganu', 'kota terengganu', 'kuala terengganu', 'besut', 'dungun', 'marang',
-    'kemaman', 'kuala nerus', 'setiu', 'hulu terengganu',
-    'hungry', 'lapar', 'craving', 'tasty', 'delicious', 'sedap'
+    'kemaman', 'kuala nerus', 'setiu', 'hulu terengganu','hungry', 'lapar', 'craving', 'tasty', 'delicious', 'sedap'
+
+    # --- Terengganu Local Dialect & Slang Shortcuts (Bahasa Ganu) ---
+    'tanyoo', 'hok', 'bst', 'pante', 'pata', 'rme', 'kelargo', 'comel', 'molek', 'bajet',
+    'sedak', 'dok', 'dop', 'dokgok', 'mung', 'ambe', 'guane', 'mke', 'mkng', 'mnm', 'gok',
+    'katne', 'maner', 'mne', 'mane', 'boh', 'ssunggeh', 'sapa', 'brp', 'berapo', 'nerre',
+    'lok', 'sebak', 'je', 'jer', 'ke', 'lah', 'le', 'ko', 'nyor', 'pete', 'natang',
+
+    # --- Terengganu Iconic Main Dishes & Local Specialties ---
+    'keropok lekor', 'lekor', 'losong', 'kopok', 'nasi dagang', 'dagang', 'gulai ikan tongkol',
+    'nasi kerabu', 'kerabu', 'solok lada', 'nasi lada', 'sata', 'otak-otak', 'paung', 'akok',
+    'kuih akok', 'pulut lepa', 'nekbat', 'roti paung', 'laksam', 'laksa terengganu', 'otak tali',
+    'singgang', 'singgang ikan', 'gulai darat', 'ketupat sotong', 'mee calong', 'calong',
+    'nasi minyak', 'ayam gulai', 'ikan tongkol', 'budu', 'restoran singgang', 'lempeng',
+
+    # --- Seafood, Proteins, & Coastal Cooking Formats ---
+    'seafood', 'makanan laut', 'fish', 'ikan', 'prawn', 'udang', 'sotong', 'ketam', 'crab',
+    'bakar', 'ikan bakar', 'grill', 'grilled', 'bbq', 'celup tepung', 'ict', 'garing',
+    'goreng', 'rebus', 'kukus', 'stim', 'masak lemak', 'tomyam', 'sambal', 'petai', 'kerang',
+    'lauk', 'lauk-pauk', 'sup', 'daging', 'kambing', 'ayam goreng', 'shell out',
+
+    # --- Sweets, Treats, Desserts & Hot Breakfast Drinks (Fixes "Manis" Fallback) ---
+    'manis', 'manisan', 'pencuci mulut', 'kuih', 'dessert', 'desserts', 'sweet', 'sweets',
+    'ice cream', 'ais krim', 'baking', 'bakery', 'kek', 'cake', 'pastry', 'pastries', 'waffle',
+    'cendol', 'abc', 'ais kacang', 'chocolate', 'coklat', 'donut', 'donat', 'croissant',
+    'roti canai', 'roti tampal', 'roti bom', 'half boiled egg', 'telur separuh masak', 'kaya toast',
+    'kopi o', 'teh tarik', 'milo', 'boba', 'bubble tea', 'juice', 'jus', 'fruits', 'buah',
+    'sweet tooth', 'lompat tikam', 'kuih-muih', 'sirap', 'soda', 'waffle ice cream', 'gelato'
 }
 
 _OUT_OF_SCOPE_KEYWORDS = {
@@ -172,7 +201,7 @@ _OUT_OF_SCOPE_KEYWORDS = {
 
 def is_restaurant_related(text, conversation_history=None):
     """Detect if user question is about restaurants/food with follow-up awareness."""
-    text_lower = text.lower()
+    text_lower = text.lower().strip()
     
     # 1. Check for hard off-topic blocks first
     detected_off_topic = [kw for kw in _OUT_OF_SCOPE_KEYWORDS if kw in text_lower]
@@ -184,12 +213,22 @@ def is_restaurant_related(text, conversation_history=None):
     if detected_keywords:
         return True, min(0.95, len(detected_keywords) * 0.3), detected_keywords
     
-    # 3. FIX: Check if this is a follow-up request before enforcing the short-message penalty
+    # 3. FIX: Check if this is a contextual follow-up/reaction to previous options
     if conversation_history and len(conversation_history) > 0:
-        followup_signals = ['more', 'other', 'another', 'different', 'else', 'instead', 'options', 'lagi', 'lain', 'ada lagi']
-        if any(sig in text_lower for sig in followup_signals):
-            logger.info("[SCOPE] Context short-message follow-up query bypass activated.")
-            return True, 0.8, ['follow_up_intent']
+        # Catch follow-up intent signals, digits, and conversational reactions
+        followup_signals = [
+            'more', 'other', 'another', 'different', 'else', 'instead', 
+            'lagi', 'lain', 'ada lagi', 'tak', 'sahaja', 'saja', 'je', 'jer',
+            'only', 'few', 'sikit', 'banyak', 'kenapa', 'why', 'betul ke', 'sure'
+        ]
+        
+        # Check if text contains a digit (like '3') or structural reaction keywords
+        has_digit = any(char.isdigit() for char in text_lower)
+        matches_signal = any(sig in text_lower for sig in followup_signals)
+        
+        if matches_signal or has_digit:
+            logger.info("[SCOPE] Conversational follow-up reaction bypass activated.")
+            return True, 0.8, ['follow_up_reaction']
 
     # 4. Standard short message penalty for completely fresh chats
     if len(text.split()) < 5 and not detected_keywords:
@@ -202,17 +241,31 @@ def is_restaurant_related(text, conversation_history=None):
 # ==========================================================================
 
 CUISINE_KEYWORDS = {
-    'malay':     ['malay', 'nasi', 'mee', 'kuih', 'lemak', 'goreng', 'kampung', 'traditional'],
-    'seafood':   ['seafood', 'fish', 'ikan', 'prawn', 'udang', 'sotong', 'ketam', 'crab', 'laut', 'laut'],
-    'western':   ['western', 'burger', 'pasta', 'steak', 'pizza', 'sandwich', 'international'],
-    'cafe':      ['cafe', 'coffee', 'latte', 'kopitiam', 'kopi', 'brunch', 'cappuccino', 'espresso'],
-    'chinese':   ['chinese', 'dim sum', 'wonton', 'char kway', 'hakka', 'cantonese'],
-    'japanese':  ['japanese', 'sushi', 'ramen', 'sashimi', 'udon', 'tempura', 'tonkatsu'],
-    'bbq':       ['bbq', 'grill', 'bakar', 'satay', 'satai', 'roasted', 'grilled'],
-    'dessert':   ['dessert', 'ice cream', 'ais', 'cake', 'pastry', 'sweet', 'gelato'],
-    'fast food': ['fast food', 'mcdonalds', 'kfc', 'burger king', 'mamak', 'quick'],
-    'thai':      ['thai', 'tomyam', 'tom yam', 'pad thai', 'thai cuisine'],
-    'indian':    ['indian', 'roti canai', 'naan', 'curry', 'briyani', 'tandoori'],
+    'seafood': [
+        'seafood', 'fish', 'ikan', 'prawn', 'udang', 'sotong', 'ketam', 'crab', 'laut', 
+        'bakar', 'celup tepung', 'ict', 'makanan laut', 'ikan bakar', 'shell out'
+    ],
+    'malay': [
+        'malay', 'nasi', 'mee', 'kuih', 'lemak', 'goreng', 'kampung', 'traditional', 
+        'dagang', 'kerabu', 'laksam', 'singgang', 'gulai darat', 'nasi minyak', 'budu', 'lempeng'
+    ],
+    'dessert': [
+        'dessert', 'desserts', 'ice cream', 'ais', 'cake', 'pastry', 'sweet', 'gelato', 
+        'manis', 'manisan', 'pencuci mulut', 'kek', 'kuih', 'akok', 'nekbat', 'cendol', 
+        'abc', 'ais kacang', 'lompat tikam', 'kuih-muih', 'bakery', 'coklat', 'chocolate'
+    ],
+    'western': [
+        'western', 'burger', 'pasta', 'steak', 'pizza', 'sandwich', 'international', 
+        'chicken chop', 'lamb chop', 'spaghetti', 'grill'
+    ],
+    'cafe': [
+        'cafe', 'coffee', 'latte', 'kopitiam', 'kopi', 'brunch', 'cappuccino', 'espresso', 
+        'cafe hopping', 'matcha', 'croissant'
+    ],
+    'fast food': [
+        'fast food', 'mcdonalds', 'kfc', 'burger king', 'mamak', 'quick', 'paung', 
+        'roti paung', 'fried chicken'
+    ],
 }
 
 DIETARY_KEYWORDS = {
@@ -940,6 +993,7 @@ def normalize_malay_text(text: str) -> str:
     normalized = ' '.join(normalized.split())
     
     replacements = {
+        # --- Existing Mappings ---
         r"\bnak\b|\bnok\b": "ingin",
         r"\bmcm\b": "macam",
         r"\btu\b": "itu",
@@ -953,7 +1007,17 @@ def normalize_malay_text(text: str) -> str:
         r"\brme\b|\brame\b": "ramai",
         r"\bkelargo\b": "keluarga",
         r"\bcomel\b|\bmolek\b": "bagus",
-        r"\bbajet\b": "budget"
+        r"\bbajet\b": "budget",
+        
+        # --- New Core Extensions ---
+        r"\bmanis\b|\bmanisang\b": "manis dessert",
+        r"\bmke\b|\bmkng\b|\bmkn\b": "makan",
+        r"\bmnm\b": "minum",
+        r"\bkatne\b|\bmne\b|\bmaner\b": "di mana",
+        r"\bpete\b": "petang",
+        r"\bict\b": "celup tepung seafood",
+        r"\bkb\b": "kuala terengganu", # Handles fast type adjustments
+        r"\bbrp\b|\bberapo\b": "berapa price"
     }
     for abbr, full in replacements.items():
         normalized = re.sub(abbr, full, normalized, flags=re.IGNORECASE)
@@ -1481,6 +1545,28 @@ def chat():
             if not filtered:
                 filtered = sorted(restaurants,
                                   key=lambda x: float(x.get('rating', 0)), reverse=True)[:TOP_N * 2]
+
+            # 1. Gather all restaurant names the assistant has already mentioned in this chat
+            already_mentioned_names = []
+            for turn in conversation_history:
+                if turn.get('role') == 'assistant':
+                    bot_text_lower = turn.get('content', '').lower()
+                    # Check every cached restaurant name against the historical bot responses
+                    for r in restaurants:
+                        r_name = r.get('name', '')
+                        if r_name and r_name.lower() in bot_text_lower:
+                            if r_name not in already_mentioned_names:
+                                already_mentioned_names.append(r_name)
+
+            logger.info(f"[HISTORY FILTER] Excluding already mentioned places: {already_mentioned_names}")
+
+            # 2. Filter out those restaurants so they don't appear in the new results list
+            if already_mentioned_names:
+                filtered = [r for r in filtered if r.get('name') not in already_mentioned_names]
+
+            # 3. Fallback: If we filtered out too many places, reload top choices to keep the list populated
+            if not filtered:
+                filtered = sorted(restaurants, key=lambda x: float(x.get('rating', 0)), reverse=True)[:TOP_N * 2]
 
             max_distance = max((r.get('distance_km', 0) for r in filtered), default=1)
             scored = []
