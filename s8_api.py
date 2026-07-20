@@ -1551,12 +1551,12 @@ def chat():
             for turn in conversation_history:
                 if turn.get('role') == 'assistant':
                     bot_text_lower = turn.get('content', '').lower()
-                    # Check every cached restaurant name against the historical bot responses
                     for r in restaurants:
                         r_name = r.get('name', '')
-                        if r_name and r_name.lower() in bot_text_lower:
+                        if r_name and len(r_name) > 2 and r_name.lower() in bot_text_lower:
                             if r_name not in already_mentioned_names:
                                 already_mentioned_names.append(r_name)
+                                logger.info(f"[HISTORY] Matched already-mentioned: {r_name}")
 
             logger.info(f"[HISTORY FILTER] Excluding already mentioned places: {already_mentioned_names}")
 
