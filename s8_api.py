@@ -1612,28 +1612,6 @@ def chat():
             # Format for LLM
             ranked_context, exact_names = format_ranked_restaurants_for_llm(ranked_restaurants)
             
-            # Build restaurant preview (use ranked restaurants)
-            for r in ranked_restaurants:
-                matched = build_matched_filters(r, preferences)
-                restaurant_preview.append({
-                    'name'           : r.get('name', ''),
-                    'rating'         : r.get('rating', 0),
-                    'cuisine_type'   : r.get('cuisine_type', ''),
-                    'municipality'   : r.get('municipality', ''),
-                    'address'        : r.get('address', ''),
-                    'is_halal'       : r.get('is_halal', False),
-                    'topic_label'    : r.get('topic_label', ''),
-                    'latitude'       : r.get('latitude'),
-                    'longitude'      : r.get('longitude'),
-                    'price_level'    : r.get('price_level'),
-                    'matched_filters': matched,
-                    'is_romantic'    : r.get('is_romantic', False),
-                    'has_scenic_view': r.get('has_scenic_view', False),
-                    'distance_km'    : r.get('distance_km') or 0,
-                    'distance_label' : r.get('distance_label') or 'Nearby',
-                    'is_partial_match': len(filters_relaxed) > 0,
-                })
-            
             logger.info(f"[chat] Ranked {len(ranked_restaurants)} restaurants for this message")
         else:
             ranked_context = ""
@@ -1663,6 +1641,46 @@ def chat():
                     reply = f"Maaf, dikesan ralat penjanaan nama restoran. Sila rujuk senarai restoran yang sah ini sahaja: {alternatives}"
                 else:
                     reply = f"Apologies, restaurant name generation hallucination detected. Please refer to this list of valid options instead: {alternatives}"
+
+        # ==========================================
+        # NEW PATCH: CONVERSATIONAL CARDS ALIGNMENT
+        # ==========================================
+        restaurant_preview = []
+        if is_on_topic and ranked_restaurants:
+            bot_reply_lower = reply.lower()
+            mentioned_in_text = []
+            remaining_candidates = []
+
+            for r in ranked_restaurants:
+                r_name = r.get('name', '')
+                if r_name and len(r_name) > 2 and r_name.lower() in bot_reply_lower:
+                    mentioned_in_text.append(r)
+                    logger.info(f"[ALIGNMENT] Found text mention! Moving to top slot: {r_name}")
+                else:
+                    remaining_candidates.append(r)
+
+            aligned_restaurants = mentioned_in_text + remaining_candidates
+
+            for r in aligned_restaurants:
+                matched = build_matched_filters(r, preferences)
+                restaurant_preview.append({
+                    'name'           : r.get('name', ''),
+                    'rating'         : r.get('rating', 0),
+                    'cuisine_type'   : r.get('cuisine_type', ''),
+                    'municipality'   : r.get('municipality', ''),
+                    'address'        : r.get('address', ''),
+                    'is_halal'       : r.get('is_halal', False),
+                    'topic_label'    : r.get('topic_label', ''),
+                    'latitude'       : r.get('latitude'),
+                    'longitude'      : r.get('longitude'),
+                    'price_level'    : r.get('price_level'),
+                    'matched_filters': matched,
+                    'is_romantic'    : r.get('is_romantic', False),
+                    'has_scenic_view': r.get('has_scenic_view', False),
+                    'distance_km'    : r.get('distance_km') or 0,
+                    'distance_label' : r.get('distance_label') or 'Nearby',
+                    'is_partial_match': len(relaxed_criteria) > 0,
+                })
 
         logger.info(f"[chat] model={model_used} | on_topic={is_on_topic} | restaurants={len(ranked_restaurants)} | hallucination={had_hallucinations}")
 
